@@ -1,12 +1,10 @@
 
-
 ![](https://raw.githubusercontent.com/qiubaiying/qiubaiying.github.io/master/img/readme-home.png)
-
 ### [查看博客戳这里 👆](http://lianyiming.github.io)
 
 
 
-## 使用
+## 怎么改成自己のblog
 
 * 开始
 	* [环境](#环境)

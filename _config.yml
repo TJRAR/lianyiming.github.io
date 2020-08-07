@@ -2,9 +2,9 @@
 title: LY Blog
 SEOTitle: LY | Blog
 header-img: img/post-bg-desk.jpg
-email: agzx_lym@163.com
+email: AGZX_lym@163.com
 description: "Every failure is leading towards success."
-keyword: "LY, LY Blog, 廉一鸣的博客, LianYiMing, 廉一鸣, iOS, Apple, iPhone"
+keyword: "LY, LY Blog, 廉一鸣的博客, LianYiMing, 廉一鸣, 扯扯淡, 濮阳市油田十中, 濮阳市油田四小"
 url: "https://lianyiming.github.io/"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/LianYiMing/LianYiMing.github.io" # you code repository
@@ -23,8 +23,9 @@ weibo_username:     false
 zhihu_username:     agzx
 github_username:    LianYiMing
 facebook_username:  false
-jianshu_username:   
-#twitter_username:   qiubaiying
+jianshu_username:   true
+#twitter_username:   lianyiming
+#用twitter的话删掉上边的#就可以了
 
 
 

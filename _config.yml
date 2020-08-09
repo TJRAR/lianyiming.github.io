@@ -102,7 +102,7 @@ service-worker: true
 friends: [
     {
         title: "我的公众号",
-        href: "https://mp.weixin.qq.com/profile?src=3&timestamp=1596789111&ver=1&signature=24lDXdNhHftLVYpWTBSI0A8o5VpAlIZq3ZyRoa-qm*8Wedg6mtSzyjc98HYxkGh9hnzpi2my40CASE-m51hcvQ=="
+        href: "https://mp.weixin.qq.com/s/7oEX4dRnvKM1HdKwvrMr2g"
 		
     }
 ]

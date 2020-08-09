@@ -101,8 +101,8 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "我的公众号",
-        href: "https://mp.weixin.qq.com/s/7oEX4dRnvKM1HdKwvrMr2g"
+        title: "    ",
+        href: "    "
 		
     }
 ]

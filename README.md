@@ -9,11 +9,10 @@
 		    box-shadow: 0 0 10px #444;
 			background-image: url(https://raw.githubusercontent.com/lianyiming/lianyiming.github.io/master/img/readme-home.png);
         }
-</style>
+		</style>
 
 </head>
 <div id="div" >
-			
 			</div>
 ![](https://raw.githubusercontent.com/lianyiming/lianyiming.github.io/master/img/readme-home.png)
 

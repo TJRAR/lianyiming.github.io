@@ -1,13 +1,13 @@
 
 
-![](https://raw.githubusercontent.com/qiubaiying/qiubaiying.github.io/master/img/readme-home.png)
+![](https://raw.githubusercontent.com/lianyiming/lianyiming.github.io/master/img/readme-home.png)
 
-[![Build Status](https://travis-ci.org/qiubaiying/qiubaiying.github.io.svg?branch=master)](https://travis-ci.org/qiubaiying/qiubaiying.github.io)
-[![codebeat badge](https://codebeat.co/badges/5f031df3-f6c1-4ec0-911a-ff6617ca50b9)](https://codebeat.co/projects/github-com-qiubaiying-qiubaiying-github-io-master)
-[![GitHub issues](https://img.shields.io/github/issues/qiubaiying/qiubaiying.github.io.svg?style=flat)](https://github.com/qiubaiying/qiubaiying.github.io/issues)
+[![Build Status](https://travis-ci.org/lianyiming/lianyiming.github.io.svg?branch=master)](https://travis-ci.org/lianyiming/lianyiming.github.io)
+[![codebeat badge](https://codebeat.co/badges/5f031df3-f6c1-4ec0-911a-ff6617ca50b9)](https://codebeat.co/projects/github-com-lianyiming-lianyiming-github-io-master)
+[![GitHub issues](https://img.shields.io/github/issues/lianyiming/lianyiming.github.io.svg?style=flat)](https://github.com/lianyiming/lianyiming.github.io/issues)
 [![License MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/home-assistant/home-assistant-iOS/blob/master/LICENSE)
-[![](https://img.shields.io/github/stars/qiubaiying/qiubaiying.github.io.svg?style=social&label=Star)](https://github.com/qiubaiying/qiubaiying.github.io)
-[![](https://img.shields.io/github/forks/qiubaiying/qiubaiying.github.io.svg?style=social&label=Fork)](https://github.com/qiubaiying/qiubaiying.github.io)
+[![](https://img.shields.io/github/stars/lianyiming/lianyiming.github.io.svg?style=social&label=Star)](https://github.com/lianyiming/lianyiming.github.io)
+[![](https://img.shields.io/github/forks/lianyiming/lianyiming.github.io.svg?style=social&label=Fork)](https://github.com/lianyiming/lianyiming.github.io)
 
 >
 ### [查看博客戳这里 👆](http://lianyiming.github.io)
@@ -71,15 +71,14 @@ yaml 头文件长这样:
 ```
 ---
 layout:     post
-title:      定时器 你真的会使用吗？
-subtitle:   iOS定时器详解
-date:       2016-12-13
-author:     BY
-header-img: img/post-bg-ios9-web.jpg
+title:      这是题目
+subtitle:   副标题
+date:       日期
+author:     LYM
+header-img: img/post-bg-ios9-web.jpg这是头图，输入绝对地址
 catalog: 	 true
 tags:
-    - iOS
-    - 定时器
+    - 输入文字就行，这里是标签，类似于文章的分类
 ---
 
 ```
@@ -87,7 +86,7 @@ tags:
 ### 侧边栏
 
 看右边:
-![](https://raw.githubusercontent.com/qiubaiying/qiubaiying.github.io/master/img/readme-side.png)
+![](https://raw.githubusercontent.com/lianyiming/lianyiming.github.io/master/img/readme-side.png)
 
 设置是在 `_config.yml`文件里面的`Sidebar settings`那块。
 
@@ -209,7 +208,7 @@ disqus_username: lianyiming
 
 **使用：**
 
-参考我的这篇文章：[《为博客添加 Gitalk 评论插件》](http://qiubaiying.top/2017/12/19/%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0-Gitalk-%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/)
+参考我的这篇文章：[《为博客添加 Gitalk 评论插件》](http://lianyiming.top/2017/12/19/%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0-Gitalk-%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/)
 
 
 ### Analytics
@@ -271,5 +270,5 @@ ga_domain: huangxuan.me			# 默认的是 auto, 这里我是自定义了的域名
 
 ## License
 
-遵循 MIT 许可证。有关详细,请参阅 [LICENSE](https://github.com/qiubaiying/qiubaiying.github.io/blob/master/LICENSE)。
+遵循 MIT 许可证。有关详细,请参阅 [LICENSE](https://github.com/lianyiming/lianyiming.github.io/blob/master/LICENSE)。
 

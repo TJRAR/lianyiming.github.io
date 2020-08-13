@@ -1,19 +1,4 @@
 ﻿
-<head>
-	<style>
-		#div{
-            width: 80px;height: 80px;border: 1px solid #444;
-            border-radius: 100%;
-			overflow: hidden;
-			float:  left;
-		    box-shadow: 0 0 10px #444;
-			background-image: url(https://raw.githubusercontent.com/lianyiming/lianyiming.github.io/master/img/readme-home.png);
-        }
-		</style>
-
-</head>
-<div id="div" >
-			</div>
 ![](https://raw.githubusercontent.com/lianyiming/lianyiming.github.io/master/img/readme-home.png)
 
 [![Build Status](https://travis-ci.org/lianyiming/lianyiming.github.io.svg?branch=master)](https://travis-ci.org/lianyiming/lianyiming.github.io)

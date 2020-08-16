@@ -1,4 +1,4 @@
-﻿
+
 ![](https://raw.githubusercontent.com/lianyiming/lianyiming.github.io/master/img/readme-home.png)
 
 [![Build Status](https://travis-ci.org/lianyiming/lianyiming.github.io.svg?branch=master)](https://travis-ci.org/lianyiming/lianyiming.github.io)
@@ -9,7 +9,7 @@
 [![](https://img.shields.io/github/forks/lianyiming/lianyiming.github.io.svg?style=social&label=Fork)](https://github.com/lianyiming/lianyiming.github.io)
 
 >
-### [查看博客戳这里 👆](http://lianyiming.github.io)
+### [查看博客戳这里 👆](https://LYM.cool)
 
 
 

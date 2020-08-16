@@ -9,7 +9,7 @@
 [![](https://img.shields.io/github/forks/lianyiming/lianyiming.github.io.svg?style=social&label=Fork)](https://github.com/lianyiming/lianyiming.github.io)
 
 >
-### [查看博客戳这里 👆](https://LYM.cool)
+### [查看博客戳这里 👆](https://lianyiming.com)
 
 
 

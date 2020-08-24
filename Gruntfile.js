@@ -38,6 +38,7 @@ module.exports = function(grunt) {
                     position: 'top',
                     banner: '<%= banner %>'
                 },
+		
                 files: {
                     src: ['css/<%= pkg.name %>.css', 'css/<%= pkg.name %>.min.css', 'js/<%= pkg.name %>.min.js']
                 }

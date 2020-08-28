@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Internet｜root｜（2）n.
+title:      Internet-root-（2）n.
 subtitle:   这凉爽的夜晚
 date:       2020-5-2
 author:     AGZX

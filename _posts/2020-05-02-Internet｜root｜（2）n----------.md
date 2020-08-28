@@ -9,7 +9,8 @@ catalog: true
 tags:
     - root
 ---
-
+<meta name="renderer" content="webkit">
+<meta name="referrer" content="never">
 ## Internet｜root｜（2）n.
 
 AGZX [扯扯淡](javascript:void(0);) *5月2日*

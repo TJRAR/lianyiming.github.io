@@ -1,14 +1,13 @@
 ---
 layout:     post
-title:      Internet｜root入门｜[1]什么玩意
+title:      Internet｜root｜（2）n.
 subtitle:   这凉爽的夜晚
-date:       2020-5-1
+date:       2020-5-2
 author:     AGZX
 header-img: img/post-bg-ios9-web.jpg
 catalog: true
 tags:
     - root
-
 ---
 
 ## Internet｜root｜（2）n.

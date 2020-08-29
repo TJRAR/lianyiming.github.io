@@ -104,7 +104,7 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: " AJR.ECHO  ",
+        title: " 鲸一",
         href: "https://www.saroin.com/"
 		
     }

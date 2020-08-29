@@ -195,11 +195,11 @@ layout: default
                 {% if site.friends %}
                 <hr>
                 <h5>FRIENDS</h5>
-                <ul class="list-inline">
+                <ol class="list-inline">
                     {% for friend in site.friends %}
-                    <h1>  <li><a href="{{friend.href}}">{{friend.title}}</a></li></h1>
+                    <h3>  <li><a href="{{friend.href}}">{{friend.title}}</a></li></h3>
                     {% endfor %}
-                </ul>
+                </ol>
                 {% endif %}
     		</div>
         {% endif %}

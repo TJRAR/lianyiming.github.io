@@ -3,7 +3,8 @@ title: LY Blog
 SEOTitle: 廉一鸣的博客
 header-img: img/post-bg-desk.jpg
 email: AGZX_lym@163.com
-description: "Every failure is leading towards success."
+description:  "去他妈的真理无穷,进一步有一步的欢喜."
+#"Every failure is leading towards success."
 keyword: "LY, LY Blog, 廉一鸣的博客, LianYiMing, 廉一鸣, lianyiming.com,lianyiming.github.io"
 url: "https://lianyiming.github.io/"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'

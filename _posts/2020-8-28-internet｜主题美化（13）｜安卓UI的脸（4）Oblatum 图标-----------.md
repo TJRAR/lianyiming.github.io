@@ -1,19 +1,18 @@
 ---
 layout:     post
-title:      internetOblatum 图标
-subtitle:  
-date:       2020-8-28
+title:      看不见的爪子-人类进步的力量（未完成）
+subtitle:   手势与变形基础知识笔记
+date:       2020-8-30
 author:     AGZX
-header-img: 
+header-img: img/post-bg-ios9-web.jpg
 catalog: true
 tags:
-    - internet
--主题美化
--图标
+    - 经济
+    - 思考
 
 ---
 
-## internet｜主题美化（13）｜安卓UI的脸（4）Oblatum 图标
+# internet｜主题美化（13）｜安卓UI的脸（4）Oblatum 图标 
 
 原创 AGZX [扯扯淡](javascript:void(0);) *昨天*
 

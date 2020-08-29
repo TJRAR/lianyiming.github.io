@@ -8,7 +8,7 @@ header-img:
 catalog: true
 tags:
     - internet
--   app
+    - app
 ---
 
 ## internet｜app｜open2share

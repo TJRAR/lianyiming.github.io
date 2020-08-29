@@ -1,14 +1,16 @@
 ---
-title: internet｜主题美化（13）｜安卓UI的脸（4）Oblatum 图标
-subtitle: 图标推荐
-layout: post
-author: AGZX
-header-style: text
-hidden: 
+layout:     post
+title:      internet｜主题美化（13）｜安卓UI的脸（4）Oblatum 图标
+subtitle:   internet｜主题美化（13）｜安卓UI的脸（4）Oblatum 图标
+date:       2020-8-28
+author:     AGZX
+header-img: 
+catalog: true
 tags:
-  - 主题美化
-  - internet
--图标包
+    - internet
+-主题美化
+-图标
+
 ---
 
 ## internet｜主题美化（13）｜安卓UI的脸（4）Oblatum 图标
@@ -79,14 +81,4 @@ second，在第三方器中应用这个图标就可以，或者在应用里边�
 *emmm明天不水了，，，，接着聊建站
 *
 
-![img](https://mmbiz.qlogo.cn/mmbiz_jpg/qjdicZxVv5np4iasiauSouLUvu0C7OQUJNJsickBeTWAyuquib49Sn3YFzr1n1gajPPbVdbeL5IQMblPRw2Aeb3BMQA/0?wx_fmt=jpeg)
 
-AGZX
-
-别给钱哈开赞赏是为了能显示原创
-
-![赞赏二维码](https://mp.weixin.qq.com/s?__biz=MzI4Nzc2MzA3OQ==&mid=2247484906&idx=1&sn=f2b69cffd13857ee63a6ed61ec2fb8d3&chksm=ebc9fa02dcbe7314b2b8af6b066bb709c3d468e0cb4fae064c408116e801d8f00ee538efe3f4&scene=126&sessionid=1598665512&key=c3402f98b9ff364606021c24d928ae8443a66a5448fe3179a41360b4d40f10d654e76fce8b535879ae2b7c4441be34c10461fd511c161a9593c08195fe350c9b5063c61a5ad37254e689c2286db9c609d7fd98d5203e64a9d5998b4e43b64cdf8d5617a4836872485212c3e46956297abc55263b9bc137e921d4e6f8815de213&ascene=1&uin=MjQwMDc3MDMz&devicetype=Windows+7+x64&version=62090538&lang=zh_CN&exportkey=AdhfzQ7cHkgf6mE7em7FD60%3D&pass_ticket=WSjGkJcYAECI6s8xW9CHqtK59F5cDInJ4tbjIcr4XzQ%3D&winzoom=0.875)[稀罕作者](https://mp.weixin.qq.com/s?__biz=MzI4Nzc2MzA3OQ==&mid=2247484906&idx=1&sn=f2b69cffd13857ee63a6ed61ec2fb8d3&chksm=ebc9fa02dcbe7314b2b8af6b066bb709c3d468e0cb4fae064c408116e801d8f00ee538efe3f4&scene=126&sessionid=1598665512&key=c3402f98b9ff364606021c24d928ae8443a66a5448fe3179a41360b4d40f10d654e76fce8b535879ae2b7c4441be34c10461fd511c161a9593c08195fe350c9b5063c61a5ad37254e689c2286db9c609d7fd98d5203e64a9d5998b4e43b64cdf8d5617a4836872485212c3e46956297abc55263b9bc137e921d4e6f8815de213&ascene=1&uin=MjQwMDc3MDMz&devicetype=Windows+7+x64&version=62090538&lang=zh_CN&exportkey=AdhfzQ7cHkgf6mE7em7FD60%3D&pass_ticket=WSjGkJcYAECI6s8xW9CHqtK59F5cDInJ4tbjIcr4XzQ%3D&winzoom=0.875##)
-
-阅读 4
-
-赞1在看

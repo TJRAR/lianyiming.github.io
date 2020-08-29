@@ -103,16 +103,9 @@ service-worker: true
 
 # Friends
 friends: [
-    {
-        title: " 鲸一",
-        href: "https://www.saroin.com/"
-		
-	}
-     {
-     title: "",
-         href: ""
-     	
-     }
-	 
+  {
+         title: "鲸一",
+         href: https://www.saroin.com/"
+     },
 
 ]

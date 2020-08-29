@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      internet｜主题美化（13）｜安卓UI的脸（4）Oblatum 图标
-subtitle:   internet｜主题美化（13）｜安卓UI的脸（4）Oblatum 图标
+title:      internetOblatum 图标
+subtitle:  
 date:       2020-8-28
 author:     AGZX
 header-img: 

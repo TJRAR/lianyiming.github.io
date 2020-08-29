@@ -12,10 +12,6 @@ tags:
 
 ## Internet｜root入门｜[1]什么玩意
 
-AGZX [扯扯淡](javascript:void(0);) *5月1日*
-
-
-
 ![img](https://mmbiz.qpic.cn/mmbiz_jpg/tMsLbdfwxoOoZ0tMhs3omXrt591yRib16dKTDDnIZU3hNZfOqHjiblPefuy9MYbAibuNzKJm5UfMNEWyctTEuYNug/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
 

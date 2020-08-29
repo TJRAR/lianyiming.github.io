@@ -11,8 +11,6 @@ tags:
 ---
 ## Internet｜root｜（2）n.
 
-AGZX [扯扯淡](javascript:void(0);) *5月2日*
-
 
 
 ![img](https://mmbiz.qpic.cn/mmbiz_jpg/tMsLbdfwxoPLn6qR6L6ibZWB0ia7tBqqFkLrRBtCBtkukFJCrkGeFVBhenh4uSfiaQlDv1CmoSrYlB0FyXia29BeIw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)

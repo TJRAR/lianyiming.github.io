@@ -14,10 +14,6 @@ tags:
 
 ## internet｜主题美化（12）｜修改MIUI主题（1）
 
-原创 AGZX [扯扯淡](javascript:void(0);) *前天*
-
-![img](https://mmbiz.qpic.cn/mmbiz_gif/tMsLbdfwxoM12GmQGZYFy7azn1RM2Izncuqicg2azuCibJyPB4QUKslUmRtlYYXibScaxKCGx7ebczkJLq5mQWhJg/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1)
-
 大家好啊，今天聊一聊怎么样修改MIUI主题
 
 众所周知，MIUI系统的主题只能从主题商店下
@@ -54,8 +50,3 @@ tags:
 然后就会自动跳转到浏览器下载了
 
 
-
-![img](https://mmbiz.qpic.cn/mmbiz_jpg/tMsLbdfwxoPvhibcLnC5hTcXqKITTp19Os0eaE28ibFHd1diborCdq4BOb32R37jcoPQmJibxk3ibbS3xQp2L4TXicvg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
-*扯√点有意思的*
-
-拜拜

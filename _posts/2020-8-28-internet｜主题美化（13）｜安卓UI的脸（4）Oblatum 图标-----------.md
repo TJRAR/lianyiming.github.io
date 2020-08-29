@@ -14,10 +14,6 @@ tags:
 
 # internet｜主题美化（13）｜安卓UI的脸（4）Oblatum 图标 
 
-原创 AGZX [扯扯淡](javascript:void(0);) *昨天*
-
-![img](https://mmbiz.qpic.cn/mmbiz_gif/tMsLbdfwxoM12GmQGZYFy7azn1RM2Izncuqicg2azuCibJyPB4QUKslUmRtlYYXibScaxKCGx7ebczkJLq5mQWhJg/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1)
-
 你好呀，今天接着来聊一聊好看的图标包吧
 
 
@@ -75,9 +71,7 @@ second，在第三方器中应用这个图标就可以，或者在应用里边�
 
 ![img](https://mmbiz.qpic.cn/mmbiz_jpg/tMsLbdfwxoPvhibcLnC5hTcXqKITTp19Os0eaE28ibFHd1diborCdq4BOb32R37jcoPQmJibxk3ibbS3xQp2L4TXicvg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
-*扯√点有意思的*
+*emmm明天不水了，，，，接着聊建站*
 
-*emmm明天不水了，，，，接着聊建站
-*
 
 

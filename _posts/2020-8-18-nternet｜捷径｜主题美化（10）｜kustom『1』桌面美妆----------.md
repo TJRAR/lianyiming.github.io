@@ -16,10 +16,6 @@ tags:
 
 ## internet｜捷径｜主题美化（10）｜kustom『1』桌面美妆
 
-原创 AGZX [扯扯淡](javascript:void(0);) *1周前*
-
-![img](https://mmbiz.qpic.cn/mmbiz_gif/tMsLbdfwxoM12GmQGZYFy7azn1RM2Izncuqicg2azuCibJyPB4QUKslUmRtlYYXibScaxKCGx7ebczkJLq5mQWhJg/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1)
-
 你好吖，今天聊一聊桌面的美妆→[小部件](https://mp.weixin.qq.com/s?__biz=MzI4Nzc2MzA3OQ==&mid=2247484383&idx=2&sn=2b8230beb153066a3807a764548d6961&scene=21#wechat_redirect)
 
 众所周知，系统都会自带的有桌面的时钟小部件，but因为只自带一个，而应用图标往往有很多，所以就会显得非常丑，这几天就聊一聊，一些桌面小部件APP，绝对能美化桌面
@@ -68,10 +64,4 @@ then，在桌面上找到添加小工具
 
 
 
-
-
-
-
-![img](https://mmbiz.qpic.cn/mmbiz_jpg/tMsLbdfwxoPvhibcLnC5hTcXqKITTp19Os0eaE28ibFHd1diborCdq4BOb32R37jcoPQmJibxk3ibbS3xQp2L4TXicvg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
-*扯√点有意思的*
 

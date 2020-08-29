@@ -13,9 +13,6 @@ tags:
 
 ## internet｜app｜open2share
 
-原创 AGZX [扯扯淡](javascript:void(0);) *1周前*
-
-![img](https://mmbiz.qpic.cn/mmbiz_gif/tMsLbdfwxoM12GmQGZYFy7azn1RM2Izncuqicg2azuCibJyPB4QUKslUmRtlYYXibScaxKCGx7ebczkJLq5mQWhJg/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1)
 你好鸭，今天接着聊个app
 
 众所周知，如果在某个应用内分享的话，是需要开发者跟这个应用进行协调，把分享的[API](https://mp.weixin.qq.com/s?__biz=MzI4Nzc2MzA3OQ==&mid=2247484751&idx=2&sn=57b508091df008626e97701e20823d15&scene=21#wechat_redirect)给这个应用才可以，
@@ -61,8 +58,3 @@ Then，不用打开它，比如说在微信打开文件的时候
 
 
 
-
-![img](https://mmbiz.qpic.cn/mmbiz_jpg/tMsLbdfwxoPvhibcLnC5hTcXqKITTp19Os0eaE28ibFHd1diborCdq4BOb32R37jcoPQmJibxk3ibbS3xQp2L4TXicvg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
-*扯√点有意思的*
-
-拜拜

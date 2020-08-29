@@ -1,15 +1,14 @@
 ---
-title: Material design
-subtitle: 一种图标风格
-layout: post
-author: AGZX
-header-style: text
-hidden: 
+layout:     post
+title:      Material design
+subtitle:   质感
+date:       2020-8-28
+author:     AGZX
+header-img: 
+catalog: true
 tags:
-  - n.
+    - n.
 ---
-
-## Material design
 
 原创 AGZX [扯扯淡](javascript:void(0);) *昨天*
 

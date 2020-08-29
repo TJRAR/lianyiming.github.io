@@ -1,14 +1,15 @@
 ---
-title: internet｜主题美化（12）｜修改MIUI主题（1）图标
-subtitle: 图标推荐
-layout: post
-author: AGZX
-header-style: text
-hidden: 
+layout:     post
+title:      internet｜主题美化（12）｜修改MIUI主题（1）
+subtitle:   MT的力量！
+date:       2020-8-27
+author:     AGZX
+header-img: 
+catalog: true
 tags:
-  - 主题美化
-  - internet
--修改MIUI主题
+    - internet
+——主题美化
+
 ---
 
 ## internet｜主题美化（12）｜修改MIUI主题（1）

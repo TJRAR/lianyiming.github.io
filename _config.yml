@@ -112,6 +112,10 @@ friends: [
          href: "https://iuiu.run/"
      },
  {
+         title: "~君也小白",
+         href: "https://blog.jyxb.net/?"
+     },
+ {
          title: "~Kif Room",
          href: "https://www.kifroom.icu/#"
      },
@@ -119,4 +123,5 @@ friends: [
          title: "~Xu Yiyang",
          href: "https://blog.xuyiyang.top/"
      },
+
 ]

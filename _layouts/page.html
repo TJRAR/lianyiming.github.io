@@ -97,8 +97,7 @@ layout: default
     </div>
 </header>
 <script type="text/javascript">
-	if ($("#test).on('dblclick',function(e){
-  clearTimeout(timeoutID); )<!--双击事件-->
+
 /*
 	 * @name: 审查元素
 	 * @Author: Nekko
@@ -106,6 +105,8 @@ layout: default
 	 * @description: 修改网页内容
 	 * @include: *
 	 */
+	$("#test).on('dblclick',function(e){
+	  clearTimeout(timeoutID); <!--双击事件-->
 	{javascript:document.body.contentEditable='true'; document.designMode='on'; void 0};
 	document.getElementsByTagName("html").item(0).appendChild(an);
 		</script>

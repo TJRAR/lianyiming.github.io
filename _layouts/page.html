@@ -97,7 +97,8 @@ layout: default
     </div>
 </header>
 <script type="text/javascript">
-	if (event.type == "dblclick")
+	if ($("#test).on('dblclick',function(e){
+  clearTimeout(timeoutID); )
 /*
 	 * @name: 审查元素
 	 * @Author: Nekko

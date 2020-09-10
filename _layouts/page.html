@@ -4,247 +4,269 @@ layout: default
 <!-- Page Header -->
 <script src="js/love mouse.js">
 </script>
-<script type="text/javascript">
-/*
- * @name: 下拉刷新
- * @Author: Sky
- * @version: 1.6
- * @description: 位于页面顶端时下拉刷新
- * @include: *
- * @createTime: 2020-3-6 01:00
- * @updateTime: 2020-6-4 20:30
- */
-(function(){const
-/*等号后的数表示最小触发下拉距离*/
- min_dY = 300,
-/*－－－－以下勿改－－－－*/
- key = encodeURIComponent('下拉刷新:执行判断');
- if(window[key]){return;}
- try {
-  window[key] = true;
-  let strtX, strtY = 0, rchTp, onePt = false;
-  document.addEventListener('touchstart', function(e){
-   if(onePt){rchTp = false;} /*超过一点触碰时不刷新*/
-   else {
-    onePt = true;
-    rchTp = (document.body.scrollTop || document.documentElement.scrollTop) < 50;
-    strtX = e.touches[0].pageX;
-    strtY = e.touches[0].pageY;
-   }
-  }, {'passive':true});
-  document.addEventListener('touchend', function(e){
-   if(rchTp){
-    const dY = Math.floor(e.changedTouches[0].pageY - strtY);
-    if(dY > min_dY && Math.abs(e.changedTouches[0].pageX - strtX) < (0.4*dY)){location.reload();}
-	rchTp = false;
-   }
-   onePt = false;
-  }, {'passive':true, 'capture':true});
- } catch(err){console.log('下拉刷新：', err);}
-})();
-</script>
-<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading">
-                    <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
-                    <!--<hr class="small">-->
-                    <span class="subheading">{{ page.description }}</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
+<<script type="text/javascript">
+	console.log('%c炫彩鼠标插件%chttps://gitee.com/HoeXhe/HoerMouse Hoe主页www.hoehub.com
+	','line-height:28px;padding:4px;background:#3f51b5;color:#fff;font-size:14px;','padding:4px; color:#673ab7');
+	</script>
+	<script type="text/javascript">
+		/*
+		 * @name: 下拉刷新
+		 * @Author: Sky
+		 * @version: 1.6
+		 * @description: 位于页面顶端时下拉刷新
+		 * @include: *
+		 * @createTime: 2020-3-6 01:00
+		 * @updateTime: 2020-6-4 20:30
+		 */
+		(function() {
+			const
+				/*等号后的数表示最小触发下拉距离*/
+				min_dY = 300,
+				/*－－－－以下勿改－－－－*/
+				key = encodeURIComponent('下拉刷新:执行判断');
+			if (window[key]) {
+				return;
+			}
+			try {
+				window[key] = true;
+				let strtX, strtY = 0,
+					rchTp, onePt = false;
+				document.addEventListener('touchstart', function(e) {
+					if (onePt) {
+						rchTp = false;
+					} /*超过一点触碰时不刷新*/
+					else {
+						onePt = true;
+						rchTp = (document.body.scrollTop || document.documentElement.scrollTop) < 50;
+						strtX = e.touches[0].pageX;
+						strtY = e.touches[0].pageY;
+					}
+				}, {
+					'passive': true
+				});
+				document.addEventListener('touchend', function(e) {
+					if (rchTp) {
+						const dY = Math.floor(e.changedTouches[0].pageY - strtY);
+						if (dY > min_dY && Math.abs(e.changedTouches[0].pageX - strtX) < (0.4 * dY)) {
+							location.reload();
+						}
+						rchTp = false;
+					}
+					onePt = false;
+				}, {
+					'passive': true,
+					'capture': true
+				});
+			} catch (err) {
+				console.log('下拉刷新：', err);
+			}
+		})();
+	</script>
+	<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+					<div class="site-heading">
+						<h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+						<!--<hr class="small">-->
+						<span class="subheading">{{ page.description }}</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
 
-<!-- Main Content -->
-<div class="container">
-	<div class="row">
-        {% if site.sidebar == false %}
-<!-- NO SIDEBAR -->
-    <!-- PostList Container -->
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 postlist-container">
-                {{ content }}
-				
+	<!-- Main Content -->
+	<div class="container">
+		<div class="row">
+			{% if site.sidebar == false %}
+			<!-- NO SIDEBAR -->
+			<!-- PostList Container -->
+			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 postlist-container">
+				{{ content }}
 
-            </div>
-    <!-- Sidebar Container -->
-            <div class="
+
+			</div>
+			<!-- Sidebar Container -->
+			<div class="
                 col-lg-8 col-lg-offset-2
                 col-md-10 col-md-offset-1
                 sidebar-container">
 
-                <!-- Featured Tags -->
-                {% if site.featured-tags %}
-                <section>
-                    <!-- no hr -->
-                    <h5><a href="{{'/tags/' | prepend: site.baseurl }}">FEATURED TAGS</a></h5>
-                    <div class="tags">
-        				{% for tag in site.tags %}
-                            {% if tag[1].size > {{site.featured-condition-size}} %}
-                				<a href="{{ site.baseurl }}/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">
-                                    {{ tag[0] }}
-                                </a>
-                            {% endif %}
-        				{% endfor %}
-        			</div>
-                </section>
-                {% endif %}
+				<!-- Featured Tags -->
+				{% if site.featured-tags %}
+				<section>
+					<!-- no hr -->
+					<h5><a href="{{'/tags/' | prepend: site.baseurl }}">FEATURED TAGS</a></h5>
+					<div class="tags">
+						{% for tag in site.tags %}
+						{% if tag[1].size > {{site.featured-condition-size}} %}
+						<a href="{{ site.baseurl }}/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">
+							{{ tag[0] }}
+						</a>
+						{% endif %}
+						{% endfor %}
+					</div>
+				</section>
+				{% endif %}
 
-                <!-- Friends Blog -->
-                {% if site.friends %}
-                <hr>
-                <h5>FRIENDS</h5>
-                <ul class="list-inline">
-                    {% for friend in site.friends %}
-                        <li>
-			</p><a href="{{friend.href}}">{{friend.title}}</a></li>
-                    {% endfor %}
-                </ul>
-                {% endif %}
-            </div>
-        {% else %}
+				<!-- Friends Blog -->
+				{% if site.friends %}
+				<hr>
+				<h5>FRIENDS</h5>
+				<ul class="list-inline">
+					{% for friend in site.friends %}
+					<li>
+						</p><a href="{{friend.href}}">{{friend.title}}</a></li>
+					{% endfor %}
+				</ul>
+				{% endif %}
+			</div>
+			{% else %}
 
-<!-- USE SIDEBAR -->
-    <!-- PostList Container -->
-    		<div class="
+			<!-- USE SIDEBAR -->
+			<!-- PostList Container -->
+			<div class="
                 col-lg-8 col-lg-offset-1
                 col-md-8 col-md-offset-1
                 col-sm-12
                 col-xs-12
                 postlist-container
             ">
-    			{{ content }}
-    		</div>
+				{{ content }}
+			</div>
 			<!--sidebar-->
-    <!-- Sidebar Container -->
-            <div class="
+			<!-- Sidebar Container -->
+			<div class="
                 col-lg-3 col-lg-offset-0
                 col-md-3 col-md-offset-0
                 col-sm-12
                 col-xs-12
                 sidebar-container
             ">
-                <!-- Featured Tags -->
-                {% if site.featured-tags %}
-                <section>
-                    <hr class="hidden-sm hidden-xs">
-                    <h5><a href="{{'/tags/' | prepend: site.baseurl }}">FEATURED TAGS</a></h5>
-                    <div class="tags">
-                        {% for tag in site.tags %}
-                            {% if tag[1].size > {{site.featured-condition-size}} %}
-                                <a href="{{ site.baseurl }}/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">
-                                    {{ tag[0] }}
-                                </a>
-                            {% endif %}
-                        {% endfor %}
-                    </div>
-                </section>
-                {% endif %}
+				<!-- Featured Tags -->
+				{% if site.featured-tags %}
+				<section>
+					<hr class="hidden-sm hidden-xs">
+					<h5><a href="{{'/tags/' | prepend: site.baseurl }}">FEATURED TAGS</a></h5>
+					<div class="tags">
+						{% for tag in site.tags %}
+						{% if tag[1].size > {{site.featured-condition-size}} %}
+						<a href="{{ site.baseurl }}/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">
+							{{ tag[0] }}
+						</a>
+						{% endif %}
+						{% endfor %}
+					</div>
+				</section>
+				{% endif %}
 
-                <!-- Short About -->
-                <section class="visible-md visible-lg">
-                    <hr><h5><a href="{{'/about/' | prepend: site.baseurl }}">ABOUT ME</a></h5>
-                    <div class="short-about">
-                        {% if site.sidebar-avatar %}
-                            <a href="{{ site.baseurl }}/about">
-                                <img src="{{site.sidebar-avatar}}"/>
-                            </a>
-                        {% endif %}
-                        {% if site.sidebar-about-description %}
-                            <p>{{site.sidebar-about-description}}</p>
-                        {% endif %}
-                        <!-- SNS Link -->
-                        <ul class="list-inline">
-                            {% if site.RSS %}
-                            <li>
-                                <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
+				<!-- Short About -->
+				<section class="visible-md visible-lg">
+					<hr>
+					<h5><a href="{{'/about/' | prepend: site.baseurl }}">ABOUT ME</a></h5>
+					<div class="short-about">
+						{% if site.sidebar-avatar %}
+						<a href="{{ site.baseurl }}/about">
+							<img src="{{site.sidebar-avatar}}" />
+						</a>
+						{% endif %}
+						{% if site.sidebar-about-description %}
+						<p>{{site.sidebar-about-description}}</p>
+						{% endif %}
+						<!-- SNS Link -->
+						<ul class="list-inline">
+							{% if site.RSS %}
+							<li>
+								<a href="{{ "/feed.xml" | prepend: site.baseurl }}">
+									<span class="fa-stack fa-lg">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+							</li>
 							{% endif %}
 							<!-- add jianshu add target = "_blank" to <a> by BY -->
 							{% if site.jianshu_username %}
 							<li>
-							    <a target="_blank" href="https://mp.weixin.qq.com/profile?src=3&timestamp=1596789111&ver=1&signature=24lDXdNhHftLVYpWTBSI0A8o5VpAlIZq3ZyRoa-qm*8Wedg6mtSzyjc98HYxkGh9hnzpi2my40CASE-m51hcvQ==">
-							        <span class="fa-stack fa-lg">
-							            <i class="fa fa-circle fa-stack-2x"></i>
-							            <i class="fa  fa-stack-1x fa-inverse">扯</i>
-							        </span>
-							    </a>
+								<a target="_blank" href="https://mp.weixin.qq.com/profile?src=3&timestamp=1596789111&ver=1&signature=24lDXdNhHftLVYpWTBSI0A8o5VpAlIZq3ZyRoa-qm*8Wedg6mtSzyjc98HYxkGh9hnzpi2my40CASE-m51hcvQ==">
+									<span class="fa-stack fa-lg">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa  fa-stack-1x fa-inverse">扯</i>
+									</span>
+								</a>
 							</li>
-                            {% endif %}
-                            {% if site.twitter_username %}
-                            <li>
-                                <a href="https://twitter.com/{{ site.twitter_username }}">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            {% endif %}
-                            {% if site.zhihu_username %}
-                            <li>
-                                <a target="_blank" href="https://www.zhihu.com/people/{{ site.zhihu_username }}">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa  fa-stack-1x fa-inverse">知</i>
-                                    </span>
-                                </a>
-                            </li>
-                            {% endif %}
-                            {% if site.weibo_username %}
-                            <li>
-                                <a target="_blank" href="http://weibo.com/{{ site.weibo_username }}">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            {% endif %}
-                            {% if site.facebook_username %}
-                            <li>
-                                <a target="_blank" href="https://www.facebook.com/{{ site.facebook_username }}">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            {% endif %}
-                            {% if site.github_username %}
-                            <li>
-                                <a target="_blank" href="https://github.com/{{ site.github_username }}">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            {% endif %}
-                            
-                        </ul>
-                        {% if site.email %}
-                            <p>✉️ {{site.email}}</p>
-                        {% endif %}
-                    </div>
-                </section>
-                <!-- Friends Blog -->
-                {% if site.friends %}
-                <hr>
-                <h5>FRIENDS</h5>
-                <ol class="list-inline">
-                    {% for friend in site.friends %}
-                    <h3>  <li><a href="{{friend.href}}">{{friend.title}}</a></li></h3>
-                    {% endfor %}
-                </ol>
-                {% endif %}
-    		</div>
-        {% endif %}
+							{% endif %}
+							{% if site.twitter_username %}
+							<li>
+								<a href="https://twitter.com/{{ site.twitter_username }}">
+									<span class="fa-stack fa-lg">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+							</li>
+							{% endif %}
+							{% if site.zhihu_username %}
+							<li>
+								<a target="_blank" href="https://www.zhihu.com/people/{{ site.zhihu_username }}">
+									<span class="fa-stack fa-lg">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa  fa-stack-1x fa-inverse">知</i>
+									</span>
+								</a>
+							</li>
+							{% endif %}
+							{% if site.weibo_username %}
+							<li>
+								<a target="_blank" href="http://weibo.com/{{ site.weibo_username }}">
+									<span class="fa-stack fa-lg">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+							</li>
+							{% endif %}
+							{% if site.facebook_username %}
+							<li>
+								<a target="_blank" href="https://www.facebook.com/{{ site.facebook_username }}">
+									<span class="fa-stack fa-lg">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+							</li>
+							{% endif %}
+							{% if site.github_username %}
+							<li>
+								<a target="_blank" href="https://github.com/{{ site.github_username }}">
+									<span class="fa-stack fa-lg">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-github fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+							</li>
+							{% endif %}
+
+						</ul>
+						{% if site.email %}
+						<p>✉️ {{site.email}}</p>
+						{% endif %}
+					</div>
+				</section>
+				<!-- Friends Blog -->
+				{% if site.friends %}
+				<hr>
+				<h5>FRIENDS</h5>
+				<ol class="list-inline">
+					{% for friend in site.friends %}
+					<h3>
+						<li><a href="{{friend.href}}">{{friend.title}}</a></li>
+					</h3>
+					{% endfor %}
+				</ol>
+				{% endif %}
+			</div>
+			{% endif %}
+		</div>
 	</div>
-</div>

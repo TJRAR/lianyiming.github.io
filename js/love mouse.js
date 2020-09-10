@@ -159,8 +159,7 @@ if (canvasEl) {
 			(render.play(), updateCoords(e), animateParticules(pointerX, pointerY))
 	}, !1), setCanvasSize(), window.addEventListener("resize", setCanvasSize, !1)
 }
- /*
-"use strict";
+
 
 function updateCoords(e) {
 	pointerX = (e.clientX || e.touches[0].clientX) - canvasEl.getBoundingClientRect().left, pointerY = e.clientY || e.touches[
@@ -264,4 +263,3 @@ if (canvasEl) {
 			(render.play(), updateCoords(e), animateParticules(pointerX, pointerY))
 	}, !1), setCanvasSize(), window.addEventListener("resize", setCanvasSize, !1)
 };
-*/

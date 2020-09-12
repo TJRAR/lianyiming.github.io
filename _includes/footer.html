@@ -18,6 +18,8 @@
 								function playPause() {
 								var music = document.getElementById('music');
 								var music_btn = document.getElementById('music-btn');
+								if (music.paused){
+								music.play();
 								music_btn.src='pause.png';
 								}
 								else {

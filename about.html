@@ -12,7 +12,191 @@ header-img: "img/post-bg-rwd.jpg"
     <option value="1"> 英文 English </option>
 </select> -->
 <head>
-	<script> 
+	<style>
+
+#jiv{
+            width: 60px;height: 60px;border: 1px solid #444;
+            border-radius: 100%;
+			overflow: hidden;
+			float:  left;
+		    box-shadow: 0 0 10px #444;
+			background-image: url(/img/doABM4.jpg);
+			background-size: 100%;
+        }
+#eiv{
+            width: 60px;height: 60px;border: 1px solid #444;
+            border-radius: 100%;
+			overflow: hidden;
+			float:  left;
+		    box-shadow: 0 0 10px #444;
+			background-image: url(/img/7ac0f2267c07862a8e9dbb046c85a0ca.jpg);
+			background-size: 100%;
+        }
+#civ{
+            width: 60px;height: 60px;border: 1px solid #444;
+            border-radius: 100%;
+			overflow: hidden;
+			float:  left;
+		    box-shadow: 0 0 10px #444;
+			background-image: url(/img/43c0e067f4fe652ab4e412ac27cde2cd.jpg);
+			background-size: 100%;
+        }
+#biv{
+            width: 60px;height: 60px;border: 1px solid #444;
+            border-radius: 100%;
+			overflow: hidden;
+			float:  left;
+		    box-shadow: 0 0 10px #444;
+			background-image: url(/img/g.jpg);
+			background-size: 100%;
+        }
+#aiv{
+            width: 60px;height: 60px;border: 1px solid #444;
+            border-radius: 100%;
+			overflow: hidden;
+			float:  left;
+		    box-shadow: 0 0 10px #444;
+			background-image: url(/img/ajrecho.jpg);
+			background-size: 100%;
+        }
+		#div{
+            width: 80px;height: 80px;border: 1px solid #444;
+            border-radius: 100%;
+			overflow: hidden;
+			float:  left;
+		    box-shadow: 0 0 10px #444;
+			background-image: url(/img/avatar-by.jpg);
+			background-size: 100%;
+        }
+</style>
+	<script>
+	    document.addEventListener('DOMContentLoaded', initLiveDay);
+	    function initLiveDay() {
+	        const birthTime = '2015/2/21 10:23:12';
+	        const template = (A, B, C, D) => `本站已勉强生存 ${A}天 ${B}时 ${C}分 ${D}秒.`;
+	
+	        /* 锚点开始 */
+	        const container = footer.querySelector('.container');
+	        const p = document.createElement('p');
+	        container.insertBefore(p, container.firstElementChild);
+	        /* 锚点结束*/
+	
+	        const msoad = 24 * 60 * 60 * 1000;
+	        const warp = n => n > 9 ? n : '0' + n;
+	        const toInt = n => warp(Math.floor(n));
+	        setInterval(() => {
+	            const lived = new Date() - new Date(birthTime);
+	            const days = lived / msoad;
+	            const intDays = toInt(days);
+	            const hours = (days - intDays) * 24;
+	            const intHours = toInt(hours);
+	            const minutes = (hours - intHours) * 60;
+	            const intMinutes = toInt(minutes);
+	            const seconds = (minutes - intMinutes) * 60;
+	            const intSeconds = toInt(seconds);
+	            p.innerHTML = template(intDays, intHours, intMinutes, intSeconds);
+	        }, 1000);
+	    }
+	</script>
+</head>
+<!-- Chinese Version -->
+	<!--copied from markdown -->
+	<br>
+	<!--<a href="https://orxing.top/nav/"><img src="/img/avatar-by.jpg" width="117" height="152" alt="Me!" border-radius=200px;></a>-->
+	<blockquote>
+		<p>冰冻三尺 非一日之寒<br>
+			积土成山 非斯须之作<br>
+			<div id="div" >
+				<!--<a href="https://orxing.top/nav/"><img   src="/img/avatar-by.jpg" width="117" height="152" alt="Me!" ></a>-->
+			</div>
+			<div class="zh post-container">
+				</p>
+	<!--三个属性缺一不可，前边也需要一个斜杠-->
+	<blockquote><p>&nbsp Hey，我是<strong>廉一鸣</strong>，一只初四斜杠学生</p><blockquote>
+	<hr>
+	<p>感谢你来到这里吖(◍˃̶ᗜ˂̶◍)✩~
+		<br />
+		网站の源码--<strong><a href="{{ site.github_repo }}">Github·Lianyiming.github.io</a></strong>
+			<br />
+		网站的Appの源码--<a href="https://github.com/LianYiMing/LY-Blog">Github·LY |  Blog</a>
+
+</div>
+
+<!-- English Version -->
+<!-- <div class="en post-container">
+    <blockquote><p>Yet another  Developer. <br>
+    Yet another Life-long Student.</p></blockquote>
+
+    <p>Hi, I am <strong>agzx</strong>，you can call me <strong>LY</strong>. I am an green-hand student</p>
+
+    <p>This is my personal blog, through making Github Pages and Jekyll.My GitHub  👉 <a href="http://github.com/lianyiming">Github·LY</a>.</p>
+  -->
+    <h4>Dear Friends</h4>
+
+  <blockquote>  <ul>
+<h5><a href=""> </a></h5><div id="aiv" >
+				
+			</div></li>
+  <li><strong><h3><a href="https://www.saroin.com/">&nbsp ~ &nbsp鲸一</a></h3></strong><div id="biv" >
+				
+			</div></li>
+  <li><strong><h3><a href="https://iuiu.run/">&nbsp ~ &nbsp哎呦哎呦</a></h3></strong><div id="eiv" >
+				
+			</div></li>
+    <li><strong><h3><a href="https://www.kifroom.icu/#">&nbsp ~ &nbspKif Room</a></h3></strong><div id="civ" >
+				
+			</div></li>
+	<li><strong><h3><a href="https://blog.xuyiyang.top/">&nbsp ~ &nbspXu Yiyang</a></h3></strong><div id="jiv" >
+				
+			</div></li>
+			
+	<li><strong><h3><a href="https://blog.jyxb.net/?">&nbsp ~ &nbsp君也小白</a></h3></strong><div id="" >
+				
+			</div></li>
+	<!--仔细看-->
+    <li><a href=""></a></li>
+    </ul>
+</div> 
+
+<!-- Handle Language Change -->
+<script type="text/javascript">
+	// get nodes
+	var $zh = document.querySelector(".zh");
+	var $en = document.querySelector(".en");
+	var $select = document.querySelector("select");
+
+	// bind hashchange event
+	window.addEventListener('hashchange', _render);
+
+	// handle render
+	function _render() {
+		var _hash = window.location.hash;
+		// en
+		if (_hash == "#en") {
+			$select.selectedIndex = 1;
+			$en.style.display = "block";
+			$zh.style.display = "none";
+			// zh by default
+		} else {
+			// not trigger onChange, otherwise cause a loop call.
+			$select.selectedIndex = 0;
+			$zh.style.display = "block";
+			$en.style.display = "none";
+		}
+	}
+
+	// handle select change
+	function onLanChange(index) {
+		if (index == 0) {
+			window.location.hash = "#zh"
+		} else {
+			window.location.hash = "#en"
+		}
+	}
+
+	// init
+	_render();
+	<script>
 	
 	    // 鼠标点击爱心特效
 	!function (e, t, a) {
@@ -299,190 +483,7 @@ header-img: "img/post-bg-rwd.jpg"
 	};
 	
 	</script>
-	<style>
-
-#jiv{
-            width: 60px;height: 60px;border: 1px solid #444;
-            border-radius: 100%;
-			overflow: hidden;
-			float:  left;
-		    box-shadow: 0 0 10px #444;
-			background-image: url(/img/doABM4.jpg);
-			background-size: 100%;
-        }
-#eiv{
-            width: 60px;height: 60px;border: 1px solid #444;
-            border-radius: 100%;
-			overflow: hidden;
-			float:  left;
-		    box-shadow: 0 0 10px #444;
-			background-image: url(/img/7ac0f2267c07862a8e9dbb046c85a0ca.jpg);
-			background-size: 100%;
-        }
-#civ{
-            width: 60px;height: 60px;border: 1px solid #444;
-            border-radius: 100%;
-			overflow: hidden;
-			float:  left;
-		    box-shadow: 0 0 10px #444;
-			background-image: url(/img/43c0e067f4fe652ab4e412ac27cde2cd.jpg);
-			background-size: 100%;
-        }
-#biv{
-            width: 60px;height: 60px;border: 1px solid #444;
-            border-radius: 100%;
-			overflow: hidden;
-			float:  left;
-		    box-shadow: 0 0 10px #444;
-			background-image: url(/img/g.jpg);
-			background-size: 100%;
-        }
-#aiv{
-            width: 60px;height: 60px;border: 1px solid #444;
-            border-radius: 100%;
-			overflow: hidden;
-			float:  left;
-		    box-shadow: 0 0 10px #444;
-			background-image: url(/img/ajrecho.jpg);
-			background-size: 100%;
-        }
-		#div{
-            width: 80px;height: 80px;border: 1px solid #444;
-            border-radius: 100%;
-			overflow: hidden;
-			float:  left;
-		    box-shadow: 0 0 10px #444;
-			background-image: url(/img/avatar-by.jpg);
-			background-size: 100%;
-        }
-</style>
-	<script>
-	    document.addEventListener('DOMContentLoaded', initLiveDay);
-	    function initLiveDay() {
-	        const birthTime = '2015/2/21 10:23:12';
-	        const template = (A, B, C, D) => `本站已勉强生存 ${A}天 ${B}时 ${C}分 ${D}秒.`;
 	
-	        /* 锚点开始 */
-	        const container = footer.querySelector('.container');
-	        const p = document.createElement('p');
-	        container.insertBefore(p, container.firstElementChild);
-	        /* 锚点结束*/
-	
-	        const msoad = 24 * 60 * 60 * 1000;
-	        const warp = n => n > 9 ? n : '0' + n;
-	        const toInt = n => warp(Math.floor(n));
-	        setInterval(() => {
-	            const lived = new Date() - new Date(birthTime);
-	            const days = lived / msoad;
-	            const intDays = toInt(days);
-	            const hours = (days - intDays) * 24;
-	            const intHours = toInt(hours);
-	            const minutes = (hours - intHours) * 60;
-	            const intMinutes = toInt(minutes);
-	            const seconds = (minutes - intMinutes) * 60;
-	            const intSeconds = toInt(seconds);
-	            p.innerHTML = template(intDays, intHours, intMinutes, intSeconds);
-	        }, 1000);
-	    }
-	</script>
-</head>
-<!-- Chinese Version -->
-	<!--copied from markdown -->
-	<br>
-	<!--<a href="https://orxing.top/nav/"><img src="/img/avatar-by.jpg" width="117" height="152" alt="Me!" border-radius=200px;></a>-->
-	<blockquote>
-		<p>冰冻三尺 非一日之寒<br>
-			积土成山 非斯须之作<br>
-			<div id="div" >
-				<!--<a href="https://orxing.top/nav/"><img   src="/img/avatar-by.jpg" width="117" height="152" alt="Me!" ></a>-->
-			</div>
-			<div class="zh post-container">
-				</p>
-	<!--三个属性缺一不可，前边也需要一个斜杠-->
-	<blockquote><p>&nbsp Hey，我是<strong>廉一鸣</strong>，一只初四斜杠学生</p><blockquote>
-	<hr>
-	<p>感谢你来到这里吖(◍˃̶ᗜ˂̶◍)✩~
-		<br />
-		网站の源码--<strong><a href="{{ site.github_repo }}">Github·Lianyiming.github.io</a></strong>
-			<br />
-		网站的Appの源码--<a href="https://github.com/LianYiMing/LY-Blog">Github·LY |  Blog</a>
-
-</div>
-
-<!-- English Version -->
-<!-- <div class="en post-container">
-    <blockquote><p>Yet another  Developer. <br>
-    Yet another Life-long Student.</p></blockquote>
-
-    <p>Hi, I am <strong>agzx</strong>，you can call me <strong>LY</strong>. I am an green-hand student</p>
-
-    <p>This is my personal blog, through making Github Pages and Jekyll.My GitHub  👉 <a href="http://github.com/lianyiming">Github·LY</a>.</p>
-  -->
-    <h4>Dear Friends</h4>
-
-  <blockquote>  <ul>
-<h5><a href=""> </a></h5><div id="aiv" >
-				
-			</div></li>
-  <li><strong><h3><a href="https://www.saroin.com/">&nbsp ~ &nbsp鲸一</a></h3></strong><div id="biv" >
-				
-			</div></li>
-  <li><strong><h3><a href="https://iuiu.run/">&nbsp ~ &nbsp哎呦哎呦</a></h3></strong><div id="eiv" >
-				
-			</div></li>
-    <li><strong><h3><a href="https://www.kifroom.icu/#">&nbsp ~ &nbspKif Room</a></h3></strong><div id="civ" >
-				
-			</div></li>
-	<li><strong><h3><a href="https://blog.xuyiyang.top/">&nbsp ~ &nbspXu Yiyang</a></h3></strong><div id="jiv" >
-				
-			</div></li>
-			
-	<li><strong><h3><a href="https://blog.jyxb.net/?">&nbsp ~ &nbsp君也小白</a></h3></strong><div id="" >
-				
-			</div></li>
-	<!--仔细看-->
-    <li><a href=""></a></li>
-    </ul>
-</div> 
-
-<!-- Handle Language Change -->
-<script type="text/javascript">
-	// get nodes
-	var $zh = document.querySelector(".zh");
-	var $en = document.querySelector(".en");
-	var $select = document.querySelector("select");
-
-	// bind hashchange event
-	window.addEventListener('hashchange', _render);
-
-	// handle render
-	function _render() {
-		var _hash = window.location.hash;
-		// en
-		if (_hash == "#en") {
-			$select.selectedIndex = 1;
-			$en.style.display = "block";
-			$zh.style.display = "none";
-			// zh by default
-		} else {
-			// not trigger onChange, otherwise cause a loop call.
-			$select.selectedIndex = 0;
-			$zh.style.display = "block";
-			$en.style.display = "none";
-		}
-	}
-
-	// handle select change
-	function onLanChange(index) {
-		if (index == 0) {
-			window.location.hash = "#zh"
-		} else {
-			window.location.hash = "#en"
-		}
-	}
-
-	// init
-	_render();
 </script>
 
 

@@ -11,20 +11,20 @@
                     <br>
 					<audio preload id='music'>
 									<source src="笑场.mp3"></audio>
-								<a href="javascript:lastmusic()"><img src="pause.png" width="24" height="24" border="0"></a>
-								<a href="javascript:playPause()"><img src="play.png" width="24" height="24" id="music-btn" border="0"></a>
-								<a href="javascript:nextmusic()"><img src="next.png" width="24" height="24" border="0"></a>
+								<a href="javascript:lastmusic()"><img src="img/pause.png" width="24" height="24" border="0"></a>
+								<a href="javascript:playPause()"><img src="img/play.png" width="24" height="24" id="music-btn" border="0"></a>
+								<a href="javascript:nextmusic()"><img src="img/next.png" width="24" height="24" border="0"></a>
 							<script>
 								function playPause() {
 								var music = document.getElementById('music');
 								var music_btn = document.getElementById('music-btn');
 								if (music.paused){
 								music.play();
-								music_btn.src='second.png';
+								music_btn.src='img/second.png';
 								}
 								else {
 								music.pause();
-								music_btn.src='play.png';
+								music_btn.src='img/play.png';
 								}
 								}//播放和暂停合一，默认是打开页面点击播放，点击后播放键就会变为暂停键
 								//这里只是我想二合一，其实可以分开的，原理一样，把两个判断分到两个按钮，写两个function就ok啦

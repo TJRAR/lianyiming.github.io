@@ -983,15 +983,14 @@ title: Friends
                         {% endfor %}
                         {% endif %}
 						
-                        {% if site.friend %}
-                        {% for friend in site.friend1 %}
+                       {% if page.title %}
                         <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
                             <div class="card frind-card3">
                                 <div class="frind-ship">
                                     <div class="title">
                                         <img src="https://s1.ax1x.com/2020/08/29/d7YjeA.jpg" alt="img">
                                         <div>
-                                            <h1 class="friend-name">廉一鸣的博客</h1>
+                                            <h1 class="friend-name{{ page.title }}</h1>
                                             <p style="position: relative;top: -35px;">去他的真理无穷，进一寸有一寸的欢喜 </p>
                                         </div>
                                     </div>
@@ -1004,7 +1003,7 @@ title: Friends
                                 </div>
                             </div>
                         </div>
-                        {% endfor %}
+                        
                         {% endif %}
 						
                     </div>

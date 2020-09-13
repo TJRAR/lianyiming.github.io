@@ -129,8 +129,8 @@ friends: [
 ]
 
   
-        friends.1:  title: "鲸一",
-         fiend.1: "https://www.saroin.com/" 
+        friends1title: "鲸一",
+         friends1href: "https://www.saroin.com/" 
 		 
     
 

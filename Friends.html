@@ -886,7 +886,26 @@ title: Friends
                        
                         
                         
-                        
+                        {% for friend in site.friends1 %}
+                        <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
+                            <div class="card frind-card1">
+                                <div class="frind-ship">
+                                    <div class="title">
+                                        <img src="https://q1.qlogo.cn/g?b=qq&nk=10963273&s=640" alt="img">
+                                        <div>
+                                            <h1 class="friend-name">{{friend.title}}</h1>
+                                            <p style="position: relative;top: -35px;">哎呦哎呦是一个关注互联网和分享网站建设·记录生活的个人博客。</p>
+                                        </div>
+                                    </div>
+                                    <div class="friend-button">
+                                        <a href="{{friend.href}}" target="_blank"
+                                            class="button button-glow button-rounded button-caution">
+                                            前去学习
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         
                         <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
                             <div class="card frind-card8">
@@ -894,7 +913,7 @@ title: Friends
                                     <div class="title">
                                         <img src="https://www.lianyiming.com/img/Xu.jpg" alt="img">
                                         <div>
-                                            <h1 class="friend-name">Xu Yiyang</h1>
+                                            <h1 class="friend-name">{% for friend in site.friends2 %}</h1>
                                             <p style="position: relative;top: -35px;">大佬还未给描述呢</p>
                                         </div>
                                     </div>

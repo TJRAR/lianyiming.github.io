@@ -1168,29 +1168,58 @@ title: Friends
 								{% endfor %}
 								{% endif %}
 
-						
-                    </div>
-                    
-                </article>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-content">
-                <h1 id="本人友链信息"><a href="#本人友链信息" class="headerlink" title="本人友链信息"></a>本人友链信息</h1><p>欢迎大佬互加友链😍😍😍
-				<br>Blog 名字： 廉一鸣的博客<br>Blog 地址： <a href="https://www.lianyiming.com/">https://www.lianyiming.com</a>
-				<br>Blog 头像： <a href="https://s1.ax1x.com/2020/08/29/d7YjeA.jpg" target="_blank" rel="noopener">https://s1.ax1x.com/2020/08/29/d7YjeA.jpg</a>
-				<br>Blog 简介：去他妈的真理无穷，进一步有一步的欢喜</p>
-<h1 id="留言格式"><a href="#留言格式" class="headerlink" title="留言格式"></a>留言格式</h1><p>name: 名称 </p>
-<p>url: 地址 </p>
-<p>img: 头像 </p>
-<p>desc: 描述</p>
-<h1 id="添加条件"><a href="#添加条件" class="headerlink" title="添加条件"></a>添加条件</h1><p>1.来者是客，看到有时间会第一时间添加</p>
-<p>2.如果你的头像地址错误，会自动分配一个随机头像</p>
-<p>3.不定期查看友链博客内容，如已经死站或长时间未更新，你的友链会被下架</p>
-<p>4.请先 添加本站链接，在本站留言，待审核通过即添加友链。</p>
-<p>5.拒绝广告站，技术博客优先~ </p>
-<script>
-        document.querySelectorAll('.github-emoji')
+								{% if page.title %}
+								<!--{% if page.description %}
+								{% if page.url %}-->
+								<div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
+									<div class="card frind-card3">
+										<div class="frind-ship">
+											<div class="title">
+												<img src="https://s1.ax1x.com/2020/08/29/d7YjeA.jpg" alt="img">
+												<div>
+													<h1 class="friend-name">{{ page.title }}</h1>
+													<p style="position: relative;top: -35px;"> {{ page.description } } </p>
+                                        </div>
+                                    </div>
+                                    <div class="friend-button">
+                                        <a href="{{ page.url }}"
+														target="_blank"
+														class="button button-glow button-rounded button-caution">
+														就似我辣
+														</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- {% endif %}
+                        {% endif %}-->
+									{% endif %}
+
+								</div>
+
+						</article>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-content">
+						<h1 id="本人友链信息"><a href="#本人友链信息" class="headerlink" title="本人友链信息"></a>本人友链信息</h1>
+						<p>欢迎大佬互加友链😍😍😍
+							<br>Blog 名字： 廉一鸣的博客<br>Blog 地址： <a href="https://www.lianyiming.com/">https://www.lianyiming.com</a>
+							<br>Blog 头像： <a href="https://s1.ax1x.com/2020/08/29/d7YjeA.jpg" target="_blank" rel="noopener">https://s1.ax1x.com/2020/08/29/d7YjeA.jpg</a>
+							<br>Blog 简介：去他妈的真理无穷，进一步有一步的欢喜</p>
+						<h1 id="留言格式"><a href="#留言格式" class="headerlink" title="留言格式"></a>留言格式</h1>
+						<p>name: 名称 </p>
+						<p>url: 地址 </p>
+						<p>img: 头像 </p>
+						<p>desc: 描述</p>
+						<h1 id="添加条件"><a href="#添加条件" class="headerlink" title="添加条件"></a>添加条件</h1>
+						<p>1.来者是客，看到有时间会第一时间添加</p>
+						<p>2.如果你的头像地址错误，会自动分配一个随机头像</p>
+						<p>3.不定期查看友链博客内容，如已经死站或长时间未更新，你的友链会被下架</p>
+						<p>4.请先 添加本站链接，在本站留言，待审核通过即添加友链。</p>
+						<p>5.拒绝广告站，技术博客优先~ </p>
+						<script>
+							document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
             const img = document.createElement('img');
@@ -1208,21 +1237,21 @@ title: Friends
             document.body.appendChild(img);
           });
       </script>
-            </div>
-        </div>
-        <div class="card">
+					</div>
+				</div>
+				<div class="card">
 
-            
 
-            
 
-            
 
-            
 
-            
-            <style>
-    .valine-card {
+
+
+
+
+
+					<style>
+						.valine-card {
         margin: 1.5rem auto;
     }
 
@@ -1457,22 +1486,22 @@ title: Friends
     }
 </style>
 
-<div class="card valine-card" data-aos="fade-up">
-    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
-        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
-        <span>评论</span>
-    </div>
-    <div id="vcomments" class="card-content" style="display: grid">
-    </div>
-</div>
+					<div class="card valine-card" data-aos="fade-up">
+						<div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+							<i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+							<span>评论</span>
+						</div>
+						<div id="vcomments" class="card-content" style="display: grid">
+						</div>
+					</div>
 
-<script src="/libs/valine/av-min.js"></script>
-<script src="/libs/valine/Valine.min.js"></script>
-<script>
-    new Valine({
+					<script src="/libs/valine/av-min.js"></script>
+					<script src="/libs/valine/Valine.min.js"></script>
+					<script>
+						new Valine({
         el: '#vcomments',
-        appId: 'HgaelgOgs6foTaNPVsDMOBto-MdYXbMMI',
-        appKey: 'JF83orivlt2mgqGaX2p829bo',
+        appId: '324CSMlwN7QYCW31WN0BOd61-gzGzoHsz',
+        appKey: 'cUgj6L8hQhKJijEUq6dyb68S',
         notify: 'true' === 'true',
         verify: 'false' === 'true',
         visitor: 'true' === 'true',
@@ -1483,14 +1512,14 @@ title: Friends
     });
 </script>
 
-            
 
-        </div>
-    </div>
-</main>
 
-<script>
-    $(function () {
+				</div>
+			</div>
+		</main>
+
+		<script>
+			$(function () {
         $('#friends-link').masonry({
             itemSelector: '.friend-div'
         });
@@ -1502,8 +1531,8 @@ title: Friends
 
 
 		<div id="jsi-flying-fish-container"></div>
-	<script>
-var RENDERER = {
+		<script>
+			var RENDERER = {
 	POINT_INTERVAL : 5,
 	FISH_COUNT : 3,
 	MAX_INTERVAL_COUNT : 50,
@@ -1839,51 +1868,49 @@ $(function(){
 });
 </script>
 
-<footer class="page-footer bg-color">
-		
-	
-	
-	
+		<footer class="page-footer bg-color">
 
-	<div class="container row center-align" style="margin-bottom: 15px !important;">
-		
-	
 
-	
 
-		
-		<div class="col s12 m8 l8 copy-right">
-			Copyright&nbsp;&copy;
-			<span id="year">2020</span>
-			<!--<a href="/about" target="_blank">-->
-				kif
-			<!--</a>-->
-			
-			<br>
-			 &nbsp;
-			<i class="fas fa-chart-area"></i>&nbsp;破站有:&nbsp;<span class="white-color">?</span>&nbsp;字
-			
-			
-			
-			
-			
-			
-			<span id="busuanzi_container_site_pv">
-                |&nbsp;<i class="far fa-eye"></i>&nbsp;访问量有:&nbsp;<span id="busuanzi_value_site_pv"
-                    class="white-color"></span>&nbsp;次
-			</span>
-			
-			
-			<span id="busuanzi_container_site_uv">
-                |&nbsp;<i class="fas fa-users"></i>&nbsp;访问人数:&nbsp;<span id="busuanzi_value_site_uv"
-                    class="white-color"></span>&nbsp;人
-			</span>
-			
-			<br>
-			
-			<span id="sitetime">载入运行时间...</span>
-			<script>
-				function siteTime() {
+
+
+			<div class="container row center-align" style="margin-bottom: 15px !important;">
+
+
+
+
+
+
+				<div class="col s12 m8 l8 copy-right">
+					Copyright&nbsp;&copy;
+					<span id="year">2020</span>
+					<!--<a href="/about" target="_blank">-->
+					kif
+					<!--</a>-->
+
+					<br>
+					&nbsp;
+					<i class="fas fa-chart-area"></i>&nbsp;破站有:&nbsp;<span class="white-color">?</span>&nbsp;字
+
+
+
+
+
+
+					<span id="busuanzi_container_site_pv">
+						|&nbsp;<i class="far fa-eye"></i>&nbsp;访问量有:&nbsp;<span id="busuanzi_value_site_pv" class="white-color"></span>&nbsp;次
+					</span>
+
+
+					<span id="busuanzi_container_site_uv">
+						|&nbsp;<i class="fas fa-users"></i>&nbsp;访问人数:&nbsp;<span id="busuanzi_value_site_uv" class="white-color"></span>&nbsp;人
+					</span>
+
+					<br>
+
+					<span id="sitetime">载入运行时间...</span>
+					<script>
+						function siteTime() {
 					var seconds = 1000;
 					var minutes = seconds * 60;
 					var hours = minutes * 60;
@@ -1924,28 +1951,29 @@ $(function(){
 				}
 				setInterval(siteTime, 1000);
 			</script>
-			
-			<br>
-			
-		</div>
-		<div class="col s12 m4 l4 social-link social-statis">
-			
-    <a href="https://github.com/lianyiming" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
+
+					<br>
+
+				</div>
+				<div class="col s12 m4 l4 social-link social-statis">
+
+					<a href="https://github.com/lianyiming" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top"
+					 data-delay="50">
+						<i class="fab fa-github"></i>
+					</a>
 
 
 
-    <a href="AGZX_lym@163.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
+					<a href="AGZX_lym@163.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+						<i class="fas fa-envelope-open"></i>
+					</a>
 
 
 
 
 
 
-<!--
+					<!--
     <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1825565000" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1825565000" data-position="top" data-delay="50">
         <i class="fab fa-qq"></i>
     </a>
@@ -1964,46 +1992,45 @@ $(function(){
 
 -->
 
-    <a href="/feed.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
+					<a href="/feed.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+						<i class="fas fa-rss"></i>
+					</a>
 
 
-		</div>
+				</div>
 
-	</div>
+			</div>
 
 
 
-</footer>
+		</footer>
 
-<div class="progress-bar"></div>
+		<div class="progress-bar"></div>
 
 		<!-- 搜索遮罩框 -->
-<div id="searchModal" class="modal">
-    <div class="modal-content">
-        <div class="search-header">
-            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
-            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
-                   class="search-input">
-        </div>
-        <div id="searchResult"></div>
-    </div>
-</div>
+		<div id="searchModal" class="modal">
+			<div class="modal-content">
+				<div class="search-header">
+					<span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+					<input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字" class="search-input">
+				</div>
+				<div id="searchResult"></div>
+			</div>
+		</div>
 
-<script src="/js/search.js"></script>
-<script type="text/javascript">
-$(function () {
-    searchFunc("/search.xml", 'searchInput', 'searchResult');
-});
-</script>
+		<script src="/js/search.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				searchFunc("/search.xml", 'searchInput', 'searchResult');
+			});
+		</script>
 
 		<!-- 回到顶部按钮 -->
-<div id="backTop" class="top-scroll">
-    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-</div>
+		<div id="backTop" class="top-scroll">
+			<a class="btn-floating btn-large waves-effect waves-light" href="#!">
+				<i class="fas fa-arrow-up"></i>
+			</a>
+		</div>
 
 
 		<script src="/libs/materialize/materialize.min.js"></script>
@@ -2017,44 +2044,44 @@ $(function () {
 
 		<!-- Baidu Push -->
 
-<script>
-    (function () {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        } else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-</script>
+		<script>
+			(function() {
+				var bp = document.createElement('script');
+				var curProtocol = window.location.protocol.split(':')[0];
+				if (curProtocol === 'https') {
+					bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+				} else {
+					bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+				}
+				var s = document.getElementsByTagName("script")[0];
+				s.parentNode.insertBefore(bp, s);
+			})();
+		</script>
 
-		
-		
+
+
 		<script async src="/libs/others/busuanzi.pure.mini.js"></script>
-		
 
-		
 
-		
 
-		
 
-		
 
-		
+
+
+
+
+
+
 		<script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
-		
 
-		
+
+
 		<script src="/libs/instantpage/instantpage.js" type="module"></script>
-		
+
 		<!--浏览器搞笑标题-->
 		<script type="text/javascript" src="\js\FunnyTitle.js"></script>
 		<!-- 雪花特效3 -->
-		
+
 
 		<!-- 礼花特效 -->
 		<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas>
@@ -2062,13 +2089,13 @@ $(function () {
 		<script type="text/javascript" src="/js/fireworks.js"></script>
 
 		<!--动态线条背景-->
-		
-		
-		
+
+
+
 
 		<script type="text/javascript">
 			var windowWidth = $(window).width();
-			if(windowWidth > 768) {
+			if (windowWidth > 768) {
 				document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
 			}
 		</script>
@@ -2089,7 +2116,7 @@ $(function () {
 		<!-- start webpushr code -->
 		<script>
 			(function(w, d, s, id) {
-				if(typeof(w.webpushr) !== 'undefined') return;
+				if (typeof(w.webpushr) !== 'undefined') return;
 				w.webpushr = w.webpushr || function() {
 					(w.webpushr.q = w.webpushr.q || []).push(arguments)
 				};
@@ -2105,7 +2132,7 @@ $(function () {
 		</script>
 		<!-- end webpushr code -->
 		<!-- 数字雨 -->
-		
+
 
 		<div id="he-plugin-standard"></div>
 		<script>
@@ -2124,8 +2151,43 @@ $(function () {
 		<script src="https://apip.weatherdt.com/standard/static/js/weather-standard-common.js?v=2.0"></script>
 		<script type="text/javascript" src="//js.users.51.la/20906211.js"></script>
 
-		
 
-	<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"left","width":150,"height":350},"mobile":{"show":true},"log":false});</script><script>(function(w,d, s, id) {w.webpushr=w.webpushr||function(){(w.webpushr.q=w.webpushr.q||[]).push(arguments)};var js, fjs = d.getElementsByTagName(s)[0];js = d.createElement(s); js.id = id;js.src = 'https://cdn.webpushr.com/app.min.js';fjs.parentNode.appendChild(js);}(window,document, 'script', 'webpushr-jssdk'));webpushr('init','BGajJeKPeLBgQYHSvuiRNO5dQ3ObyOLhamDZnPgn0CarPRvs-KnNSicCon6Ax5_6rPKzm2X0goRa6hzZ3JHhMvk');</script></body>
+
+		<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script>
+		<script>
+			L2Dwidget.init({
+				"pluginRootPath": "live2dw/",
+				"pluginJsPath": "lib/",
+				"pluginModelPath": "assets/",
+				"tagMode": false,
+				"debug": false,
+				"model": {
+					"jsonPath": "/live2dw/assets/tororo.model.json"
+				},
+				"display": {
+					"position": "left",
+					"width": 150,
+					"height": 350
+				},
+				"mobile": {
+					"show": true
+				},
+				"log": false
+			});
+		</script>
+		<script>
+			(function(w, d, s, id) {
+				w.webpushr = w.webpushr || function() {
+					(w.webpushr.q = w.webpushr.q || []).push(arguments)
+				};
+				var js, fjs = d.getElementsByTagName(s)[0];
+				js = d.createElement(s);
+				js.id = id;
+				js.src = 'https://cdn.webpushr.com/app.min.js';
+				fjs.parentNode.appendChild(js);
+			}(window, document, 'script', 'webpushr-jssdk'));
+			webpushr('init', 'BGajJeKPeLBgQYHSvuiRNO5dQ3ObyOLhamDZnPgn0CarPRvs-KnNSicCon6Ax5_6rPKzm2X0goRa6hzZ3JHhMvk');
+		</script>
+	</body>
 
 </html>

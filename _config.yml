@@ -127,11 +127,10 @@ friends: [
      },
 
 ]
-friends1: [
-  {
-         title: "鲸一",
-         href: "https://www.saroin.com/"
+
+  
+        friends.1:  title: "鲸一",
+         fiend.1: "https://www.saroin.com/" 
 		 
-	   	  
-     },
-]
+    
+

@@ -884,20 +884,22 @@ title: Friends
                     <div class="row tags-posts friend-all">
                         
                        
-                        {% if site.friends1 %}
+                        <!--{% if site.friends1 %}
 						{% for friend in site.friends1 %}
+						{% endfor %}
+						{% endif %}-->
                         <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
                             <div class="card frind-card8">
                                 <div class="frind-ship">
                                     <div class="title">
                                         <img src="{{friend.img}}" alt="img">
                                         <div>
-                                            <h1 class="friend-name">{{friend.title}}</h1>
+                                            <h1 class="friend-name">{{friends1.title}}</h1>
                                             <p style="position: relative;top: -35px;">大佬还未给描述呢</p>
                                         </div>
                                     </div>
                                     <div class="friend-button">
-                                        <a href="{{friend.href}}" target="_blank"
+                                        <a href="{{friends1.href}}" target="_blank"
                                             class="button button-glow button-rounded button-caution">
                                             前去学习
                                         </a>
@@ -905,8 +907,7 @@ title: Friends
                                 </div>
                             </div>
                         </div>
-                    	{% endfor %}
-                        {% endif %}
+                    	
 						
 						
 						{% if site.friends2 %}

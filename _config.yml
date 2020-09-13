@@ -135,3 +135,28 @@ friend1: [
        intro: "不是忙着活，就是忙着累死"
      },
 ]
+friend2: [
+ {
+       title: "XuYiyang",
+       href: "https://blog.xuyiyang.top/",
+       img: "https://www.lianyiming.com/img/Xu.jpg",
+       intro: "大佬还未给描述呢"
+     },
+]
+friend3: [
+ {
+       title: "Kif Room",
+       href: "https://www.kifroom.icu/#",
+       img: "https://s1.ax1x.com/2020/06/23/NUr8pQ.jpg",
+       intro: "kif的树洞"
+     },
+]
+friend4: [
+ {
+       title: "哎呦哎呦",
+       href: "https://iuiu.run/",
+       img: "https://q1.qlogo.cn/g?b=qq&nk=10963273&s=640",
+       intro: "哎呦哎呦是一个关注互联网和分享网站建设·记录生活的个人博客"
+     },
+]
+

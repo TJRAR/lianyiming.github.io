@@ -916,14 +916,14 @@ title: Friends
                             <div class="card frind-card2">
                                 <div class="frind-ship">
                                     <div class="title">
-                                        <img src="https://www.lianyiming.com/img/Xu.jpg" alt="img">
+                                        <img src="{{friend.img}}" alt="img">
                                         <div>
-                                            <h1 class="friend-name">{{friend1.title}}</h1>
-                                            <p style="position: relative;top: -35px;">大佬还未给描述呢</p>
+                                            <h1 class="friend-name">{{friend.title}}</h1>
+                                            <p style="position: relative;top: -35px;">{{friend.intro}}</p>
                                         </div>
                                     </div>
                                     <div class="friend-button">
-                                        <a href="https://blog.xuyiyang.top/" target="_blank"
+                                        <a href="{{friend.href}}" target="_blank"
                                             class="button button-glow button-rounded button-caution">
                                             前去学习
                                         </a>
@@ -934,18 +934,45 @@ title: Friends
                         {% endfor %}
                         {% endif %}
                         
+						
+						{% if site.friend3 %}
+						{% for friend in site.friend3 %}
+                      <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
+                          <div class="card frind-card3">
+                              <div class="frind-ship">
+                                  <div class="title">
+                                      <img src="{{friend.img}}" alt="img">
+                                      <div>
+                                          <h1 class="friend-name">{{friend.title}}</h1>
+                                          <p style="position: relative;top: -35px;">{{friend.intro}}</p>
+                                      </div>
+                                  </div>
+                                  <div class="friend-button">
+                                      <a href="{{friend.href}}" target="_blank"
+                                          class="button button-glow button-rounded button-caution">
+                                          前去学习
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                        {% endfor %}
+                        {% endif %}
+                        
+                        {% if site.friend4 %}
+                        {% for friend in site.friend4 %}
                         <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
-                            <div class="card frind-card9">
+                            <div class="card frind-card4">
                                 <div class="frind-ship">
                                     <div class="title">
-                                        <img src="https://s1.ax1x.com/2020/06/23/NUr8pQ.jpg" alt="img">
+                                        <img src="{{friend.img}}" alt="img">
                                         <div>
-                                            <h1 class="friend-name">kif room</h1>
-                                            <p style="position: relative;top: -35px;">kif的树洞</p>
+                                            <h1 class="friend-name">{{friend.title}}</h1>
+                                            <p style="position: relative;top: -35px;">{{friend.intro}}</p>
                                         </div>
                                     </div>
                                     <div class="friend-button">
-                                        <a href="https://www.kifroom.icu/#" target="_blank"
+                                        <a href="{{friend.href}}" target="_blank"
                                             class="button button-glow button-rounded button-caution">
                                             前去学习
                                         </a>
@@ -953,30 +980,12 @@ title: Friends
                                 </div>
                             </div>
                         </div>
-                        
-                        
-                        
-                        <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
-                            <div class="card frind-card1">
-                                <div class="frind-ship">
-                                    <div class="title">
-                                        <img src="https://q1.qlogo.cn/g?b=qq&nk=10963273&s=640" alt="img">
-                                        <div>
-                                            <h1 class="friend-name">哎呦哎呦</h1>
-                                            <p style="position: relative;top: -35px;">哎呦哎呦是一个关注互联网和分享网站建设·记录生活的个人博客。</p>
-                                        </div>
-                                    </div>
-                                    <div class="friend-button">
-                                        <a href="https://iuiu.run/" target="_blank"
-                                            class="button button-glow button-rounded button-caution">
-                                            前去学习
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
+                        {% endfor %}
+                        {% endif %}
+						
+						
+                        {% if site.friend1 %}
+                        {% for friend in site.friend1 %}
                         <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
                             <div class="card frind-card2">
                                 <div class="frind-ship">
@@ -996,14 +1005,18 @@ title: Friends
                                 </div>
                             </div>
                         </div>
-                        
+                        {% endfor %}
+                        {% endif %}
+						
+						
                        
                         
                         
                        
                   
                         
-                        
+                        {% if site.friend1 %}
+                        {% for friend in site.friend1 %}
                         <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
                             <div class="card frind-card3">
                                 <div class="frind-ship">
@@ -1023,7 +1036,9 @@ title: Friends
                                 </div>
                             </div>
                         </div>
-                        
+                        {% endfor %}
+                        {% endif %}
+						
                     </div>
                     
                 </article>

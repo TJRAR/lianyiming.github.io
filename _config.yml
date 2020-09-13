@@ -127,6 +127,7 @@ friends: [
      },
 
 ]
+
 friend1: [
  {
          title: "鲸一",
@@ -134,5 +135,9 @@ friend1: [
          img: "https://cdn.jsdelivr.net/gh/AJRECHO/WWW@master/uPic/user/ajrecho.jpg",
          intro: "不是忙着活，就是忙着累死",
      },
+]
+
+friend1: [
+
 ]
 

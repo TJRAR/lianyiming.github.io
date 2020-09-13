@@ -883,12 +883,10 @@ title: Friends
                     
                     <div class="row tags-posts friend-all">
                         
-                       {% if site.friends1tittle %}
-					     {% if site.friends1href %}
-                        <!--{% if site.friends1 %}
-						{% for friend in site.friends1 %}
-						{% endfor %}
-						{% endif %}-->
+                   
+                        {% if site.friend1 %}
+						{% for friend in site.friend1 %}
+						
                         <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
                             <div class="card frind-card8">
                                 <div class="frind-ship">
@@ -908,8 +906,9 @@ title: Friends
                                 </div>
                             </div>
                         </div>
-                    	{% endif %}
+						{% endfor %}
 						{% endif %}
+                 
 						
 						
 						{% if site.friends2 %}

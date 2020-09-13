@@ -887,17 +887,17 @@ title: Friends
                         {% if site.friend1 %}
 						{% for friend in site.friend1 %}
                         <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
-                            <div class="card frind-card8">
+                            <div class="card frind-card1">
                                 <div class="frind-ship">
                                     <div class="title">
                                         <img src="{{friend.img}}" alt="img">
                                         <div>
-                                            <h1 class="friend-name">{{friends1.title}}</h1>
-                                            <p style="position: relative;top: -35px;">大佬还未给描述呢</p>
+                                            <h1 class="friend-name">{{friend1.title}}</h1>
+                                            <p style="position: relative;top: -35px;">{{friend1.intro}}</p>
                                         </div>
                                     </div>
                                     <div class="friend-button">
-                                        <a href="{{friends1.href}}" target="_blank"
+                                        <a href="{{friend1.href}}" target="_blank"
                                             class="button button-glow button-rounded button-caution">
                                             前去学习
                                         </a>

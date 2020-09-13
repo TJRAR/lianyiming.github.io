@@ -921,21 +921,29 @@ layout: default
 					</h3>
 					
 					{% endfor %}
+					{% for friend in site.friends2 %}
+					<h3>
+						<li><a href="{{friend.href}}">{{friend.title}}</a></li>
+					</h3>
+					{% endfor %}
 				</ol>
 				{% endif %}
+				
+				
+				
 				<!-- Friends Blog -->
 				{% if site.friends %}
 				<hr>
 				<h5>FRIENDS</h5>
 				<ol class="list-inline">
-					{% for friend in site.friends2 %}
-					<h3>
-						<li><a href="{{friend.href}}">{{friend.title}}</a></li>
-					</h3>
+					
 					
 					{% endfor %}
 				</ol>
 				{% endif %}
+				
+				
+				
 			</div>
 			{% endif %}
 		</div>

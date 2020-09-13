@@ -919,6 +919,8 @@ layout: default
 					<h3>
 						<li><a href="{{friend.href}}">{{friend.title}}</a></li>
 					</h3>
+					{% for friend in site.friends2 %}
+					<li><a href="{{friend2.href}}">{{friend2.title}}</a></li>
 					{% endfor %}
 				</ol>
 				{% endif %}

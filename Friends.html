@@ -890,14 +890,14 @@ title: Friends
                             <div class="card frind-card8">
                                 <div class="frind-ship">
                                     <div class="title">
-                                        <img src="https://www.lianyiming.com/img/Xu.jpg" alt="img">
+                                        <img src="{{friend.img}}" alt="img">
                                         <div>
                                             <h1 class="friend-name">{{friend.title}}</h1>
                                             <p style="position: relative;top: -35px;">大佬还未给描述呢</p>
                                         </div>
                                     </div>
                                     <div class="friend-button">
-                                        <a href="https://blog.xuyiyang.top/" target="_blank"
+                                        <a href="{{friend.href}}" target="_blank"
                                             class="button button-glow button-rounded button-caution">
                                             前去学习
                                         </a>
@@ -909,6 +909,8 @@ title: Friends
                         {% endif %}
 						
 						
+						{% if site.friends2 %}
+						{% for friend in site.friends2 %}
                         <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
                             <div class="card frind-card8">
                                 <div class="frind-ship">
@@ -928,7 +930,8 @@ title: Friends
                                 </div>
                             </div>
                         </div>
-                        
+                        {% endfor %}
+                        {% endif %}
                         
                         <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
                             <div class="card frind-card9">

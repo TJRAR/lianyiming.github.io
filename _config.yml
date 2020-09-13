@@ -128,11 +128,11 @@ friends: [
 
 ]
 friend1: [
-  {
-title: "鲸一",
-href: "https://www.saroin.com/"
-img: "https://www.lianyiming.com/img/Xu.jpg",
-intro: "不是忙着活，就是忙着累死",
- },
+ {
+         title: "鲸一",
+         href: "https://www.saroin.com/"
+         img: "https://www.lianyiming.com/img/Xu.jpg",
+         intro: "不是忙着活，就是忙着累死",
+     },
 ]
 

@@ -1169,7 +1169,8 @@ title: Friends
 								{% endif %}
 
 								{% if page.title %}
-								{% if page.description %}
+								<!--{% if page.description %}
+								{% if page.url %}-->
 								<div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
 									<div class="card frind-card3">
 										<div class="frind-ship">
@@ -1181,7 +1182,7 @@ title: Friends
                                         </div>
                                     </div>
                                     <div class="friend-button">
-                                        <a href="https://lianyiming.com" target="_blank"
+                                        <a href="{{ page.url }}" target="_blank"
                                             class="button button-glow button-rounded button-caution">
                                             就似我辣
                                         </a>
@@ -1189,8 +1190,9 @@ title: Friends
                                 </div>
                             </div>
                         </div>
-                        {% endif %}
-                        {% endif %}
+                       <!-- {% endif %}
+                        {% endif %}-->
+						{% endif %}
 						
                     </div>
                     

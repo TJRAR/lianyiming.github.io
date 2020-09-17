@@ -159,4 +159,12 @@ friend4: [
        intro: "哎呦哎呦是一个关注互联网和分享网站建设·记录生活的个人博客"
      },
 ]
+friend5: [
+ {
+       title: "Astics的博客",
+       href: "https://astcs.gitee.io/",
+       img: "https://s1.ax1x.com/2020/09/07/wn5dU0.jpg",
+       intro: "一个简单的小白博客"
+     },
+]
 

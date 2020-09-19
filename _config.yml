@@ -215,3 +215,11 @@ friend11: [
        intro: "生命不息，折腾不止"
      },
 ]
+friend12: [
+ {
+       title: "独人欣赏",
+       href: "https://www.wangyusong.cn",
+       img: "https://file.wangyusong.cn/head.jpg",
+       intro: "摆脱了十足乏味的交际，摆脱不了群居属性"
+     },
+]

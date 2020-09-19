@@ -505,7 +505,21 @@ layout: default
                     {% endif %}
                 </ul>
 
-
+<div id="vcomments"></div>
+	<script src="/libs/valine/av-min.js"></script>
+	<script src="/libs/valine/Valine.min.js"></script>
+	<script>
+	    new Valine({
+	        el: '#vcomments',
+	        appId: '324CSMlwN7QYCW31WN0BOd61-gzGzoHsz',
+	        appKey: 'cUgj6L8hQhKJijEUq6dyb68S',
+	        visitor: 'true' === 'true',
+	        avatar: '   ',
+	        pageSize: '10',
+	        lang: 'en',
+	        placeholder: '“我什么都知道，但还是想听你娓娓道来。”'
+	    });
+	</script>
                 <!--Gitalk评论start  -->
                 {% if site.gitalk.enable %}
                 <!-- 引入Gitalk评论插件  -->
@@ -650,19 +664,5 @@ layout: default
     }
 </style>
 {% endif %}
-<div id="vcomments"></div>
-	<script src="/libs/valine/av-min.js"></script>
-	<script src="/libs/valine/Valine.min.js"></script>
-	<script>
-	    new Valine({
-	        el: '#vcomments',
-	        appId: '324CSMlwN7QYCW31WN0BOd61-gzGzoHsz',
-	        appKey: 'cUgj6L8hQhKJijEUq6dyb68S',
-	        visitor: 'true' === 'true',
-	        avatar: '   ',
-	        pageSize: '10',
-	        lang: 'en',
-	        placeholder: '“我什么都知道，但还是想听你娓娓道来。”'
-	    });
-	</script>
+
 </body>

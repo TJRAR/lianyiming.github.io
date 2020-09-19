@@ -207,3 +207,11 @@ friend10: [
        intro: "Liumang's Blog"
      },
 ]
+friend11: [
+ {
+       title: "小浣熊的技术小站",
+       href: "https://nimitiz.cn/",
+       img: "https://nimitiz.cn/images/avatar.gif",
+       intro: "生命不息，折腾不止"
+     },
+]

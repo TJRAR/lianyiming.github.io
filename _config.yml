@@ -199,3 +199,11 @@ friend9: [
        intro: "大佬还未给描述呢"
      },
 ]
+friend10: [
+ {
+       title: "Liumang",
+       href: "https://blog.liumang.life/",
+       img: "http://blog.liumang.life/usr/uploads/2020/08/1962663907.png",
+       intro: "Liumang's Blog"
+     },
+]

@@ -175,3 +175,11 @@ friend6: [
        intro: "一份分享教程&游戏的博客"
      },
 ]
+friend6: [
+ {
+       title: "Deserts",
+       href: "https://deserts.io/",
+       img: "https://www.gravatar.com/avatar/f32fc1c3f6674bfb5621a60901b5f96c?s=250&d=mm&r=x",
+       intro: "大佬还未给描述呢"
+     },
+]

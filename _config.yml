@@ -68,7 +68,7 @@ disqus_username:  #LianYiMing
 
 # Gitalk
 gitalk:
-  enable: true    #是否开启Gitalk评论
+  enable: false   #是否开启Gitalk评论
   clientID: 0ba0ce534eaab8f3df75                          #生成的clientID
   clientSecret: 3e24f7e6e0084eb5a906a8ac4610a1463449f196    #生成的clientSecret
   repo: LianYiMing.github.io     #仓库名称

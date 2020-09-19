@@ -191,3 +191,11 @@ friend8: [
        intro: "医不自医，人不渡己"
      },
 ]
+friend9: [
+ {
+       title: "Eanraig",
+       href: "https://eanraig.top",
+       img: "https://cdn.jsdelivr.net/gh/eanraig/eanraig-storage/2020/09/avatar.jpg",
+       intro: "大佬还未给描述呢"
+     },
+]

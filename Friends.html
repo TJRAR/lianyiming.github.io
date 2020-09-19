@@ -1234,7 +1234,28 @@ title: Friends
 								</div>
 								{% endfor %}
 								{% endif %}
-
+{% if site.friend8 %}
+								{% for friend in site.friend8 %}
+								<div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
+									<div class="card frind-card8">
+										<div class="frind-ship">
+											<div class="title">
+												<img src="{{friend.img}}" alt="img">
+												<div>
+													<h1 class="friend-name">{{friend.title}}</h1>
+													<p style="position: relative;top: -35px;">{{friend.intro}}</p>
+												</div>
+											</div>
+											<div class="friend-button">
+												<a href="{{friend.href}}" target="_blank" class="button button-glow button-rounded button-caution">
+													前去学习
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								{% endfor %}
+								{% endif %}
 							</div>
 
 						</article>

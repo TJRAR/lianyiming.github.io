@@ -183,3 +183,11 @@ friend7: [
        intro: "大佬还未给描述呢"
      },
 ]
+friend8: [
+ {
+       title: "今今今生",
+       href: "https://noheart.cn",
+       img: "https://noheart.cn/upload/mylife.jpg",
+       intro: "医不自医，人不渡己"
+     },
+]

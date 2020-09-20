@@ -223,3 +223,11 @@ friend12: [
        intro: "摆脱了十足乏味的交际，摆脱不了群居属性"
      },
 ]
+friend13: [
+ {
+       title: "Alsaces",
+       href: "https://www.alsces.cn",
+       img: "https://wx1.sbimg.cn/2020/09/07/9kNiM.png",
+       intro: "言必行，行必果"
+     },
+]

@@ -227,7 +227,7 @@ friend13: [
  {
        title: "Alsaces",
        href: "https://www.alsaces.cn",
-       img: "https://images.alsaces.cn/second-blog/universal/avatar.png",
+       img: "https://cdn.jsdelivr.net/gh/zhangfh-cq/images/second-blog/universal/avatar.png",
        intro: "言必行，行必果"
      },
 ]

@@ -219,15 +219,15 @@ friend12: [
  {
        title: "独人欣赏",
        href: "https://www.wangyusong.cn",
-       img: "https://file.wangyusong.cn/head.jpg",
+       img: "https://files.wangyusong.cn/head.jpg",
        intro: "摆脱了十足乏味的交际，摆脱不了群居属性"
      },
 ]
 friend13: [
  {
        title: "Alsaces",
-       href: "https://www.alsces.cn",
-       img: "https://wx1.sbimg.cn/2020/09/07/9kNiM.png",
+       href: "https://www.alsaces.cn",
+       img: "https://cdn.jsdelivr.net/gh/zhangfh-cq/images/second-blog/universal/avatar.png",
        intro: "言必行，行必果"
      },
 ]

@@ -1,10 +1,12 @@
-document.getElementById("list").style.visibility = "hidden";
+document.getElementById("intro-header").style.visibility = "hidden";
 
 function fclist() {
 	setTimeout(function() {
-		document.getElementById("list").style.visibility = "visible";
+		document.getElementById("intro-header").style.visibility = "visible";
 	}, 2000);
 }
+
+
 document.getElementById("ceil").style.visibility = "hidden";
 
 function fcceil() {
@@ -12,6 +14,9 @@ function fcceil() {
 		document.getElementById("ceil").style.visibility = "visible";
 	}, 1000);
 }
+
+
+
 divset = document.getElementsByClassName("postdiv");
 for (var i = 0; i < divset.length; i++) {
 	divset[i].style.visibility = "hidden";

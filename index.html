@@ -218,7 +218,7 @@ description: "Even if it makes me blind,I just wanna see the light."
             setTimeout(function(){
                 loader.style.display="none";
             },1000); 
-        },1000);//强制显示loading page 1s  
+        },3000);//强制显示loading page 1s  
     };
     loaded();
 })()
@@ -450,13 +450,38 @@ description: "Even if it makes me blind,I just wanna see the light."
 	</head>
 
 
-
 	<div id="loading-container">
-		<p class="loading-text">廉一鸣玩命加载中 . . . </p>
+		<p class="loading-text">
 		<div class="loading-image">
 			
 		</div>
 	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {% for post in paginator.posts %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">

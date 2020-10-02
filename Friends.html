@@ -252,231 +252,7 @@ title: Friends
         },1000);//强制显示loading page 1s  
     };
     loaded();
-})()
- </script>
-		<meta name="generator" content="Hexo 4.2.1">
-		<link rel="alternate" href="/atom.xml" title="Kif Room" type="application/atom+xml">
-		<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
-		<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css">
-		<style type="text/css" lang="css">
-			#loading-container {
-				position: fixed;
-				top: 0;
-				left: 0;
-				min-height: 100vh;
-				width: 100vw;
-				z-index: 9999;
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				align-items: center;
-				background: #FFF;
-				text-align: center;
-				/* loader页面消失采用渐隐的方式*/
-				-webkit-transition: opacity 1s ease;
-				-moz-transition: opacity 1s ease;
-				-o-transition: opacity 1s ease;
-				transition: opacity 1s ease;
-			}
-
-			.loading-image {
-				width: 120px;
-				height: 50px;
-				transform: translate(-50%);
-			}
-
-			.loading-image div:nth-child(2) {
-				-webkit-animation: pacman-balls 1s linear 0s infinite;
-				animation: pacman-balls 1s linear 0s infinite
-			}
-
-			.loading-image div:nth-child(3) {
-				-webkit-animation: pacman-balls 1s linear .33s infinite;
-				animation: pacman-balls 1s linear .33s infinite
-			}
-
-			.loading-image div:nth-child(4) {
-				-webkit-animation: pacman-balls 1s linear .66s infinite;
-				animation: pacman-balls 1s linear .66s infinite
-			}
-
-			.loading-image div:nth-child(5) {
-				-webkit-animation: pacman-balls 1s linear .99s infinite;
-				animation: pacman-balls 1s linear .99s infinite
-			}
-
-			.loading-image div:first-of-type {
-				width: 0;
-				height: 0;
-				border: 25px solid #49b1f5;
-				border-right-color: transparent;
-				border-radius: 25px;
-				-webkit-animation: rotate_pacman_half_up .5s 0s infinite;
-				animation: rotate_pacman_half_up .5s 0s infinite;
-			}
-
-			.loading-image div:nth-child(2) {
-				width: 0;
-				height: 0;
-				border: 25px solid #49b1f5;
-				border-right-color: transparent;
-				border-radius: 25px;
-				-webkit-animation: rotate_pacman_half_down .5s 0s infinite;
-				animation: rotate_pacman_half_down .5s 0s infinite;
-				margin-top: -50px;
-			}
-
-			@-webkit-keyframes rotate_pacman_half_up {
-				0% {
-					transform: rotate(270deg)
-				}
-
-				50% {
-					transform: rotate(1turn)
-				}
-
-				to {
-					transform: rotate(270deg)
-				}
-			}
-
-			@keyframes rotate_pacman_half_up {
-				0% {
-					transform: rotate(270deg)
-				}
-
-				50% {
-					transform: rotate(1turn)
-				}
-
-				to {
-					transform: rotate(270deg)
-				}
-			}
-
-			@-webkit-keyframes rotate_pacman_half_down {
-				0% {
-					transform: rotate(90deg)
-				}
-
-				50% {
-					transform: rotate(0deg)
-				}
-
-				to {
-					transform: rotate(90deg)
-				}
-			}
-
-			@keyframes rotate_pacman_half_down {
-				0% {
-					transform: rotate(90deg)
-				}
-
-				50% {
-					transform: rotate(0deg)
-				}
-
-				to {
-					transform: rotate(90deg)
-				}
-			}
-
-			@-webkit-keyframes pacman-balls {
-				75% {
-					opacity: .7
-				}
-
-				to {
-					transform: translate(-100px, -6.25px)
-				}
-			}
-
-			@keyframes pacman-balls {
-				75% {
-					opacity: .7
-				}
-
-				to {
-					transform: translate(-100px, -6.25px)
-				}
-			}
-
-
-			.loading-image div:nth-child(3),
-			.loading-image div:nth-child(4),
-			.loading-image div:nth-child(5),
-			.loading-image div:nth-child(6) {
-				background-color: #49b1f5;
-				width: 15px;
-				height: 15px;
-				border-radius: 100%;
-				margin: 2px;
-				width: 10px;
-				height: 10px;
-				position: absolute;
-				transform: translateY(-6.25px);
-				top: 25px;
-				left: 100px;
-			}
-
-			.loading-text {
-				margin-bottom: 20vh;
-				text-align: center;
-				color: #2c3e50;
-				font-size: 2rem;
-				box-sizing: border-box;
-				padding: 0 10px;
-				text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-			}
-
-			@media only screen and (max-width: 500px) {
-				.loading-text {
-					font-size: 1.5rem;
-				}
-			}
-
-			.fadeout {
-				opacity: 0;
-				filter: alpha(opacity=0);
-			}
-
-			/* logo出现动画 */
-			@-webkit-keyframes fadeInDown {
-				0% {
-					opacity: 0;
-					-webkit-transform: translate3d(0, -100%, 0);
-					transform: translate3d(0, -100%, 0)
-				}
-
-				100% {
-					opacity: 1;
-					-webkit-transform: none;
-					transform: none
-				}
-			}
-
-			@keyframes fadeInDown {
-				0% {
-					opacity: 0;
-					-webkit-transform: translate3d(0, -100%, 0);
-				}
-			}
-		</style>
-		<script>
-			(function() {
-				const loaded = function() {
-					setTimeout(function() {
-						const loader = document.getElementById("loading-container");
-						loader.className = "fadeout"; //使用渐隐的方法淡出loading page
-						// document.getElementById("body-wrap").style.display="flex";
-						setTimeout(function() {
-							loader.style.display = "none";
-						}, 1000);
-					}, 1000); //强制显示loading page 1s  
-				};
-				loaded();
-			})()
+})()		
 		</script>
 	</head>
 
@@ -494,6 +270,7 @@ title: Friends
 		</div>
 	</div>
 	<body>
+		<!--
 		<header class="navbar-fixed">
 			<nav id="headNav" class="bg-color nav-transparent">
 				<div id="navContainer" class="nav-wrapper container">
@@ -823,6 +600,7 @@ title: Friends
 			</nav>
 
 		</header>
+		-->
 
 		<div class="bg-cover pd-header about-cover">
 			<div class="container">
@@ -1405,7 +1183,7 @@ title: Friends
 						<p>欢迎大佬互加友链😍😍😍
 							<br>Blog 名字： 廉一鸣的博客<br>Blog 地址： <a href="https://www.lianyiming.com/">https://www.lianyiming.com</a>
 							<br>Blog 头像： <a href="https://s1.ax1x.com/2020/08/29/d7YjeA.jpg" target="_blank" rel="noopener">https://s1.ax1x.com/2020/08/29/d7YjeA.jpg</a>
-							<br>Blog 简介：去他妈的真理无穷，进一步有一步的欢喜</p>
+							<br>Blog 简介：去他的真理无穷，进一步有一步的欢喜</p>
 						<h1 id="留言格式"><a href="#留言格式" class="headerlink" title="留言格式"></a>留言格式</h1>
 						<p>name: 名称 </p>
 						<p>url: 地址 </p>
@@ -1414,9 +1192,7 @@ title: Friends
 						<h1 id="添加条件"><a href="#添加条件" class="headerlink" title="添加条件"></a>添加条件</h1>
 						<p>1.来者是客，看到有时间会第一时间添加</p>
 						<p>2.如果你的头像地址错误，会自动分配一个随机头像</p>
-						<p>3.不定期查看友链博客内容，如已经死站或长时间未更新，你的友链会被下架</p>
-						<p>4.请先 添加本站链接，在本站留言，待审核通过即添加友链。</p>
-						<p>5.拒绝广告站，技术博客优先~ </p>
+						<p>3.技术博客优先~ </p>
 						<script>
 							document.querySelectorAll('.github-emoji')
           .forEach(el => {

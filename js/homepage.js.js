@@ -1,31 +1,31 @@
 //放div id
 document.getElementById("intro-header").style.visibility = "hidden";
 
-function fclist() {
+function fcintro-heade() {
 	setTimeout(function() {
 		document.getElementById("intro-header").style.visibility = "visible";
 	}, 2000);
 }
 
 
-document.getElementById("ceil").style.visibility = "hidden";
+document.getElementById("container").style.visibility = "hidden";
 
-function fcceil() {
+function fccontainer() {
 	setTimeout(function() {
-		document.getElementById("ceil").style.visibility = "visible";
+		document.getElementById("container").style.visibility = "visible";
 	}, 1000);
 }
 
 
 //放div class
-divset = document.getElementsByClassName("postdiv");
+divset = document.getElementsByClassName("container");
 for (var i = 0; i < divset.length; i++) {
 	divset[i].style.visibility = "hidden";
 }
 
-function fcpostdiv() {
+function fccontainer() {
 	setTimeout(function() {
-		divset = document.getElementsByClassName("postdiv");
+		divset = document.getElementsByClassName("container");
 		for (var i = 0; i < divset.length; i++) divset[i].style.visibility = "visible";
 	}, 1000)
 }

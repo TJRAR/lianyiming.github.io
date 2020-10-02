@@ -12,7 +12,7 @@
 
 /*中等屏幕下(平板类)的样式*/
 
-@media only screen and (min-width: 600px) and (max-width: 692px) {
+@media only screen and (min-width: 600px) and (max-width: 992px) {
 	.container {
 		width: 90%;
 	}
@@ -766,7 +766,7 @@ header .go-back i {
 
 /*中等屏幕下(平板类)的样式*/
 
-@media only screen and (min-width: 600px) and (max-width: 692px) {
+@media only screen and (min-width: 600px) and (max-width: 992px) {
 	.index-card .card .card-content {
 		padding: 20px 20px;
 	}
@@ -1147,7 +1147,7 @@ article .article-tags .chip {
 	}
 }
 
-@media only screen and (min-width: 600px) and (max-width: 692px) {
+@media only screen and (min-width: 600px) and (max-width: 992px) {
 	#artDetail .article-card-content {
 		padding: 0 30px 20px 32px;
 	}

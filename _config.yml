@@ -106,10 +106,26 @@ page-mathjax: true
 # Friends
 friends: [
   {
-         title: "",
-         href: ""
+         title: "~鲸一",
+         href: "https://www.saroin.com/"
      },
- 
+ {
+         title: "~哎呦哎呦",
+         href: "https://iuiu.run/"
+     },
+ {
+         title: "~君也小白",
+         href: "https://blog.jyxb.net/?"
+     },
+ {
+         title: "~Kif Room",
+         href: "https://www.kifroom.icu/#"
+     },
+ {
+         title: "~Xu Yiyang",
+         href: "https://blog.xuyiyang.top/"
+     },
+
 ]
 friend1: [
  {

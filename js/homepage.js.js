@@ -1,3 +1,4 @@
+//放div id
 document.getElementById("intro-header").style.visibility = "hidden";
 
 function fclist() {
@@ -16,7 +17,7 @@ function fcceil() {
 }
 
 
-
+//放div class
 divset = document.getElementsByClassName("postdiv");
 for (var i = 0; i < divset.length; i++) {
 	divset[i].style.visibility = "hidden";

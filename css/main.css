@@ -1816,7 +1816,7 @@ pre .javascript .function {
 .content {
   padding-top: 40px;
 }
-@media (min-width: 992px) {
+@media (min-width: 692px) {
   .post-body {
     text-align: justify;
   }

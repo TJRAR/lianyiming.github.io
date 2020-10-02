@@ -14,7 +14,7 @@ header-img: "img/post-bg-rwd.jpg"
 <head>
 	<style>
 
-#jiv{
+		#jiv{
             width: 60px;height: 60px;border: 1px solid #444;
             border-radius: 100%;
 			overflow: hidden;
@@ -71,86 +71,93 @@ header-img: "img/post-bg-rwd.jpg"
         }
 </style>
 	<script>
-	    document.addEventListener('DOMContentLoaded', initLiveDay);
-	    function initLiveDay() {
-	        const birthTime = '2015/2/21 10:23:12';
-	        const template = (A, B, C, D) => `本站已勉强生存 ${A}天 ${B}时 ${C}分 ${D}秒.`;
-	
-	        /* 锚点开始 */
-	        const container = footer.querySelector('.container');
-	        const p = document.createElement('p');
-	        container.insertBefore(p, container.firstElementChild);
-	        /* 锚点结束*/
-	
-	        const msoad = 24 * 60 * 60 * 1000;
-	        const warp = n => n > 9 ? n : '0' + n;
-	        const toInt = n => warp(Math.floor(n));
-	        setInterval(() => {
-	            const lived = new Date() - new Date(birthTime);
-	            const days = lived / msoad;
-	            const intDays = toInt(days);
-	            const hours = (days - intDays) * 24;
-	            const intHours = toInt(hours);
-	            const minutes = (hours - intHours) * 60;
-	            const intMinutes = toInt(minutes);
-	            const seconds = (minutes - intMinutes) * 60;
-	            const intSeconds = toInt(seconds);
-	            p.innerHTML = template(intDays, intHours, intMinutes, intSeconds);
-	        }, 1000);
-	    }
+		document.addEventListener('DOMContentLoaded', initLiveDay);
+
+		function initLiveDay() {
+			const birthTime = '2015/2/21 10:23:12';
+			const template = (A, B, C, D) => `本站已勉强生存 ${A}天 ${B}时 ${C}分 ${D}秒.`;
+
+			/* 锚点开始 */
+			const container = footer.querySelector('.container');
+			const p = document.createElement('p');
+			container.insertBefore(p, container.firstElementChild);
+			/* 锚点结束*/
+
+			const msoad = 24 * 60 * 60 * 1000;
+			const warp = n => n > 9 ? n : '0' + n;
+			const toInt = n => warp(Math.floor(n));
+			setInterval(() => {
+				const lived = new Date() - new Date(birthTime);
+				const days = lived / msoad;
+				const intDays = toInt(days);
+				const hours = (days - intDays) * 24;
+				const intHours = toInt(hours);
+				const minutes = (hours - intHours) * 60;
+				const intMinutes = toInt(minutes);
+				const seconds = (minutes - intMinutes) * 60;
+				const intSeconds = toInt(seconds);
+				p.innerHTML = template(intDays, intHours, intMinutes, intSeconds);
+			}, 1000);
+		}
 	</script>
 </head>
 <!-- Chinese Version -->
-	<!--copied from markdown -->
-	<br>
-	<!--<a href="https://orxing.top/nav/"><img src="/img/avatar-by.jpg" width="117" height="152" alt="Me!" border-radius=200px;></a>-->
-	<blockquote>
-		<p>冰冻三尺 非一日之寒<br>
-			积土成山 非斯须之作<br>
-				
-			<div id="div" >
-				<!--<a href="https://orxing.top/nav/"><img   src="/img/avatar-by.jpg" width="117" height="152" alt="Me!" ></a>-->
-			</div>
-			<div class="zh post-container">
-				</p>
+<!--copied from markdown -->
+<br>
+<!--<a href="https://orxing.top/nav/"><img src="/img/avatar-by.jpg" width="117" height="152" alt="Me!" border-radius=200px;></a>-->
+<blockquote>
+	<p>冰冻三尺 非一日之寒<br>
+		积土成山 非斯须之作<br>
+
+		<div id="div">
+			<!--<a href="https://orxing.top/nav/"><img   src="/img/avatar-by.jpg" width="117" height="152" alt="Me!" ></a>-->
+		</div>
+		<div class="zh post-container">
+	</p>
 	<!--三个属性缺一不可，前边也需要一个斜杠-->
-	<blockquote><p>&nbsp Hey，我是<strong>廉一鸣</strong>，一只初四斜杠学生</p>
-	<hr>
-	<p>感谢你来到这里吖(◍˃̶ᗜ˂̶◍)✩~
-		
-		<br />
-	网站のApp--<strong><a href="https://wwe.lanzous.com/iIwtBh326pi">Lianyiming.apk</a></strong>
-		<br />
-		网站の源码--<strong><a href="{{ site.github_repo }}">Github·Lianyiming.github.io</a></strong>
+	<blockquote>
+		<p>&nbsp Hey，我是<strong>廉一鸣</strong>，一只初四斜杠学生</p>
+		<hr>
+		<p>感谢你来到这里吖(◍˃̶ᗜ˂̶◍)✩~
+
 			<br />
-		网站的Appの源码--<a href="https://github.com/LianYiMing/LianYiMing.apk">Github·LianYiMing.apk</a>
-		<br />
-		<blockquote>
-				<h4><strong>Dear 陌生人</strong><h4>
-			<hr>
-		<h5>
-	
+			网站のApp--<strong><a href="https://wwe.lanzous.com/iIwtBh326pi">Lianyiming.apk</a></strong>
 			<br />
-		见字如晤	<br />
-		这里是廉一鸣的の公众号小窝	<br />
-		也是更新的大本营	<br />
-		Everyday	<br />
-		都会与你聊聊最近的学习心得	<br />
-		☞最重要的是→绝对说人话，小白向，每一个系列都是写给零基础的小白的入门专辑	<br />
-		And	<br />
-		会以日更的形式，每天聊两篇	<br />
-		ᝰ→第1篇是实战	<br />
-		ᝰ→第2篇是为之后做铺垫的理论or让人脑爆的n.技术名词	<br />
-		IN THE END :感谢大佬的关注	<br />
-		廉一鸣	<br />
-		<hr>分割线	<br />
-		1.电报群(挂梯子后<a href ="https://t.me/LianYiMing">点击</a>加入):	<br />
-		https://t.me/LianYiMing『Intro』:里边有自己觉得很实用的资源(基本都是破解哈哈哈)	<br />
-		2.大本营:(<a href ="https://www.lianyiming.com/">窝の博客</a>):	<br />
-		https://www.lianyiming.com/	<br />
-		『Intro』:里边会把各个平台输出的内容汇集一下，算是个归档，欢迎来瞅瞅吖~	<br />
-		3.窝的APP(<a href ="https://wwe.lanzous.com/iIwtBh326pi">阔以点击 </a>下载瞅瞅呢)	<br />
-		https://wwe.lanzous.com/iIwtBh326pi	<br />
+			网站の源码--<strong><a href="{{ site.github_repo }}">Github·Lianyiming.github.io</a></strong>
+			<br />
+			网站的Appの源码--<a href="https://github.com/LianYiMing/LianYiMing.apk">Github·LianYiMing.apk</a>
+			<br />
+			<blockquote>
+				<h4><strong>Dear 陌生人</strong>
+					<h4>
+						<hr>
+						<h5>
+			</blockquote>
+	</blockquote>
+</blockquote>
+</blockquote>
+
+<br />
+<strong>见字如晤 </strong><br />
+这里是廉一鸣的の公众号小窝 <br />
+也是更新的大本营 <br />
+Everyday <br />
+都会与你聊聊最近的学习心得 <br />
+☞最重要的是→绝对说人话，小白向，每一个系列都是写给零基础的小白的入门专辑 <br />
+And <br />
+会以日更的形式，每天聊两篇 <br />
+ᝰ→第1篇是实战 <br />
+ᝰ→第2篇是为之后做铺垫的理论or让人脑爆的n.技术名词 <br />
+IN THE END :感谢大佬的关注 <br />
+廉一鸣 <br />
+<hr>分割线 <br />
+1.电报群(挂梯子后<a href="https://t.me/LianYiMing">点击</a>加入): <br />
+https://t.me/LianYiMing『Intro』:里边有自己觉得很实用的资源(基本都是破解哈哈哈) <br />
+2.大本营:(<a href="https://www.lianyiming.com/">窝の博客</a>): <br />
+https://www.lianyiming.com/ <br />
+『Intro』:里边会把各个平台输出的内容汇集一下，算是个归档，欢迎来瞅瞅吖~ <br />
+3.窝的APP(<a href="https://wwe.lanzous.com/iIwtBh326pi">阔以点击 </a>下载瞅瞅呢) <br />
+https://wwe.lanzous.com/iIwtBh326pi <br />
 </h5>
 </div>
 
@@ -163,7 +170,7 @@ header-img: "img/post-bg-rwd.jpg"
 
     <p>This is my personal blog, through making Github Pages and Jekyll.My GitHub  👉 <a href="http://github.com/lianyiming">Github·LY</a>.</p>
   -->
-  <!--  <h4>Dear Friends</h4>
+<!--  <h4>Dear Friends</h4>
 
   <blockquote>  <ul>
 <h5><a href=""> </a></h5><div id="aiv" >
@@ -186,7 +193,7 @@ header-img: "img/post-bg-rwd.jpg"
 				
 			</div></li>
 	<!--仔细看-->
-  <!--  <li><a href=""></a></li>
+<!--  <li><a href=""></a></li>
     </ul>
 </div>
 -->
@@ -228,92 +235,99 @@ header-img: "img/post-bg-rwd.jpg"
 
 	// init
 	_render();
-	
-	
-	<script>
-	
-	    // 鼠标点击爱心特效
-	!function (e, t, a) {
-	        function r() {
-	            for (var e = 0; e < s.length; e++) {
-	                s[e].alpha <= 0 ? (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[e].y--, s[e].scale += .004, s[e].alpha -= .013, s[e].el.style.cssText = "left:" + s[e].x + "px;top:" + s[e].y + "px;opacity:" + s[e].alpha + ";transform:scale(" + s[e].scale + "," + s[e].scale + ") rotate(45deg);background:" + s[e].color + ";z-index:99999");
-	            }
-	            requestAnimationFrame(r)
-	        }
-	
-	        function n() {
-	            var t = "function" == typeof e.onclick && e.onclick;
-	            e.onclick = function (e) {
-	                t && t(),
-	                    o(e)
-	            }
-	        }
-	
-	        function o(e) {
-	            var a = t.createElement("div");
-	            a.className = "heart",
-	                s.push({
-	                    el: a,
-	                    x: e.clientX - 5,
-	                    y: e.clientY - 5,
-	                    scale: 1,
-	                    alpha: 1,
-	                    color: c()
-	                }),
-	                t.body.appendChild(a)
-	        }
-	
-	        function i(e) {
-	            var a = t.createElement("style");
-	            a.type = "text/css";
-	            try {
-	                a.appendChild(t.createTextNode(e))
-	            } catch (t) {
-	                a.styleSheet.cssText = e
-	            }
-	            t.getElementsByTagName("head")[0].appendChild(a)
-	        }
-	
-	        function c() {
-	            return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")"
-	        }
-	
-	        var s = [];
-	        e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame ||
-	            function (e) {
-	                setTimeout(e, 1e3 / 60)
-	            },
-	            i(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"),
-	            n(),
-	            r()
-	    }(window, document);
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+	<
+	script >
+
+		// 鼠标点击爱心特效
+		! function(e, t, a) {
+			function r() {
+				for (var e = 0; e < s.length; e++) {
+					s[e].alpha <= 0 ? (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[e].y--, s[e].scale += .004, s[e].alpha -=
+						.013, s[e].el.style.cssText = "left:" + s[e].x + "px;top:" + s[e].y + "px;opacity:" + s[e].alpha +
+						";transform:scale(" + s[e].scale + "," + s[e].scale + ") rotate(45deg);background:" + s[e].color +
+						";z-index:99999");
+				}
+				requestAnimationFrame(r)
+			}
+
+			function n() {
+				var t = "function" == typeof e.onclick && e.onclick;
+				e.onclick = function(e) {
+					t && t(),
+						o(e)
+				}
+			}
+
+			function o(e) {
+				var a = t.createElement("div");
+				a.className = "heart",
+					s.push({
+						el: a,
+						x: e.clientX - 5,
+						y: e.clientY - 5,
+						scale: 1,
+						alpha: 1,
+						color: c()
+					}),
+					t.body.appendChild(a)
+			}
+
+			function i(e) {
+				var a = t.createElement("style");
+				a.type = "text/css";
+				try {
+					a.appendChild(t.createTextNode(e))
+				} catch (t) {
+					a.styleSheet.cssText = e
+				}
+				t.getElementsByTagName("head")[0].appendChild(a)
+			}
+
+			function c() {
+				return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")"
+			}
+
+			var s = [];
+			e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame ||
+				e.oRequestAnimationFrame || e.msRequestAnimationFrame ||
+				function(e) {
+					setTimeout(e, 1e3 / 60)
+				},
+				i(
+					".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"
+				),
+				n(),
+				r()
+		}(window, document);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	function updateCoords(e) {
 		pointerX = (e.clientX || e.touches[0].clientX) - canvasEl.getBoundingClientRect().left, pointerY = e.clientY || e.touches[
 			0].clientY - canvasEl.getBoundingClientRect().top
 	}
-	
+
 	function setParticuleDirection(e) {
 		var t = anime.random(0, 360) * Math.PI / 180,
 			a = anime.random(50, 180),
@@ -323,7 +337,7 @@ header-img: "img/post-bg-rwd.jpg"
 			y: e.y + n * Math.sin(t)
 		}
 	}
-	
+
 	function createParticule(e, t) {
 		var a = {};
 		return a.x = e, a.y = t, a.color = colors[anime.random(0, colors.length - 1)], a.radius = anime.random(16, 32), a.endPos =
@@ -331,7 +345,7 @@ header-img: "img/post-bg-rwd.jpg"
 				ctx.beginPath(), ctx.arc(a.x, a.y, a.radius, 0, 2 * Math.PI, !0), ctx.fillStyle = a.color, ctx.fill()
 			}, a
 	}
-	
+
 	function createCircle(e, t) {
 		var a = {};
 		return a.x = e, a.y = t, a.color = "#F00", a.radius = 0.1, a.alpha = 0.5, a.lineWidth = 6, a.draw = function() {
@@ -339,13 +353,13 @@ header-img: "img/post-bg-rwd.jpg"
 				ctx.strokeStyle = a.color, ctx.stroke(), ctx.globalAlpha = 1
 		}, a
 	}
-	
+
 	function renderParticule(e) {
 		for (var t = 0; t < e.animatables.length; t++) {
 			e.animatables[t].target.draw()
 		}
 	}
-	
+
 	function animateParticules(e, t) {
 		for (var a = createCircle(e, t), n = [], i = 0; i < numberOfParticules; i++) {
 			n.push(createParticule(e, t))
@@ -377,7 +391,7 @@ header-img: "img/post-bg-rwd.jpg"
 			offset: 0
 		})
 	}
-	
+
 	function debounce(e, t) {
 		var a;
 		return function() {
@@ -411,13 +425,13 @@ header-img: "img/post-bg-rwd.jpg"
 				(render.play(), updateCoords(e), animateParticules(pointerX, pointerY))
 		}, !1), setCanvasSize(), window.addEventListener("resize", setCanvasSize, !1)
 	}
-	
-	
+
+
 	function updateCoords(e) {
 		pointerX = (e.clientX || e.touches[0].clientX) - canvasEl.getBoundingClientRect().left, pointerY = e.clientY || e.touches[
 			0].clientY - canvasEl.getBoundingClientRect().top
 	}
-	
+
 	function setParticuleDirection(e) {
 		var t = anime.random(0, 360) * Math.PI / 180,
 			a = anime.random(50, 180),
@@ -427,7 +441,7 @@ header-img: "img/post-bg-rwd.jpg"
 			y: e.y + n * Math.sin(t)
 		}
 	}
-	
+
 	function createParticule(e, t) {
 		var a = {};
 		return a.x = e, a.y = t, a.color = colors[anime.random(0, colors.length - 1)], a.radius = anime.random(16, 32), a.endPos =
@@ -435,7 +449,7 @@ header-img: "img/post-bg-rwd.jpg"
 				ctx.beginPath(), ctx.arc(a.x, a.y, a.radius, 0, 2 * Math.PI, !0), ctx.fillStyle = a.color, ctx.fill()
 			}, a
 	}
-	
+
 	function createCircle(e, t) {
 		var a = {};
 		return a.x = e, a.y = t, a.color = "#F00", a.radius = 0.1, a.alpha = 0.5, a.lineWidth = 6, a.draw = function() {
@@ -443,13 +457,13 @@ header-img: "img/post-bg-rwd.jpg"
 				ctx.strokeStyle = a.color, ctx.stroke(), ctx.globalAlpha = 1
 		}, a
 	}
-	
+
 	function renderParticule(e) {
 		for (var t = 0; t < e.animatables.length; t++) {
 			e.animatables[t].target.draw()
 		}
 	}
-	
+
 	function animateParticules(e, t) {
 		for (var a = createCircle(e, t), n = [], i = 0; i < numberOfParticules; i++) {
 			n.push(createParticule(e, t))
@@ -481,7 +495,7 @@ header-img: "img/post-bg-rwd.jpg"
 			offset: 0
 		})
 	}
-	
+
 	function debounce(e, t) {
 		var a;
 		return function() {
@@ -515,9 +529,8 @@ header-img: "img/post-bg-rwd.jpg"
 				(render.play(), updateCoords(e), animateParticules(pointerX, pointerY))
 		}, !1), setCanvasSize(), window.addEventListener("resize", setCanvasSize, !1)
 	};
-	
-	</script>
-	
+</script>
+
 </script>
 
 
@@ -577,5 +590,5 @@ header-img: "img/post-bg-rwd.jpg"
 
 
 
-      </div>
-    </main>
+</div>
+</main>

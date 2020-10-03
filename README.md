@@ -10,8 +10,7 @@
  [![Gitter](https://img.shields.io/gitter/room/lianyiming-github-io/main.svg)](https://gitter.im/lianyiming-github-io/community)
 [![Awesome](https://camo.githubusercontent.com/1997c7e760b163a61aba3a2c98f21be8c524be29/68747470733a2f2f617765736f6d652e72652f62616467652e737667)](https://awesome.re/)
 ![GitHub tag](https://img.shields.io/github/tag/meteor/meteor.svg)
-
-
+![GitHub release](https://img.shields.io/github/release/facebook/react.svg) 
 
 
 

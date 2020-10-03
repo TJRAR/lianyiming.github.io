@@ -1,4 +1,69 @@
 
+.highlighter-rouge .highlight pre {
+	font-size: 14px;
+	line-height: 1.5;
+	color: #555;
+	background: 0 0;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	word-wrap: normal
+}
+
+.highlighter-rouge .highlight .rouge-table .rouge-gutter,
+.highlighter-rouge .highlight .rouge-table .rouge-code {
+	border: 0 !important
+}
+
+.highlighter-rouge .highlight .rouge-code pre {
+	color: #abb2bf
+}
+
+.highlighter-rouge .highlight .table-responsive {
+	margin: 0;
+	border: 0
+}
+
+.highlighter-rouge .highlight .table {
+	margin: 0;
+	table-layout: fixed
+}
+
+.highlighter-rouge .highlight table>tbody>tr>td {
+	margin: 0;
+	border: 0;
+	padding: 0
+}
+
+.highlighter-rouge .highlight table>tbody>tr>td>pre {
+	padding: 14px
+}
+
+.highlighter-rouge .highlight td.rouge-gutter {
+	width: 56px
+}
+
+.highlighter-rouge .highlight .lineno {
+	text-align: right;
+	border-radius: 0
+}
+
+@media (max-width:480px) {
+	.highlighter-rouge .highlight {
+		margin-left: -15px;
+		margin-right: -15px;
+		border-radius: 0
+	}
+
+	.highlighter-rouge .highlight td.rouge-gutter {
+		width: 36px
+	}
+
+	.highlighter-rouge .highlight table>tbody>tr>td>pre {
+		padding: 14px 10px
+	}
+}
+
 .search-page {
 	position: fixed;
 	top: 0;
@@ -96,7 +161,297 @@
 }
 
 body {
-	
+	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+	line-height: 1.7;
+	font-size: 16px;
+	color: #404040;
+	overflow-x: hidden;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
+}
+
+p {
+	margin: 30px 0
+}
+
+@media screen and (max-width:768px) {
+	p {
+		margin: 25px 0
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+	line-height: 1.7;
+	line-height: 1.1;
+	font-weight: 700
+}
+
+h4 {
+	font-size: 21px
+}
+
+a {
+	color: #404040
+}
+
+a:hover,
+a:focus {
+	color: #0085a1
+}
+
+a img:hover,
+a img:focus {
+	cursor: zoom-in
+}
+
+article {
+	overflow: hidden
+}
+
+blockquote {
+	color: gray;
+	font-style: italic;
+	font-size: .95em;
+	margin: 20px 0 20px
+}
+
+blockquote p {
+	margin: 0
+}
+
+small.img-hint {
+	display: block;
+	margin-top: -20px;
+	text-align: center
+}
+
+br+small.img-hint {
+	margin-top: -40px
+}
+
+img.shadow {
+	box-shadow: rgba(0, 0, 0, .258824) 0 2px 5px 0
+}
+
+select {
+	-webkit-appearance: none;
+	margin-top: 15px;
+	color: #337ab7;
+	border-color: #337ab7;
+	padding: 0 .4em;
+	background: #fff
+}
+
+select.sel-lang {
+	min-height: 28px;
+	font-size: 14px
+}
+
+table {
+	margin-top: 10px
+}
+
+table.table>tbody th,
+table.table>thead th,
+table.table>tbody td,
+table.table>thead td {
+	border: 1px solid #eee !important
+}
+
+@media screen and (max-width:767px) {
+	.table-responsive {
+		border: 0
+	}
+}
+
+hr.small {
+	max-width: 100px;
+	margin: 15px auto;
+	border-width: 4px;
+	border-color: #fff
+}
+
+pre,
+.table-responsive {
+	-webkit-overflow-scrolling: touch
+}
+
+pre code {
+	display: block;
+	width: auto;
+	white-space: pre;
+	word-wrap: normal
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: "Fira Code", Menlo, Monaco, Consolas, "Courier New", monospace
+}
+
+.postlist-container {
+	margin-bottom: 15px
+}
+
+.post-container a {
+	color: #337ab7
+}
+
+.post-container a:hover,
+.post-container a:focus {
+	color: #0085a1
+}
+
+.post-container h1,
+.post-container h2,
+.post-container h3,
+.post-container h4,
+.post-container h5,
+.post-container h6 {
+	margin: 50px 0 20px;
+	line-height: 1.4
+}
+
+.post-container h1+p,
+.post-container h2+p,
+.post-container h3+p,
+.post-container h4+p,
+.post-container h5+p,
+.post-container h6+p {
+	margin-top: 20px
+}
+
+.post-container h2::before {
+	content: " ";
+	display: block;
+	border-bottom: 1px solid #ececec;
+	margin-top: 44px;
+	margin-bottom: 30px
+}
+
+.post-container h4 {
+	font-size: 22px;
+	font-weight: 600;
+	color: gray
+}
+
+.post-container h4+p {
+	margin-top: 10px
+}
+
+.post-container h5,
+.post-container h6 {
+	font-size: 20px;
+	font-weight: 600;
+	color: gray
+}
+
+.post-container h5+p,
+.post-container h6+p {
+	margin-top: 10px
+}
+
+@media screen and (max-width:768px) {
+	.post-container h1 {
+		font-size: 30px
+	}
+
+	.post-container h2 {
+		font-size: 22px
+	}
+
+	.post-container h3 {
+		font-size: 20px
+	}
+
+	.post-container h4 {
+		font-size: 19px
+	}
+
+	.post-container h5,
+	.post-container h6 {
+		font-size: 18px
+	}
+}
+
+.post-container ul,
+.post-container ol {
+	margin-bottom: 40px
+}
+
+@media screen and (max-width:768px) {
+
+	.post-container ul,
+	.post-container ol {
+		padding-left: 30px
+	}
+}
+
+@media screen and (max-width:500px) {
+
+	.post-container ul,
+	.post-container ol {
+		padding-left: 20px
+	}
+}
+
+.post-container ol ol,
+.post-container ol ul,
+.post-container ul ol,
+.post-container ul ul {
+	margin-bottom: 5px
+}
+
+.post-container li p {
+	margin: 0;
+	margin-bottom: 5px
+}
+
+.post-container li h1,
+.post-container li h2,
+.post-container li h3,
+.post-container li h4,
+.post-container li h5,
+.post-container li h6 {
+	line-height: 2;
+	margin-top: 20px
+}
+
+.post-container .pager li {
+	width: 48%
+}
+
+.post-container .pager li.next {
+	float: right
+}
+
+.post-container .pager li.previous {
+	float: left
+}
+
+.post-container .pager li>a {
+	width: 100%
+}
+
+.post-container .pager li>a>span {
+	color: #a3a3a3;
+	font-weight: 400;
+	letter-spacing: .5px
+}
+
+.post-container .anchorjs-link {
+	position: absolute;
+	text-decoration: none !important
+}
+
 @media only screen and (max-width:767px) {
 	.navbar-default .navbar-collapse {
 		position: absolute;
@@ -310,6 +665,220 @@ body {
 	}
 }
 
+.intro-header {
+	background: no-repeat center center;
+	background-color: #a3a3a3;
+	background-attachment: scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	margin-bottom: 0
+}
+
+.intro-header.style-text {
+	background: 0 0
+}
+
+.intro-header.style-text .site-heading,
+.intro-header.style-text .post-heading,
+.intro-header.style-text .page-heading {
+	padding: 85px 0 20px;
+	color: #404040
+}
+
+.intro-header.style-text .site-heading .subheading,
+.intro-header.style-text .post-heading .subheading,
+.intro-header.style-text .page-heading .subheading {
+	margin-bottom: 15px
+}
+
+.intro-header.style-text .tags a,
+.intro-header.style-text .tags .tag {
+	border-color: #404040;
+	color: #404040
+}
+
+.intro-header.style-text .tags a:hover,
+.intro-header.style-text .tags .tag:hover,
+.intro-header.style-text .tags a:active,
+.intro-header.style-text .tags .tag:active {
+	background-color: rgba(0, 0, 0, .05)
+}
+
+@media only screen and (min-width:768px) {
+	.intro-header {
+		margin-bottom: 20px
+	}
+}
+
+.intro-header .site-heading,
+.intro-header .post-heading,
+.intro-header .page-heading {
+	padding: 85px 0 55px;
+	color: #fff
+}
+
+@media only screen and (min-width:768px) {
+
+	.intro-header .site-heading,
+	.intro-header .post-heading,
+	.intro-header .page-heading {
+		padding: 150px 0
+	}
+}
+
+.intro-header .site-heading {
+	padding: 95px 0 70px
+}
+
+@media only screen and (min-width:768px) {
+	.intro-header .site-heading {
+		padding: 150px 0
+	}
+}
+
+.intro-header .site-heading,
+.intro-header .page-heading {
+	text-align: center
+}
+
+.intro-header .site-heading h1,
+.intro-header .page-heading h1 {
+	margin-top: 0;
+	font-size: 50px
+}
+
+.intro-header .site-heading .subheading,
+.intro-header .page-heading .subheading {
+	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+	line-height: 1.7;
+	font-size: 18px;
+	line-height: 1.1;
+	display: block;
+	font-weight: 300;
+	margin: 10px 0 0
+}
+
+@media only screen and (min-width:768px) {
+
+	.intro-header .site-heading h1,
+	.intro-header .page-heading h1 {
+		font-size: 80px
+	}
+}
+
+.intro-header .post-heading h1 {
+	font-size: 30px;
+	margin-bottom: 24px
+}
+
+.intro-header .post-heading .subheading,
+.intro-header .post-heading .meta {
+	line-height: 1.1;
+	display: block
+}
+
+.intro-header .post-heading .subheading {
+	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+	line-height: 1.7;
+	font-size: 17px;
+	line-height: 1.4;
+	font-weight: 400;
+	margin: 10px 0 30px;
+	margin-top: -5px
+}
+
+.intro-header .post-heading .meta {
+	font-family: Lora, 'Times New Roman', serif;
+	font-style: italic;
+	font-weight: 300;
+	font-size: 16px
+}
+
+.intro-header .post-heading .meta a {
+	color: #fff
+}
+
+@media only screen and (min-width:768px) {
+	.intro-header .post-heading h1 {
+		font-size: 55px
+	}
+
+	.intro-header .post-heading .subheading {
+		font-size: 30px
+	}
+
+	.intro-header .post-heading .meta {
+		font-size: 20px
+	}
+}
+
+.intro-header .header-img-credit {
+	position: absolute;
+	bottom: 6px;
+	right: 9px;
+	color: #fff;
+	opacity: .3;
+	font-size: 10px;
+	z-index: 1
+}
+
+.intro-header .header-img-credit a {
+	color: #fff
+}
+
+@media only screen and (min-width:768px) {
+	.intro-header .header-img-credit {
+		font-size: 12px;
+		bottom: 10px;
+		right: 15px
+	}
+}
+
+.post-preview>a {
+	color: #404040
+}
+
+.post-preview>a:hover,
+.post-preview>a:focus {
+	text-decoration: none;
+	color: #0085a1
+}
+
+.post-preview>a>.post-title {
+	font-size: 21px;
+	line-height: 1.3;
+	margin-top: 30px;
+	margin-bottom: 8px
+}
+
+.post-preview>a>.post-subtitle {
+	font-size: 15px;
+	line-height: 1.3;
+	margin: 0;
+	font-weight: 300;
+	margin-bottom: 10px
+}
+
+.post-preview>.post-meta {
+	font-family: Lora, 'Times New Roman', serif;
+	color: #a3a3a3;
+	font-size: 16px;
+	font-style: italic;
+	margin-top: 0
+}
+
+.post-preview>.post-meta>a {
+	text-decoration: none;
+	color: #404040
+}
+
+.post-preview>.post-meta>a:hover,
+.post-preview>.post-meta>a:focus {
+	color: #0085a1;
+	text-decoration: underline
+}
 
 @media only screen and (min-width:768px) {
 	.post-preview>a>.post-title {

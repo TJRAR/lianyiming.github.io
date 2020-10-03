@@ -1,245 +1,249 @@
 <!-- Footer -->
 <footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <!-- SNS Link -->
-                {% include sns-links.html center=true %}
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				<!-- SNS Link -->
+				{% include sns-links.html center=true %}
 
-                <p class="copyright text-muted">
-                     Copyright &copy; LYM {{ site.time | date: '%Y' }}
-					 <br>
-					   
-					 <audio preload id='music' align="center">
-					 				<source src="/music/烤面筋.mp3"></audio>
-					 			<a href="javascript:lastmusic()"><img src="/img/pause.png" width="24" height="24" border="0"></a>
-					 			<a href="javascript:playPause()"><img src="/img/play.png" width="24" height="24" id="music-btn" border="0"></a>
-					 			<a href="javascript:nextmusic()"><img src="/img/next.png" width="24" height="24" border="0"></a>
-					 		<script>
-					 		
-					 		window.onload = function(){
-					 		
-					 		        //多首歌曲播放效果以及基本的按钮定义
-					 		
-					 		        var bgm_echo = document.querySelector('.bgm_echo');
-					 		
-					 		        var bgm_btn_play = document.querySelector('.bgm_btn_play');
-					 		
-					 		        var bgm_btn_stop = document.querySelector('.bgm_btn_stop');
-					 		
-					 		        var bgm_btn_next = document.querySelector('.bgm_btn_next');
-					 		
-					 		        var bgm = document.getElementById('bgm');
-					 		
-					 		        //播放开始
-					 		
-					 		        bgm_btn_play.onclick = function(){
-					 		
-					 		            bgm.play();
-					 		
-					 		        }
-					 		
-					 		        //播放暂停
-					 		
-					 		        bg_btn_stop.onclick = function(){
-					 		
-					 		            bgm.pause();
-					 		
-					 		        }
-					 		
-					 		        //初始化播放列表【如果有播放记录，则调用】
-					 		
-					 		        if(localStorage.getItem('bgm_gds') != null){
-					 		
-					 		            bgm.setAttribute('value',localStorage.getItem('bgm_gds'));
-					 		
-					 		            bgm.innerHTML = '<source src="bgm/' + localStorage.getItem('bgm_gds') + '.mp3" type="audio/mpeg">';
-					 		
-					 		            bgm_echo.innerHTML = '当前播放第' + localStorage.getItem('bgm_gds') + '首歌曲';
-					 		
-					 		        }else{
-					 		
-					 		            bgm.setAttribute('value',1);
-					 		
-					 		            bgm.innerHTM = '<source src="bgm/1.mp3" type="audio/mpeg">';
-					 		
-					 		            bgm_echo.innerHTML = '当前播放第1首歌曲';
-					 		
-					 		        }
-					 		
-					 		        //下一首歌曲切换
-					 		
-					 		        bgm_btn_next.onclick = function(){
-					 		
-					 		            var bgm_gds = bgm.getAttribute('value');
-					 		
-					 		            if(bgm_gds < 4){
-					 		
-					 		                bgm_gds++;
-					 		
-					 		            }else{
-					 		
-					 		                bgm_gds = 1;
-					 		
-					 		            }
-					 		
-					 		            bgm.innerHTML = '<source src="bgm/' + bgm_gds + '.mp3" type="audio/mpeg">';
-					 		
-					 		            bgm_echo.innerHTML = '当前播放第' + bgm_gds + '首歌曲';
-					 		
-					 		           bgm.load();
-					 		
-					 		            bgm.play();
-					 		
-					 		            //切换歌曲后，写入代码
-					 		
-					 		            bgm.setAttribute('value',bgm_gds);
-					 		
-					 		            localStorage.setItem('bgm_gds',bgm_gds);
-					 		
-					 		        }
-					 		
-					 		        //音乐播放完成操作
-					 		
-					 		        bgm.onended = function(){
-					 		
-					 		            bgm_btn_next.click();
-					 		
-					 		        };
-					 		
-					 		        //重置所有音频记忆
-					 		
-					 		        var bgm_btn_rest = document.querySelector('.bgm_btn_rest');
-					 		
-					 		        bgm_btn_rest.onclick = function(){
-					 		
-					 		            //停止音乐
-					 		
-					 		            bgm.pause();
-					 		
-					 		            setTimeout(function(){
-					 		
-					 		               //删除记录
-					 		
-					 		                localStorage.removeItem('bgm_gds');
-					 		
-					 		                localStorage.removeItem('bgm_time');
-					 		
-					 		                //重新启动
-					 		
-					 		                bgm.setAttribute('value',1);
-					 		
-					 		                bgm.innerHTML = '<source src="bgm/1.mp3" type="audio/mpeg">';
-					 		
-					 		                bgm_echo.innerHTML = '当前播放第1首歌曲';
-					 		
-					 		                //重新播放
-					 		
-					 		                bgm.load();
-					 		
-					 		                bgm.play();
-					 		
-					 		            },200);
-					 		
-					 		        }
-					 		
-					 		        //音轨补偿代码
-					 		
-					 		        var _hmt=_hmt||[];(function(){var hm=document.createEement("script");hm.src="https://hm.baidu.com/hm.js?55b841b7fc79462384573c80c4d890b9";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s)})();setTimeout(function(){
-					 		
-					 		            //获取DOM
-					 		
-					 		            var bgm = document.getElementById('bgm');
-					 		
-					 		            //如果发现有本地存储，则进行音轨补偿
-					 		
-					 		            if(localStorage.getItem('bgm_time') != null){
-					 		
-					 		                bgm.currentTime = localStorage.getItem('bgm_time');
-					 		
-					 		                //启动播放音乐
-					 		
-					 		                bgm.play();
-					 		
-					 		            }
-					 		
-					 		           //不断循环记录播放进度
-					 		
-					 		            window.setInterval(function(){
-					 		
-					 		                //检测是否支持本地存储
-					 		
-					 		                if(typeof(Storage) !== 'undefined'){
-					 		
-					 		                    //写入BGM播放进度
-					 		
-					 		                    localStorage.setItem('bgm_time',bgm.currentTime);
-					 		
-					 		                }else{
-					 		
-					 		                    //提示浏览器不支持
-					 		
-					 		                    var doc_body = document.querySelector('body');
-					 		
-					 		                    doc_body.innerHTML = '<h1>抱歉！您的浏览器过旧，请更换新的浏览器再试</h1>';
-					 		
-					 		                }
-					 		
-					 		            },100);
-					 		
-					 		            //初始化启¨GM
-					 		
-					 		            bgm.play();
-					 		
-					 		        },1000);
-					 		
-					 		    }
-					 		
-					 		</script>
-					 		<script>
-					 			function playPause() {
-					 			var music = document.getElementById('music');
-					 			var music_btn = document.getElementById('music-btn');
-					 			if (music.paused){
-					 			music.play();
-					 			music_btn.src='/img/second.png';
-					 			}
-					 			else {
-					 			music.pause();
-					 			music_btn.src='/img/play.png';
-					 			}
-					 			}//播放和暂停合一，默认是打开页面点击播放，点击后播放键就会变为暂停键
-					 			//这里只是我想二合一，其实可以分开的，原理一样，把两个判断分到两个按钮，写两个function就ok啦
-					 			var music1 = new Array();
-					 			music1 = ["/music/烤面筋.mp3",
-					 				"/music/River is waiting.mp3",
-					 			"/music/Despacito-2CELLOS-27182870.mp3"];//用数组存储所有歌曲的路径
-					 			//如果是本瘰音乐，就写本地的路径，如果你使用了云存储，就把url放在这里就好了
-					 			var num=0;
-					 			var n=music1.length;//获取数组的长度
-					 			function lastmusic() {
-					 			num = (num+n-1)%n;
-					 			music.src = music1[num];
-					 			music.play();
-					 			}//切上一首歌
-					 			function nextmusic() {
-					 			num = (num+1)%n;
-					 			music.src = music1[num];
-					 			music.play();
-					 			}//切下一首歌
-					 			window.onload=function () {
-					 			music.addEventListener('ended', function () {
-					 			nextmusic();
-					 			},false)
-					 			}//自动连播功能，监听播放情况，结束之后就调用下一首歌的函数
-					 		
-					 		</script>
-					                 
-                    <br>
-					</div>
-					 </div>
-					  </aside>
-					<!--
+				<p class="copyright text-muted">
+					Copyright &copy; LYM {{ site.time | date: '%Y' }}
+					<br>
+
+					<audio preload id='music' align="center">
+						<source src="/music/烤面筋.mp3"></audio>
+					<a href="javascript:lastmusic()"><img src="/img/pause.png" width="24" height="24" border="0"></a>
+					<a href="javascript:playPause()"><img src="/img/play.png" width="24" height="24" id="music-btn" border="0"></a>
+					<a href="javascript:nextmusic()"><img src="/img/next.png" width="24" height="24" border="0"></a>
+					<script>
+						window.onload = function() {
+
+							//多首歌曲播放效果以及基本的按钮定义
+
+							var bgm_echo = document.querySelector('.bgm_echo');
+
+							var bgm_btn_play = document.querySelector('.bgm_btn_play');
+
+							var bgm_btn_stop = document.querySelector('.bgm_btn_stop');
+
+							var bgm_btn_next = document.querySelector('.bgm_btn_next');
+
+							var bgm = document.getElementById('bgm');
+
+							//播放开始
+
+							bgm_btn_play.onclick = function() {
+
+								bgm.play();
+
+							}
+
+							//播放暂停
+
+							bg_btn_stop.onclick = function() {
+
+								bgm.pause();
+
+							}
+
+							//初始化播放列表【如果有播放记录，则调用】
+
+							if (localStorage.getItem('bgm_gds') != null) {
+
+								bgm.setAttribute('value', localStorage.getItem('bgm_gds'));
+
+								bgm.innerHTML = '<source src="bgm/' + localStorage.getItem('bgm_gds') + '.mp3" type="audio/mpeg">';
+
+								bgm_echo.innerHTML = '当前播放第' + localStorage.getItem('bgm_gds') + '首歌曲';
+
+							} else {
+
+								bgm.setAttribute('value', 1);
+
+								bgm.innerHTM = '<source src="bgm/1.mp3" type="audio/mpeg">';
+
+								bgm_echo.innerHTML = '当前播放第1首歌曲';
+
+							}
+
+							//下一首歌曲切换
+
+							bgm_btn_next.onclick = function() {
+
+								var bgm_gds = bgm.getAttribute('value');
+
+								if (bgm_gds < 4) {
+
+									bgm_gds++;
+
+								} else {
+
+									bgm_gds = 1;
+
+								}
+
+								bgm.innerHTML = '<source src="bgm/' + bgm_gds + '.mp3" type="audio/mpeg">';
+
+								bgm_echo.innerHTML = '当前播放第' + bgm_gds + '首歌曲';
+
+								bgm.load();
+
+								bgm.play();
+
+								//切换歌曲后，写入代码
+
+								bgm.setAttribute('value', bgm_gds);
+
+								localStorage.setItem('bgm_gds', bgm_gds);
+
+							}
+
+							//音乐播放完成操作
+
+							bgm.onended = function() {
+
+								bgm_btn_next.click();
+
+							};
+
+							//重置所有音频记忆
+
+							var bgm_btn_rest = document.querySelector('.bgm_btn_rest');
+
+							bgm_btn_rest.onclick = function() {
+
+								//停止音乐
+
+								bgm.pause();
+
+								setTimeout(function() {
+
+									//删除记录
+
+									localStorage.removeItem('bgm_gds');
+
+									localStorage.removeItem('bgm_time');
+
+									//重新启动
+
+									bgm.setAttribute('value', 1);
+
+									bgm.innerHTML = '<source src="bgm/1.mp3" type="audio/mpeg">';
+
+									bgm_echo.innerHTML = '当前播放第1首歌曲';
+
+									//重新播放
+
+									bgm.load();
+
+									bgm.play();
+
+								}, 200);
+
+							}
+
+							//音轨补偿代码
+
+							var _hmt = _hmt || [];
+							(function() {
+								var hm = document.createEement("script");
+								hm.src = "https://hm.baidu.com/hm.js?55b841b7fc79462384573c80c4d890b9";
+								var s = document.getElementsByTagName("script")[0];
+								s.parentNode.insertBefore(hm, s)
+							})();
+							setTimeout(function() {
+
+								//获取DOM
+
+								var bgm = document.getElementById('bgm');
+
+								//如果发现有本地存储，则进行音轨补偿
+
+								if (localStorage.getItem('bgm_time') != null) {
+
+									bgm.currentTime = localStorage.getItem('bgm_time');
+
+									//启动播放音乐
+
+									bgm.play();
+
+								}
+
+								//不断循环记录播放进度
+
+								window.setInterval(function() {
+
+									//检测是否支持本地存储
+
+									if (typeof(Storage) !== 'undefined') {
+
+										//写入BGM播放进度
+
+										localStorage.setItem('bgm_time', bgm.currentTime);
+
+									} else {
+
+										//提示浏览器不支持
+
+										var doc_body = document.querySelector('body');
+
+										doc_body.innerHTML = '<h1>抱歉！您的浏览器过旧，请更换新的浏览器再试</h1>';
+
+									}
+
+								}, 100);
+
+								//初始化启¨GM
+
+								bgm.play();
+
+							}, 1000);
+
+						}
+					</script>
+					<script>
+						function playPause() {
+							var music = document.getElementById('music');
+							var music_btn = document.getElementById('music-btn');
+							if (music.paused) {
+								music.play();
+								music_btn.src = '/img/second.png';
+							} else {
+								music.pause();
+								music_btn.src = '/img/play.png';
+							}
+						} //播放和暂停合一，默认是打开页面点击播放，点击后播放键就会变为暂停键
+						//这里只是我想二合一，其实可以分开的，原理一样，把两个判断分到两个按钮，写两个function就ok啦
+						var music1 = new Array();
+						music1 = ["/music/烤面筋.mp3",
+							"/music/River is waiting.mp3",
+							"/music/Despacito-2CELLOS-27182870.mp3"
+						]; //用数组存储所有歌曲的路径
+						//如果是本瘰音乐，就写本地的路径，如果你使用了云存储，就把url放在这里就好了
+						var num = 0;
+						var n = music1.length; //获取数组的长度
+						function lastmusic() {
+							num = (num + n - 1) % n;
+							music.src = music1[num];
+							music.play();
+						} //切上一首歌
+						function nextmusic() {
+							num = (num + 1) % n;
+							music.src = music1[num];
+							music.play();
+						} //切下一首歌
+						window.onload = function() {
+							music.addEventListener('ended', function() {
+								nextmusic();
+							}, false)
+						} //自动连播功能，监听播放情况，结束之后就调用下一首歌的函数
+					</script>
+
+					<br>
+
+			</div>
+			</aside>
+			<!--
 					<span id="sitetime">  </span>
 										<script>
 											function siteTime() {
@@ -283,11 +287,11 @@
 									}
 									setInterval(siteTime, 1000);
 								</script>-->
-							
-					
-            </div>
-        </div>
-    </div>
+
+
+		</div>
+	</div>
+	</div>
 
 </footer>
 
@@ -312,14 +316,19 @@
 
 <!-- async load function -->
 <script>
-    function async(u, c) {
-        var d = document, t = 'script',
-            o = d.createElement(t),
-            s = d.getElementsByTagName(t)[0];
-        o.src = u;
-        if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
-        s.parentNode.insertBefore(o, s);
-    }
+	function async (u, c) {
+		var d = document,
+			t = 'script',
+			o = d.createElement(t),
+			s = d.getElementsByTagName(t)[0];
+		o.src = u;
+		if (c) {
+			o.addEventListener('load', function(e) {
+				c(null, e);
+			}, false);
+		}
+		s.parentNode.insertBefore(o, s);
+	}
 </script>
 
 <!--
@@ -345,20 +354,20 @@
 {% if page.plchart %}
 <!-- jquery.tagcloud.js -->
 <script>
-    // https://stackoverflow.com/questions/9975810/make-iframe-automatically-adjust-height-according-to-the-contents-without-using
-    function resizeIframe(obj) {
-        obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-    }
+	// https://stackoverflow.com/questions/9975810/make-iframe-automatically-adjust-height-according-to-the-contents-without-using
+	function resizeIframe(obj) {
+		obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+	}
 
-    $(document).ready(function () {
-        var $chart = document.querySelector("#chart");
-        $chart.onload = function () {
-            resizeIframe($chart)
-        }
-        window.addEventListener("resize", () => {
-            resizeIframe($chart)
-        });
-    })
+	$(document).ready(function() {
+		var $chart = document.querySelector("#chart");
+		$chart.onload = function() {
+			resizeIframe($chart)
+		}
+		window.addEventListener("resize", () => {
+			resizeIframe($chart)
+		});
+	})
 </script>
 {% endif %}
 
@@ -366,43 +375,51 @@
 {% if page.title == 'Archive' %}
 <!-- jquery.tagcloud.js -->
 <script>
-    async('{{ "/js/jquery.tagcloud.js" | prepend: site.baseurl }}', function () {
-        $.fn.tagcloud.defaults = {
-            //size: {start: 1, end: 1, unit: 'em'},
-            color: { start: '#bbbbee', end: '#2f93b4' },
-        };
-        $('#tag_cloud a').tagcloud();
-    })
+	async ('{{ "/js/jquery.tagcloud.js" | prepend: site.baseurl }}', function() {
+		$.fn.tagcloud.defaults = {
+			//size: {start: 1, end: 1, unit: 'em'},
+			color: {
+				start: '#bbbbee',
+				end: '#2f93b4'
+			},
+		};
+		$('#tag_cloud a').tagcloud();
+	})
 </script>
 <script src='{{ "/js/archive.js " | prepend: site.baseurl }}'></script>
 {% endif %}
 
 <!--fastClick.js -->
 <script>
-    async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function () {
-        var $nav = document.querySelector("nav");
-        if ($nav) FastClick.attach($nav);
-    })
+	async ("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function() {
+		var $nav = document.querySelector("nav");
+		if ($nav) FastClick.attach($nav);
+	})
 </script>
 
 
 <!-- Google Analytics -->
 {% if site.ga_track_id %}
 <script>
-    // dynamic User by Hux
-    var _gaId = '{{ site.ga_track_id }}';
-    var _gaDomain = '{{ site.ga_domain }}';
+	// dynamic User by Hux
+	var _gaId = '{{ site.ga_track_id }}';
+	var _gaDomain = '{{ site.ga_domain }}';
 
-    // Originial
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date(); a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+	// Originial
+	(function(i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+		i[r] = i[r] || function() {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date();
+		a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0];
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m)
+	})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-    ga('create', _gaId, _gaDomain);
-    ga('send', 'pageview');
+	ga('create', _gaId, _gaDomain);
+	ga('send', 'pageview');
 </script>
 {% endif %}
 
@@ -410,17 +427,17 @@
 <!-- Baidu Tongji -->
 {% if site.ba_track_id %}
 <script>
-    // dynamic User by Hux
-    var _baId = '{{ site.ba_track_id }}';
+	// dynamic User by Hux
+	var _baId = '{{ site.ba_track_id }}';
 
-    // Originial
-    var _hmt = _hmt || [];
-    (function () {
-        var hm = document.createElement("script");
-        hm.src = "//hm.baidu.com/hm.js?" + _baId;
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
+	// Originial
+	var _hmt = _hmt || [];
+	(function() {
+		var hm = document.createElement("script");
+		hm.src = "//hm.baidu.com/hm.js?" + _baId;
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
 </script>
 {% endif %}
 
@@ -428,61 +445,62 @@
 <!-- Side Catalog -->
 {% unless page.no-catalog %}
 <script type="text/javascript">
-    function generateCatalog(selector) {
+	function generateCatalog(selector) {
 
-        // interop with multilangual 
-        if ('{{ page.multilingual }}' == 'true') {
-            _containerSelector = 'div.post-container.active'
-        } else {
-            _containerSelector = 'div.post-container'
-        }
+		// interop with multilangual 
+		if ('{{ page.multilingual }}' == 'true') {
+			_containerSelector = 'div.post-container.active'
+		} else {
+			_containerSelector = 'div.post-container'
+		}
 
-        // init
-        var P = $(_containerSelector), a, n, t, l, i, c;
-        a = P.find('h1,h2,h3,h4,h5,h6');
+		// init
+		var P = $(_containerSelector),
+			a, n, t, l, i, c;
+		a = P.find('h1,h2,h3,h4,h5,h6');
 
-        // clean
-        $(selector).html('')
+		// clean
+		$(selector).html('')
 
-        // appending
-        a.each(function () {
-            n = $(this).prop('tagName').toLowerCase();
-            i = "#" + $(this).prop('id');
-            t = $(this).text();
-            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
-            l = $('<li class="' + n + '_nav"></li>').append(c);
-            $(selector).append(l);
-        });
-        return true;
-    }
+		// appending
+		a.each(function() {
+			n = $(this).prop('tagName').toLowerCase();
+			i = "#" + $(this).prop('id');
+			t = $(this).text();
+			c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+			l = $('<li class="' + n + '_nav"></li>').append(c);
+			$(selector).append(l);
+		});
+		return true;
+	}
 
-    generateCatalog(".catalog-body");
+	generateCatalog(".catalog-body");
 
-    // toggle side catalog
-    $(".catalog-toggle").click((function (e) {
-        e.preventDefault();
-        $('.side-catalog').toggleClass("fold")
-    }))
+	// toggle side catalog
+	$(".catalog-toggle").click((function(e) {
+		e.preventDefault();
+		$('.side-catalog').toggleClass("fold")
+	}))
 
-    /*
-     * Doc: https://github.com/davist11/jQuery-One-Page-Nav
-     * Fork by Hux to support padding
-     */
-    async("{{ '/js/jquery.nav.js' | prepend: site.baseurl }}", function () {
-        $('.catalog-body').onePageNav({
-            currentClass: "active",
-            changeHash: !1,
-            easing: "swing",
-            filter: "",
-            scrollSpeed: 700,
-            scrollOffset: 0,
-            scrollThreshold: .2,
-            begin: null,
-            end: null,
-            scrollChange: null,
-            padding: 80
-        });
-    });
+	/*
+	 * Doc: https://github.com/davist11/jQuery-One-Page-Nav
+	 * Fork by Hux to support padding
+	 */
+	async ("{{ '/js/jquery.nav.js' | prepend: site.baseurl }}", function() {
+		$('.catalog-body').onePageNav({
+			currentClass: "active",
+			changeHash: !1,
+			easing: "swing",
+			filter: "",
+			scrollSpeed: 700,
+			scrollOffset: 0,
+			scrollThreshold: .2,
+			begin: null,
+			end: null,
+			scrollChange: null,
+			padding: 80
+		});
+	});
 </script>
 {% endunless %}
 
@@ -491,112 +509,113 @@
 {% if page.multilingual %}
 <!-- Handle Language Change -->
 <script type="text/javascript">
-    // get nodes
-    var $zh = document.querySelector(".zh");
-    var $en = document.querySelector(".en");
-    var $select = document.querySelector("select");
+	// get nodes
+	var $zh = document.querySelector(".zh");
+	var $en = document.querySelector(".en");
+	var $select = document.querySelector("select");
 
-    // Changes at v1.8.1: include lang flag as a url query. This interop well with catalog hash anchors.
-    function getLang() { return new URLSearchParams(document.location.search).get("lang") }
+	// Changes at v1.8.1: include lang flag as a url query. This interop well with catalog hash anchors.
+	function getLang() {
+		return new URLSearchParams(document.location.search).get("lang")
+	}
 
-    function setLang(newLang) {
-        var params = new URLSearchParams(document.location.search)
-        params.set("lang", newLang)
-        document.location.search = params.toString()  // refresh.
-    }
+	function setLang(newLang) {
+		var params = new URLSearchParams(document.location.search)
+		params.set("lang", newLang)
+		document.location.search = params.toString() // refresh.
+	}
 
-    // handle render
-    function _render() {
-        var lang = getLang()
-        // en
-        if (lang == "en") {
-            $select.selectedIndex = 1;
-            $en.style.display = "block";
-            $en.classList.add("active");
-            $zh.style.display = "none";
-            $zh.classList.remove("active");
-            // default to zh-cn
-        } else {
-            $select.selectedIndex = 0;
-            $zh.style.display = "block";
-            $zh.classList.add("active");
-            $en.style.display = "none";
-            $en.classList.remove("active");
-        }
-        // interop with catalog 
-        generateCatalog(".catalog-body");
-    }
+	// handle render
+	function _render() {
+		var lang = getLang()
+		// en
+		if (lang == "en") {
+			$select.selectedIndex = 1;
+			$en.style.display = "block";
+			$en.classList.add("active");
+			$zh.style.display = "none";
+			$zh.classList.remove("active");
+			// default to zh-cn
+		} else {
+			$select.selectedIndex = 0;
+			$zh.style.display = "block";
+			$zh.classList.add("active");
+			$en.style.display = "none";
+			$en.classList.remove("active");
+		}
+		// interop with catalog 
+		generateCatalog(".catalog-body");
+	}
 
-    // handle select change
-    function onLanChange(index) {
-        if (index == 0) {
-            lang = "zh"
-        } else {
-            lang = "en"
-        }
-        setLang(lang)
-    }
+	// handle select change
+	function onLanChange(index) {
+		if (index == 0) {
+			lang = "zh"
+		} else {
+			lang = "en"
+		}
+		setLang(lang)
+	}
 
-    // init
-    _render();
+	// init
+	_render();
 </script>
 {% endif %}
 
 <!-- Simple Jekyll Search -->
 <script>
-    // https://stackoverflow.com/questions/1912501/unescape-html-entities-in-javascript
-    function htmlDecode(input) {
-        var e = document.createElement('textarea');
-        e.innerHTML = input;
-        // handle case of empty input
-        return e.childNodes.length === 0 ? "" : e.childNodes[0].nodeValue;
-    }
+	// https://stackoverflow.com/questions/1912501/unescape-html-entities-in-javascript
+	function htmlDecode(input) {
+		var e = document.createElement('textarea');
+		e.innerHTML = input;
+		// handle case of empty input
+		return e.childNodes.length === 0 ? "" : e.childNodes[0].nodeValue;
+	}
 
-    SimpleJekyllSearch({
-        searchInput: document.getElementById('search-input'),
-        resultsContainer: document.getElementById('search-results'),
-        json: '/search.json',
-        searchResultTemplate: '<div class="post-preview item"><a href="{url}"><h2 class="post-title">{title}</h2><h3 class="post-subtitle">{subtitle}</h3><hr></a></div>',
-        noResultsText: 'No results',
-        limit: 50,
-        fuzzy: false,
-        // a hack to get escaped subtitle unescaped. for some reason, 
-        // post.subtitle w/o escape filter nuke entire search.
-        templateMiddleware: function (prop, value, template) {
-            if (prop === 'subtitle' || prop === 'title') {
-                if (value.indexOf("code")) {
-                    return htmlDecode(value);
-                } else {
-                    return value;
-                }
-            }
-        }
-    });
+	SimpleJekyllSearch({
+		searchInput: document.getElementById('search-input'),
+		resultsContainer: document.getElementById('search-results'),
+		json: '/search.json',
+		searchResultTemplate: '<div class="post-preview item"><a href="{url}"><h2 class="post-title">{title}</h2><h3 class="post-subtitle">{subtitle}</h3><hr></a></div>',
+		noResultsText: 'No results',
+		limit: 50,
+		fuzzy: false,
+		// a hack to get escaped subtitle unescaped. for some reason, 
+		// post.subtitle w/o escape filter nuke entire search.
+		templateMiddleware: function(prop, value, template) {
+			if (prop === 'subtitle' || prop === 'title') {
+				if (value.indexOf("code")) {
+					return htmlDecode(value);
+				} else {
+					return value;
+				}
+			}
+		}
+	});
 
-    $(document).ready(function () {
-        var $searchPage = $('.search-page');
-        var $searchOpen = $('.search-icon');
-        var $searchClose = $('.search-icon-close');
-        var $searchInput = $('#search-input');
-        var $body = $('body');
+	$(document).ready(function() {
+		var $searchPage = $('.search-page');
+		var $searchOpen = $('.search-icon');
+		var $searchClose = $('.search-icon-close');
+		var $searchInput = $('#search-input');
+		var $body = $('body');
 
-        $searchOpen.on('click', function (e) {
-            e.preventDefault();
-            $searchPage.toggleClass('search-active');
-            var prevClasses = $body.attr('class') || '';
-            setTimeout(function () {
-                $body.addClass('no-scroll');
-            }, 400)
+		$searchOpen.on('click', function(e) {
+			e.preventDefault();
+			$searchPage.toggleClass('search-active');
+			var prevClasses = $body.attr('class') || '';
+			setTimeout(function() {
+				$body.addClass('no-scroll');
+			}, 400)
 
-            if ($searchPage.hasClass('search-active')) {
-                $searchClose.on('click', function (e) {
-                    e.preventDefault();
-                    $searchPage.removeClass('search-active');
-                    $body.attr('class', prevClasses);  // from closure 
-                });
-                $searchInput.focus();
-            }
-        });
-    });
+			if ($searchPage.hasClass('search-active')) {
+				$searchClose.on('click', function(e) {
+					e.preventDefault();
+					$searchPage.removeClass('search-active');
+					$body.attr('class', prevClasses); // from closure 
+				});
+				$searchInput.focus();
+			}
+		});
+	});
 </script>
-

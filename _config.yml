@@ -114,10 +114,6 @@ friends: [
          href: "https://iuiu.run/"
      },
  {
-         title: "~君也小白",
-         href: "https://blog.jyxb.net/?"
-     },
- {
          title: "~Kif Room",
          href: "https://www.kifroom.icu/#"
      },
@@ -125,7 +121,65 @@ friends: [
          title: "~Xu Yiyang",
          href: "https://blog.xuyiyang.top/"
      },
-
+ {
+       title: "小浣熊的技术小站",
+       href: "https://nimitiz.cn/",
+       img: "https://nimitiz.cn/images/avatar.gif",
+       intro: "生命不息，折腾不止"
+     },
+ {
+       title: "从南小站",
+       href: "https://ouoo.fun/",
+       img: "http://cdn.mc.huluxia.net/g4/M01/51/FE/rBAAdl9njJyAWyVfAAAM7021VZU034.png",
+       intro: "致我逝去的青春"
+     }, 
+ {
+       title: "Astics的博客",
+       href: "https://astcs.gitee.io/",
+       img: "https://s1.ax1x.com/2020/09/07/wn5dU0.jpg",
+       intro: "一个简单的小白博客"
+     },
+ {
+       title: "今今今生",
+       href: "https://noheart.cn",
+       img: "https://noheart.cn/upload/mylife.jpg",
+       intro: "医不自医，人不渡己"
+     }, 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+ {
+       title: "杏铃の小本",
+       href: "https://66ccff.work/",
+       img: "https://gitee.com/hshx123/picplus/raw/master/1595119088132.png",
+       intro: "一份分享教程&游戏的博客"
+     },
+]	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
 ]
 friend1: [
  {

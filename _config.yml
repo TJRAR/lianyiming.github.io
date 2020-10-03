@@ -27,11 +27,13 @@ zhihu_username:    32c99075e7bcda4069d856f0552b4591
 github_username:    LianYiMing
 #GIthub账户名字
 facebook_username:  100054268065189
-#用你的脸书网页版主页地址最后的数字
-gongzhonghao_username:   nouse
+#用大哥的脸书网页版主页地址最后的数字
 weibo_username:  agzxlym
+#微博的名字
 jianshu_username: false
 csdn_username:
+
+#linkedin_username:
 #用的话删掉上边的#就可以了
 
 

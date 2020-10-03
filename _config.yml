@@ -124,44 +124,50 @@ friends: [
  {
        title: "小浣熊的技术小站",
        href: "https://nimitiz.cn/",
-       img: "https://nimitiz.cn/images/avatar.gif",
-       intro: "生命不息，折腾不止"
      },
  {
        title: "从南小站",
        href: "https://ouoo.fun/",
-       img: "http://cdn.mc.huluxia.net/g4/M01/51/FE/rBAAdl9njJyAWyVfAAAM7021VZU034.png",
-       intro: "致我逝去的青春"
      }, 
  {
        title: "Astics的博客",
        href: "https://astcs.gitee.io/",
-       img: "https://s1.ax1x.com/2020/09/07/wn5dU0.jpg",
-       intro: "一个简单的小白博客"
+
      },
  {
        title: "今今今生",
        href: "https://noheart.cn",
-       img: "https://noheart.cn/upload/mylife.jpg",
-       intro: "医不自医，人不渡己"
+
      }, 
  {
        title: "杏铃の小本",
        href: "https://66ccff.work/",
-       img: "https://gitee.com/hshx123/picplus/raw/master/1595119088132.png",
-       intro: "一份分享教程&游戏的博客"
+
      },
  {
        title: "Deserts",
        href: "https://deserts.io/",
-       img: "https://www.gravatar.com/avatar/f32fc1c3f6674bfb5621a60901b5f96c?s=250&d=mm&r=x",
-       intro: "大佬还未给描述呢"
+
+     },
+ {
+       title: "独人欣赏",
+       href: "https://www.wangyusong.cn",
+
      },
  {
        title: "Liumang",
        href: "https://blog.liumang.life/",
-       img: "https://img.yxyy.top/2020/09/0E049C08-5C8A-4B0E-B861-BC3258A2AC22.png",
-       intro: "Liumang's Blog"
+
+     },
+ {
+       title: "Eanraig",
+       href: "https://eanraig.top",
+
+     },
+ {
+       title: "Alsaces",
+       href: "https://www.alsaces.cn",
+
      },
 ]	 
 	 

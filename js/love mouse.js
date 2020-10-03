@@ -21,8 +21,8 @@
             a.className = "heart",
                 s.push({
                     el: a,
-                    x: e.clientX - 5,
-                    y: e.clientY - 5,
+                    x:  e.clientX - 5,
+                    y:  e.clientY - 5,
                     scale: 1,
                     alpha: 1,
                     color: c()

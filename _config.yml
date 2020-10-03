@@ -17,9 +17,9 @@ sidebar-avatar: /img/about-BY-gentle.jpg      # 用绝对URL地址,也就是要�
 
 
 
-# 是否开RSS(直接true就可以，不需要其他任何操作呢)
+# RSS settings
 RSS: true
-# 
+# 是否开RSS(直接true就可以，不需要其他任何操作呢)
 twitter_username:  agzx
 #Twitter名字
 zhihu_username:    32c99075e7bcda4069d856f0552b4591

@@ -13,23 +13,26 @@ github_repo: "https://github.com/LianYiMing/LianYiMing.github.io" # 你的github
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
 sidebar-about-description: "Live a life you will remember"
-sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/about-BY-gentle.jpg      # 用绝对URL地址,也就是要在前面加上/
 
 
 
-# SNS settings
+# 是否开RSS(直接true就可以，不需要其他任何操作呢)
 RSS: true
 # 
-jianshu_username: false
 twitter_username:  agzx
-zhihu_username:    # 32c99075e7bcda4069d856f0552b4591
+#Twitter名字
+zhihu_username:    32c99075e7bcda4069d856f0552b4591
+#网页版知乎地址后面的字符串
 github_username:    LianYiMing
+#GIthub账户名字
 facebook_username:  100054268065189
 #用你的脸书网页版主页地址最后的数字
 gongzhonghao_username:   nouse
 weibo_username:  agzxlym
-
-#用twitter的话删掉上边的#就可以了
+jianshu_username: false
+csdn_username:
+#用的话删掉上边的#就可以了
 
 
 

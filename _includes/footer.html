@@ -288,71 +288,7 @@
             </div>
         </div>
     </div>
-	<!--<span id="sitetime">载入运行时间ing...</span>
-	<script>
-		function siteTime() {
-			var seconds = 1000;
-			var minutes = seconds * 60;
-			var hours = minutes * 60;
-			var days = hours * 24;
-			var years = days * 365;
-			var today = new Date();
-			var startYear = "2020";
-			var startMonth = "5";
-			var startDate = "13";
-			var startHour = "0";
-			var startMinute = "0";
-			var startSecond = "0";
-			var todayYear = today.getFullYear();
-			var todayMonth = today.getMonth() + 1;
-			var todayDate = today.getDate();
-			var todayHour = today.getHours();
-			var todayMinute = today.getMinutes();
-			var todaySecond = today.getSeconds();
-			var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
-			var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
-			var diff = t2 - t1;
-			var diffYears = Math.floor(diff / years);
-			var diffDays = Math.floor((diff / days) - diffYears * 365);
-			var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
-			var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
-				minutes);
-			var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
-				diffMinutes * minutes) / seconds);
-			if(startYear == todayYear) {
-				document.getElementById("year").innerHTML = todayYear;
-				document.getElementById("sitetime").innerHTML = "本站已在各种风波中苟活 " + diffDays + " 天 " + diffHours +
-					" 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
-			} else {
-				document.getElementById("year").innerHTML = startYear + " - " + todayYear;
-				document.getElementById("sitetime").innerHTML = "本站已在各种风波中苟活 " + diffYears + " 年 " + diffDays +
-					" 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
-			}
-		}
-		setInterval(siteTime, 1000);
-	</script>-->
-	<!--
-	<p> 网站已平稳运行：<span id="site_runtime" style="color: #24a0f0;"></span></p>
-<script>
-    function show_site_runtime(){
-	window.setTimeout("show_site_runtime()",1000); // 每秒运行一次函数
-	X=new Date("01/03/2020 00:00:00"); //在这里修改你的建站时间
-	Y=new Date();
-	T=(Y.getTime()-X.getTime()); // 获取当前时间与指定时间之间的时间间隔（ms）	
-	i=24*60*60*1000;
-	d=T/i;
-	D=Math.floor(d); // 计算天数并向下取整
-	h=(d-D)*24;
-	H=Math.floor(h); // 计算剩余不足一天的小时数并向下取整
-	m=(h-H)*60;
-	M=Math.floor(m); // 计算剩余不足一小时的分钟数并向下取整
-	s=(m-M)*60
-	S=Math.floor(s); // 计算剩余不足一分钟的秒数并向下取整
-	site_runtime.innerHTML= Y+D + " 天 " + H + " 小时  + M + " 分 " + S + " 秒 "
-    }
-	show_site_runtime();
-</script>
-	-->
+
 </footer>
 
 <!-- jQuery -->

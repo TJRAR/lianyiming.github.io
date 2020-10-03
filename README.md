@@ -120,7 +120,7 @@ featured-condition-size: 1     # A tag will be featured if the size of it is mor
 
 ### Social-media Account
 
-在下面输入的社交账号，没有的添加的不会显示在侧边框中。新加入了[简书](https:/www.jianshu.com)链接
+在下面输入的社交账号，没有的添加的不会显示在侧边框中。如果哪个账号不想用直接在前面添加#注释掉就Ok
 
 	# SNS settings
 	RSS: false
@@ -152,6 +152,128 @@ friends: [
         title: "Apple",
         href: "https://apple.com/"
     }
+]
+```
+
+底下是friend页面的朋友
+
+​       title: "鲸一",——这是朋友的名字
+​       href: "https://www.saroin.com/",——这是朋友的URL
+​       img: "https://cdn.jsdelivr.net/gh/AJRECHO/WWW@master/uPic/user/ajrecho.jpg",——朋友的网站Logo
+​       intro: "不是忙着活，就是忙着累死"——网站介绍
+
+```
+friend1: [
+ {
+       title: "鲸一",
+       href: "https://www.saroin.com/",
+       img: "https://cdn.jsdelivr.net/gh/AJRECHO/WWW@master/uPic/user/ajrecho.jpg",
+       intro: "不是忙着活，就是忙着累死"
+     },
+]
+friend2: [
+ {
+       title: "XuYiyang",
+       href: "https://blog.xuyiyang.top/",
+       img: "https://www.lianyiming.com/img/Xu.jpg",
+       intro: "大佬还未给描述呢"
+     },
+]
+friend3: [
+ {
+       title: "Kif Room",
+       href: "https://www.kifroom.icu/#",
+       img: "https://s1.ax1x.com/2020/06/23/NUr8pQ.jpg",
+       intro: "kif的树洞"
+     },
+]
+friend4: [
+ {
+       title: "哎呦哎呦",
+       href: "https://iuiu.run/",
+       img: "https://q1.qlogo.cn/g?b=qq&nk=10963273&s=640",
+       intro: "哎呦哎呦是一个关注互联网和分享网站建设·记录生活的个人博客"
+     },
+]
+friend5: [
+ {
+       title: "Astics的博客",
+       href: "https://astcs.gitee.io/",
+       img: "https://s1.ax1x.com/2020/09/07/wn5dU0.jpg",
+       intro: "一个简单的小白博客"
+     },
+]
+friend6: [
+ {
+       title: "杏铃の小本",
+       href: "https://66ccff.work/",
+       img: "https://gitee.com/hshx123/picplus/raw/master/1595119088132.png",
+       intro: "一份分享教程&游戏的博客"
+     },
+]
+friend7: [
+ {
+       title: "Deserts",
+       href: "https://deserts.io/",
+       img: "https://www.gravatar.com/avatar/f32fc1c3f6674bfb5621a60901b5f96c?s=250&d=mm&r=x",
+       intro: "大佬还未给描述呢"
+     },
+]
+friend8: [
+ {
+       title: "今今今生",
+       href: "https://noheart.cn",
+       img: "https://noheart.cn/upload/mylife.jpg",
+       intro: "医不自医，人不渡己"
+     },
+]
+friend9: [
+ {
+       title: "Eanraig",
+       href: "https://eanraig.top",
+       img: "https://cdn.jsdelivr.net/gh/eanraig/eanraig-storage/2020/09/avatar.jpg",
+       intro: "大佬还未给描述呢"
+     },
+]
+friend10: [
+ {
+       title: "Liumang",
+       href: "https://blog.liumang.life/",
+       img: "https://img.yxyy.top/2020/09/0E049C08-5C8A-4B0E-B861-BC3258A2AC22.png",
+       intro: "Liumang's Blog"
+     },
+]
+friend11: [
+ {
+       title: "小浣熊的技术小站",
+       href: "https://nimitiz.cn/",
+       img: "https://nimitiz.cn/images/avatar.gif",
+       intro: "生命不息，折腾不止"
+     },
+]
+friend12: [
+ {
+       title: "独人欣赏",
+       href: "https://www.wangyusong.cn",
+       img: "https://www.lianyiming.com/img/head.jpg",
+       intro: "摆脱了十足乏味的交际，摆脱不了群居属性"
+     },
+]
+friend13: [
+ {
+       title: "Alsaces",
+       href: "https://www.alsaces.cn",
+       img: "https://cdn.jsdelivr.net/gh/zhangfh-cq/images/second-blog/universal/avatar.png",
+       intro: "言必行，行必果"
+     },
+]
+friend14: [
+ {
+       title: "从南小站",
+       href: "https://ouoo.fun/",
+       img: "http://cdn.mc.huluxia.net/g4/M01/51/FE/rBAAdl9njJyAWyVfAAAM7021VZU034.png",
+       intro: "致我逝去的青春"
+     },
 ]
 ```
 

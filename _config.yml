@@ -73,7 +73,7 @@ kramdown:
 # 评论系统(不要加双引号)
 #vaLINE
 valine:
-  enable:true
+  enable: true
   appId: 324CSMlwN7QYCW31WN0BOd61-gzGzoHsz
   appKey: cUgj6L8hQhKJijEUq6dyb68S
 

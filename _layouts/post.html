@@ -744,11 +744,13 @@ layout: default
 <div id="vcomments"></div>
 	<script src="/libs/valine/av-min.js"></script>
 	<script src="/libs/valine/Valine.min.js"></script>
+	{% if site.valine %}
+	{% for friend in site.valine %}
 	<script>
 	    new Valine({
 	        el: '#vcomments',
-	        appId: '324CSMlwN7QYCW31WN0BOd61-gzGzoHsz',
-	        appKey: 'cUgj6L8hQhKJijEUq6dyb68S',
+	        appId: '{{valine.appId}}',
+	        appKey: '{{valine.appKey}',
 	        visitor: 'true' === 'true',
 	        avatar: ' ',
 	        pageSize: '10',
@@ -756,6 +758,8 @@ layout: default
 	        placeholder: '“我什么都知道，但还是想听你娓娓道来。”'
 	    });
 	</script>
+	{% endfor %}
+	{% endif %}
                 <!--Gitalk评论start  -->
                 {% if site.gitalk.enable %}
                 <!-- 引入Gitalk评论插件  -->

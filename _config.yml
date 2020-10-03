@@ -71,6 +71,16 @@ kramdown:
 
 
 # 评论系统
+#vaLINE
+valine: [
+ {
+      appId: '324CSMlwN7QYCW31WN0BOd61-gzGzoHsz',
+      appKey: 'cUgj6L8hQhKJijEUq6dyb68S',
+     },
+]
+
+
+
 # Disqus（https://disqus.com/）
 disqus_username:  #LianYiMing 
 

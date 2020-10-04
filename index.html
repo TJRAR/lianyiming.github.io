@@ -5,8 +5,8 @@ description: "Even if it makes me blind,I just wanna see the light."
 {% for post in paginator.posts %}
 <div class="post-preview">
 
-		<img src="img/banner/1.jpg" width="600" height="337"  border-radius: '100%'  border: "1px" solid: "#444" overflow: "hidden">
-		
+		<img class="post-img" src="img/banner/1.jpg" width="600" height="337"  border-radius: '100%'  border: "1px" solid: "#444" overflow: "hidden">
+		<img>
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">
             {{ post.title }}

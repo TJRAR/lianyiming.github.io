@@ -1534,12 +1534,7 @@ samp {
 }
 }
 
-.post-preview>a>.post-img {
-	width: 600;
-	height: 337;
-	border-radius: 100%;
-	border: 1px;
-}
+
 
 .post-preview>a>.post-subtitle {
 	font-size: 15px;
@@ -1604,6 +1599,12 @@ samp {
 	font-size: 36px;
 	margin-top: 60px;
 	font-weight: 700;
+}
+.postimg {
+	width: 600;
+	height: 337;
+	border-radius: 100%;
+	border: 1px;
 }
 
 .caption {

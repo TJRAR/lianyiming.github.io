@@ -71,11 +71,11 @@ kramdown:
 
 
 # 评论系统(不要加引号，要空一格子)
-#vaLINE
-#valine:
- # enable: true
-  #appId: 324CSMlwN7QYCW31WN0BOd61-gzGzoHsz
- # appKey: cUgj6L8hQhKJijEUq6dyb68S
+vaLINE
+valine:
+  enable: true
+ appId: 324CSMlwN7QYCW31WN0BOd61-gzGzoHsz
+ appKey: cUgj6L8hQhKJijEUq6dyb68S
 
 
 # Disqus（https://disqus.com/）

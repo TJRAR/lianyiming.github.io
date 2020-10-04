@@ -4,7 +4,12 @@ description: "Even if it makes me blind,I just wanna see the light."
 ---
 <!--<div id="postimg">
 </div>
-		-->
+		.postimg {
+			width: 600;
+			height: 337;
+			border-radius: 100%;
+			border: 1px; 
+		}-->
 {% for post in paginator.posts %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">

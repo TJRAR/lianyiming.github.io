@@ -1540,6 +1540,7 @@ samp {
 	border-radius: 100%;
 	border: 1px;
 	overflow: hidden;
+	src: img/banner/1.jpg;
 }
 
 .post-preview>a>.post-subtitle {

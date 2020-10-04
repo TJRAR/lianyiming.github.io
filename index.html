@@ -2,14 +2,6 @@
 layout: page
 description: "Even if it makes me blind,I just wanna see the light."
 ---
-<!--<div id="postimg">
-</div>
-		.postimg {
-			width: 600;
-			height: 337;
-			border-radius: 100%;
-			border: 1px; 
-		}-->
 {% for post in paginator.posts %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
@@ -28,12 +20,10 @@ description: "Even if it makes me blind,I just wanna see the light."
     <p class="post-meta">
         Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
     </p>
-	</div>
+	
 </div>
 <hr>
 {% endfor %}
-<!--上边是每一个post文章的显示-->
-
 
 <!-- Pager -->
 {% if paginator.total_pages > 1 %}
@@ -50,5 +40,3 @@ description: "Even if it makes me blind,I just wanna see the light."
     {% endif %}
 </ul>
 {% endif %}
-
-<!--页脚的指示器-->

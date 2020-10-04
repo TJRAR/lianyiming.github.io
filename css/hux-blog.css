@@ -1539,8 +1539,7 @@ samp {
 	height: 337;
 	border-radius: 100%;
 	border: 1px;
-	overflow: hidden;
-	src: img/banner/1.jpg;
+	background-image: url(../img/banner/19.jpg);
 }
 
 .post-preview>a>.post-subtitle {

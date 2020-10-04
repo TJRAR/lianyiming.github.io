@@ -505,7 +505,7 @@ layout: default
                     </li>
                     {% endif %}
                 </ul>
-				<!--
+			
   <style>
     .valine-card {
         margin: 1.5rem auto;
@@ -749,7 +749,7 @@ layout: default
 	    new Valine({
 	        el: '#vcomments',
 	        appId: '{{site.valine.appId}}',
-	        appKey: '{{site.valine.appKey}',
+	        appKey: '{{site.valine.appKey}}',
 	        visitor: 'true' === 'true',
 	        avatar: ' ',
 	        pageSize: '10',
@@ -758,7 +758,6 @@ layout: default
 	    });
 	</script>
 	{% endif %}
-	-->
                 <!--Gitalk评论start  -->
                 {% if site.gitalk.enable %}
                 <!-- 引入Gitalk评论插件  -->
@@ -833,7 +832,7 @@ layout: default
                 </section>
                 {% endif %}
 
-                <!--
+                
                 {% if site.friends %}
                 <hr>
                 <h5>FRIENDS</h5>
@@ -841,7 +840,7 @@ layout: default
                     {% for friend in site.friends %}
                         <li><a href="{{friend.href}}">{{friend.title}}</a></li>
                     {% endfor %}
-                </ol>    -->
+                </ol>    
                 {% endif %}
             </div>
         </div>

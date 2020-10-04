@@ -14,7 +14,7 @@ description: "Even if it makes me blind,I just wanna see the light."
         </h3>
         {% endif %}
         <div class="post-content-preview">
-            {{ post.content | strip_html | truncate:200 }}
+            {{ post.content | strip_html | truncate:200<!--文章节选的字数--> }}
         </div>
     </a>
     <p class="post-meta">
@@ -24,7 +24,7 @@ description: "Even if it makes me blind,I just wanna see the light."
 </div>
 <hr>
 {% endfor %}
-
+<!--上边是每一个post文章的显示-->
 <!-- Pager -->
 {% if paginator.total_pages > 1 %}
 <ul class="pager">

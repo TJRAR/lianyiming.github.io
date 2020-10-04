@@ -2,7 +2,7 @@
 layout: page
 description: "Even if it makes me blind,I just wanna see the light."
 ---
-<body bgcolor="#FF2C5569">
+
 {% for post in paginator.posts %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
@@ -41,4 +41,3 @@ description: "Even if it makes me blind,I just wanna see the light."
     {% endif %}
 </ul>
 {% endif %}
-</body>

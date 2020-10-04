@@ -297,3 +297,11 @@ friend14: [
        intro: "致我逝去的青春"
      },
 ]
+friend15: [
+ {
+       title: "Xunflash的小站",
+       href: "http://www.xunflash.top/",
+       img: "https://s1.ax1x.com/2020/09/21/wb8qET.jpg",
+       intro: "真不戳，嘿嘿"
+     },
+]

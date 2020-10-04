@@ -310,3 +310,19 @@ friend15: [
        intro: "真不戳，嘿嘿"
      },
 ]
+friend16: [
+ {
+       title: "Coderemarks",
+       href: "http://blog.coderemarks.cn",
+       img: "https://coderemarks.coding.net/p/coderemarks/d/blog/git/raw/master/7eb505f2cd077a63dddcfa8c8673cb41.jpg",
+       intro: "不仅仅是代码注释，更是我人生的备注！"
+     },
+]
+friend17: [
+ {
+       title: "小理の小窝",
+       href: "https://www.v48v.cn/",
+       img: "https://anfangd.com/2020/09/706751558.jpeg",
+       intro: "生而为爷 我很抱歉"
+     },
+]

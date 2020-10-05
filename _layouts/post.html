@@ -2,76 +2,6 @@
 layout: default
 ---
 <script>
-	// 每天切换 banner 图.  Switch banner image every day.By廉一鸣，一个月三十天，所以三十张
-		var bannerUrl = "/img/banner/" + new Date().getDay() + '.jpg';
-		//$('.intro-header').css('background-image', 'url(' + bannerUrl + ')');
-	</script>
-<!-- Image to hack wechat
--->
-
-<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
-<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0">
- 	url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')
-	-->
-<meta name="referrer" content="never">
-<!-- Post Header -->
-<style type="text/css">
-	header.intro-header {
-		position: relative;
-		background-image: url('bannerUrl')
-	}
-
-		{
-		% if page.header-mask %
-	}
-
-	header.intro-header .header-mask {
-		width: 100%;
-		height: 100%;
-		position: absolute;
-
-		background: rgba(0, 0, 0, {
-				{
-				page.header-mask
-			}
-		}
-
-		);
-	}
-
-		{
-		% endif %
-	}
-</style>
-
-<header class="intro-header">
-	<div class="header-mask"></div>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-				<div class="post-heading">
-					<div class="tags">
-						{% for tag in page.tags %}
-						<a class="tag" href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>
-						{% endfor %}
-					</div>
-					<h1>{{ page.title }}</h1>
-					{% comment %}
-					always create a h2 for keeping the margin , Hux
-					{% endcomment %}
-					{% comment %} if page.subtitle {% endcomment %}
-					<h2 class="subheading">{{ page.subtitle }}</h2>
-					{% comment %} endif {% endcomment %}
-					<span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
-				</div>
-			</div>
-		</div>
-	</div>
-</header>
-
-<!-- Post Content -->
-<article>
-	<script>
 		// 鼠标点击爱心特效
 		! function(e, t, a) {
 			function r() {
@@ -497,6 +427,76 @@ layout: default
 		snow.start();
 	</script>
 	<script type="text/javascript" src="\js\FunnyTitle.js"></script>
+<script>
+	// 每天切换 banner 图.  Switch banner image every day.By廉一鸣，一个月三十天，所以三十张
+		var bannerUrl = "/img/banner/" + new Date().getDay() + '.jpg';
+		//$('.intro-header').css('background-image', 'url(' + bannerUrl + ')');
+	</script>
+<!-- Image to hack wechat
+-->
+
+<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0">
+ 	url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')
+	-->
+<meta name="referrer" content="never">
+<!-- Post Header -->
+<style type="text/css">
+	header.intro-header {
+		position: relative;
+		background-image: url('bannerUrl')
+	}
+
+		{
+		% if page.header-mask %
+	}
+
+	header.intro-header .header-mask {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+
+		background: rgba(0, 0, 0, {
+				{
+				page.header-mask
+			}
+		}
+
+		);
+	}
+
+		{
+		% endif %
+	}
+</style>
+
+<header class="intro-header">
+	<div class="header-mask"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				<div class="post-heading">
+					<div class="tags">
+						{% for tag in page.tags %}
+						<a class="tag" href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>
+						{% endfor %}
+					</div>
+					<h1>{{ page.title }}</h1>
+					{% comment %}
+					always create a h2 for keeping the margin , Hux
+					{% endcomment %}
+					{% comment %} if page.subtitle {% endcomment %}
+					<h2 class="subheading">{{ page.subtitle }}</h2>
+					{% comment %} endif {% endcomment %}
+					<span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<!-- Post Content -->
+<article>
 	<div class="container">
 		<div class="row">
 

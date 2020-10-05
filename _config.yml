@@ -327,4 +327,4 @@ friend17: [
      },
 ]
 
-bannerUrl: "/img/headimg/" + new Date().getDay() + '.jpg'
+#bannerUrl: "/img/headimg/" + new Date().getDay() + '.jpg'

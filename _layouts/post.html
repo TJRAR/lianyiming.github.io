@@ -1,6 +1,6 @@
 ---
 layout: default
-bannerUrl = "/img/headimg/" + new Date().getDay() + '.jpg'
+
 ---
 <script>
 		// 每天切换 banner 图.  Switch banner image every day.By廉一鸣，一个月三十天，所以三十张
@@ -18,7 +18,7 @@ bannerUrl = "/img/headimg/" + new Date().getDay() + '.jpg'
     header.intro-header{
         position: relative;
 		background-image:
-			url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')
+			url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.bannerUrl }}{% endif %}')
          }
 
     {% if page.header-mask %}

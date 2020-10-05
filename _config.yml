@@ -326,3 +326,5 @@ friend17: [
        intro: "生而为爷 我很抱歉"
      },
 ]
+
+bannerUrl: "/img/headimg/" + new Date().getDay() + '.jpg'

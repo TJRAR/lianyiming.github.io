@@ -326,5 +326,6 @@ friend17: [
        intro: "生而为爷 我很抱歉"
      },
 ]
-
+thread: false
+#动态线条背景
 #bannerUrl: "/img/headimg/" + new Date().getDay() + '.jpg'

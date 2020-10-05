@@ -6,7 +6,10 @@ layout: default
 		var bannerUrl = "/img/headimg/" + new Date().getDay() + '.jpg';
 		$('.intro-header').css('background-image', 'url(' + bannerUrl + ')');
 	</script>
-<!-- Image to hack wechat -->
+<!-- Image to hack wechat
+ background-image:
+ 	<!--url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')-->
+ -->
 <!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
 <!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
 <meta name="referrer" content="never">
@@ -14,9 +17,7 @@ layout: default
 <style type="text/css">
     header.intro-header{
         position: relative;
-        background-image: 
-		<!--url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')-->
-    }
+         }
 
     {% if page.header-mask %}
     header.intro-header .header-mask{

@@ -14,7 +14,7 @@ layout: Friend
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 
-	<link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+		<link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
 
 
 
@@ -27,14 +27,14 @@ layout: Friend
 
 		<script src="/libs/jquery/jquery.min.js"></script>
 		<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-</head>
+	</head>
 
 	<body>
 
 
 
 
-		
+
 		<!--
 		<header class="navbar-fixed">
 			<nav id="headNav" class="bg-color nav-transparent">
@@ -954,7 +954,7 @@ layout: Friend
 								</div>
 								{% endfor %}
 								{% endif %}
-				{% if site.friend16 %}
+								{% if site.friend16 %}
 								{% for friend in site.friend16 %}
 								<div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
 									<div class="card frind-card6">
@@ -976,7 +976,7 @@ layout: Friend
 								</div>
 								{% endfor %}
 								{% endif %}
-			{% if site.friend17 %}
+								{% if site.friend17 %}
 								{% for friend in site.friend17 %}
 								<div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
 									<div class="card frind-card7">
@@ -1057,23 +1057,25 @@ layout: Friend
 						<p>3.技术博客优先~ </p>
 						<script>
 							document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>
+								.forEach(el => {
+									if (!el.dataset.src) {
+										return;
+									}
+									const img = document.createElement('img');
+									img.style = 'display:none !important;';
+									img.src = el.dataset.src;
+									img.addEventListener('error', () => {
+										img.remove();
+										el.style.color = 'inherit';
+										el.style.backgroundImage = 'none';
+										el.style.background = 'none';
+									});
+									img.addEventListener('load', () => {
+										img.remove();
+									});
+									document.body.appendChild(img);
+								});
+						</script>
 					</div>
 				</div>
 				<div class="card">
@@ -1336,16 +1338,16 @@ layout: Friend
 					<script src="/libs/valine/Valine.min.js"></script>
 					<script>
 						new Valine({
-        el: '#vcomments',
-        appId: '324CSMlwN7QYCW31WN0BOd61-gzGzoHsz',
-        appKey: 'cUgj6L8hQhKJijEUq6dyb68S',
-        visitor: 'true' === 'true',
-        avatar: 'retro',
-        pageSize: '10',
-        lang: 'en',
-        placeholder: '“我什么都知道，但还是想听你娓娓道来。”'
-    });
-</script>
+							el: '#vcomments',
+							appId: '324CSMlwN7QYCW31WN0BOd61-gzGzoHsz',
+							appKey: 'cUgj6L8hQhKJijEUq6dyb68S',
+							visitor: 'true' === 'true',
+							avatar: 'retro',
+							pageSize: '10',
+							lang: 'en',
+							placeholder: '“我什么都知道，但还是想听你娓娓道来。”'
+						});
+					</script>
 
 
 
@@ -1354,19 +1356,19 @@ layout: Friend
 		</main>
 
 		<script>
-			$(function () {
-        $('#friends-link').masonry({
-            itemSelector: '.friend-div'
-        });
-    });
-</script>
+			$(function() {
+				$('#friends-link').masonry({
+					itemSelector: '.friend-div'
+				});
+			});
+		</script>
 
 
 		<!-- 底部加了小鱼<・)))><<~ -->
 
 
-		
-<!--
+
+		<!--
 		<footer class="page-footer bg-color">
 
 
@@ -1500,10 +1502,10 @@ layout: Friend
 -->
 		<!-- 回到顶部按钮 -->
 		<div id="backTop" class="top-scroll">
-		
+
 			<a class="btn-floating btn-large waves-effect waves-light" href="#!">
-				
-			<i class="fas fa-arrow-up"></i>
+
+				<i class="fas fa-arrow-up"></i>
 			</a>
 		</div>
 

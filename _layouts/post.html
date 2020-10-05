@@ -1,7 +1,11 @@
 ---
 layout: default
 ---
-
+<script>
+		// 每天切换 banner 图.  Switch banner image every day.By廉一鸣，一个月三十天，所以三十张
+		var bannerUrl = "/img/headimg/" + new Date().getDay() + '.jpg';
+		$('.header-img').css('background-image', 'url(' + bannerUrl + ')');
+	</script>
 <!-- Image to hack wechat -->
 <!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
 <!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
@@ -10,7 +14,8 @@ layout: default
 <style type="text/css">
     header.intro-header{
         position: relative;
-        background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')
+        background-image: 
+		<!--url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')-->
     }
 
     {% if page.header-mask %}

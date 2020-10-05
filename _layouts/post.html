@@ -18,7 +18,7 @@ bannerUrl = "/img/headimg/" + new Date().getDay() + '.jpg'
     header.intro-header{
         position: relative;
 		background-image:
-			url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }{% else %}{{% post.bannerUrl %}}}{% endif %}')
+			url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')
          }
 
     {% if page.header-mask %}

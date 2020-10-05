@@ -1,24 +1,24 @@
 ---
 layout: default
-
 ---
 <script>
 		// 每天切换 banner 图.  Switch banner image every day.By廉一鸣，一个月三十天，所以三十张
 		var bannerUrl = "/img/headimg/" + new Date().getDay() + '.jpg';
-		$('.intro-header').css('background-image', 'url(' + bannerUrl + ')');
+		//$('.intro-header').css('background-image', 'url(' + bannerUrl + ')');
 	</script>
 <!-- Image to hack wechat
 -->
 
 <!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
-<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
+<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0">
+ 	url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')
+	-->
 <meta name="referrer" content="never">
 <!-- Post Header -->
 <style type="text/css">
     header.intro-header{
         position: relative;
-		background-image:
-			url('bannerUrl')
+		background-image: url('bannerUrl')
          }
 
     {% if page.header-mask %}

@@ -1,7 +1,13 @@
 ---
 layout: default
 ---
+
 <script>
+	// 每天切换 banner 图.  Switch banner image every day.By廉一鸣，一个月三十天，所以三十张
+		var bannerUrl = "/img/banner/" + new Date().getDay() + '.jpg';
+		//$('.intro-header').css('background-image', 'url(' + bannerUrl + ')');
+	</script>
+	<script>
 		// 鼠标点击爱心特效
 		! function(e, t, a) {
 			function r() {
@@ -13,7 +19,7 @@ layout: default
 				}
 				requestAnimationFrame(r)
 			}
-
+	
 			function n() {
 				var t = "function" == typeof e.onclick && e.onclick;
 				e.onclick = function(e) {
@@ -21,7 +27,7 @@ layout: default
 						o(e)
 				}
 			}
-
+	
 			function o(e) {
 				var a = t.createElement("div");
 				a.className = "heart",
@@ -35,7 +41,7 @@ layout: default
 					}),
 					t.body.appendChild(a)
 			}
-
+	
 			function i(e) {
 				var a = t.createElement("style");
 				a.type = "text/css";
@@ -46,11 +52,11 @@ layout: default
 				}
 				t.getElementsByTagName("head")[0].appendChild(a)
 			}
-
+	
 			function c() {
 				return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")"
 			}
-
+	
 			var s = [];
 			e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame ||
 				e.oRequestAnimationFrame || e.msRequestAnimationFrame ||
@@ -63,33 +69,33 @@ layout: default
 				n(),
 				r()
 		}(window, document);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 		function updateCoords(e) {
 			pointerX = (e.clientX || e.touches[0].clientX) - canvasEl.getBoundingClientRect().left, pointerY = e.clientY || e.touches[
 				0].clientY - canvasEl.getBoundingClientRect().top
 		}
-
+	
 		function setParticuleDirection(e) {
 			var t = anime.random(0, 360) * Math.PI / 180,
 				a = anime.random(50, 180),
@@ -99,7 +105,7 @@ layout: default
 				y: e.y + n * Math.sin(t)
 			}
 		}
-
+	
 		function createParticule(e, t) {
 			var a = {};
 			return a.x = e, a.y = t, a.color = colors[anime.random(0, colors.length - 1)], a.radius = anime.random(16, 32), a.endPos =
@@ -107,7 +113,7 @@ layout: default
 					ctx.beginPath(), ctx.arc(a.x, a.y, a.radius, 0, 2 * Math.PI, !0), ctx.fillStyle = a.color, ctx.fill()
 				}, a
 		}
-
+	
 		function createCircle(e, t) {
 			var a = {};
 			return a.x = e, a.y = t, a.color = "#F00", a.radius = 0.1, a.alpha = 0.5, a.lineWidth = 6, a.draw = function() {
@@ -115,13 +121,13 @@ layout: default
 					ctx.strokeStyle = a.color, ctx.stroke(), ctx.globalAlpha = 1
 			}, a
 		}
-
+	
 		function renderParticule(e) {
 			for (var t = 0; t < e.animatables.length; t++) {
 				e.animatables[t].target.draw()
 			}
 		}
-
+	
 		function animateParticules(e, t) {
 			for (var a = createCircle(e, t), n = [], i = 0; i < numberOfParticules; i++) {
 				n.push(createParticule(e, t))
@@ -153,7 +159,7 @@ layout: default
 				offset: 0
 			})
 		}
-
+	
 		function debounce(e, t) {
 			var a;
 			return function() {
@@ -187,13 +193,13 @@ layout: default
 					(render.play(), updateCoords(e), animateParticules(pointerX, pointerY))
 			}, !1), setCanvasSize(), window.addEventListener("resize", setCanvasSize, !1)
 		}
-
-
+	
+	
 		function updateCoords(e) {
 			pointerX = (e.clientX || e.touches[0].clientX) - canvasEl.getBoundingClientRect().left, pointerY = e.clientY || e.touches[
 				0].clientY - canvasEl.getBoundingClientRect().top
 		}
-
+	
 		function setParticuleDirection(e) {
 			var t = anime.random(0, 360) * Math.PI / 180,
 				a = anime.random(50, 180),
@@ -203,7 +209,7 @@ layout: default
 				y: e.y + n * Math.sin(t)
 			}
 		}
-
+	
 		function createParticule(e, t) {
 			var a = {};
 			return a.x = e, a.y = t, a.color = colors[anime.random(0, colors.length - 1)], a.radius = anime.random(16, 32), a.endPos =
@@ -211,7 +217,7 @@ layout: default
 					ctx.beginPath(), ctx.arc(a.x, a.y, a.radius, 0, 2 * Math.PI, !0), ctx.fillStyle = a.color, ctx.fill()
 				}, a
 		}
-
+	
 		function createCircle(e, t) {
 			var a = {};
 			return a.x = e, a.y = t, a.color = "#F00", a.radius = 0.1, a.alpha = 0.5, a.lineWidth = 6, a.draw = function() {
@@ -219,13 +225,13 @@ layout: default
 					ctx.strokeStyle = a.color, ctx.stroke(), ctx.globalAlpha = 1
 			}, a
 		}
-
+	
 		function renderParticule(e) {
 			for (var t = 0; t < e.animatables.length; t++) {
 				e.animatables[t].target.draw()
 			}
 		}
-
+	
 		function animateParticules(e, t) {
 			for (var a = createCircle(e, t), n = [], i = 0; i < numberOfParticules; i++) {
 				n.push(createParticule(e, t))
@@ -257,7 +263,7 @@ layout: default
 				offset: 0
 			})
 		}
-
+	
 		function debounce(e, t) {
 			var a;
 			return function() {
@@ -311,7 +317,7 @@ layout: default
 			function(callback) {
 				setTimeout(callback, 1000 / 60);
 			};
-
+	
 		cancelAnimationFrame = window.cancelAnimationFrame ||
 			window.mozCancelAnimationFrame ||
 			window.webkitCancelAnimationFrame ||
@@ -365,7 +371,7 @@ layout: default
 				this.velY = this.speed
 			}
 			this.velX += Math.cos(this.step += .05) * this.stepSize;
-
+	
 			this.y += this.velY;
 			this.x += this.velX;
 			/* 飞出边界的处理 */
@@ -427,11 +433,6 @@ layout: default
 		snow.start();
 	</script>
 	<script type="text/javascript" src="\js\FunnyTitle.js"></script>
-<script>
-	// 每天切换 banner 图.  Switch banner image every day.By廉一鸣，一个月三十天，所以三十张
-		var bannerUrl = "/img/banner/" + new Date().getDay() + '.jpg';
-		//$('.intro-header').css('background-image', 'url(' + bannerUrl + ')');
-	</script>
 <!-- Image to hack wechat
 -->
 
